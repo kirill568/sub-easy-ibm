@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Компоновка модулей и приложений J2EE с помощью RAD 6.0</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="assemble_j2ee_mod_app" name="uma.name">
+<meta content="Компоновка модулей и приложений J2EE с помощью RAD 6.0" name="uma.presentationName">
+<meta content="Tool:rup_rational_application_developer:Rational Application Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Application Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{255EDC79-8B64-4C22-94B1-AC38FC04EB37}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{255EDC79-8B64-4C22-94B1-AC38FC04EB37}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "__hxOUEUCEdqMr9-tA4TBpQ", "{255EDC79-8B64-4C22-94B1-AC38FC04EB37}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{255EDC79-8B64-4C22-94B1-AC38FC04EB37}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Компоновка модулей и приложений J2EE с помощью RAD 6.0</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту приведены инструкции по компоновке модулей J2EE и приложений J2EE с помощью среды моделирования RAD (файлы WAR, EJB JAR, JAR приложений-клиентов, RAR и EAR). </td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rational_application_developer_BCA25C88.html" guid="__hxOUEUCEdqMr9-tA4TBpQ">Rational Application Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/integrate_subsystem_E8F878D6.html" guid="{58FF0476-120F-411A-AD8C-16573032BE91}">Интегрирование подсистемы</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/integrate_system_9AFF7BFD.html" guid="{3233A207-6271-4492-A8BF-64E1D89D6C5E}">Интегрирование системы</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Компоновка - это процесс объединения компонентов приложения J2EE в пакеты, которые можно развернуть на сервере
+    приложений. Эти пакеты формируются либо как модули J2EE (см. <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="1.5663580058239784E-305">Рекомендация: Модуль J2EE</a>), либо как приложение J2EE (см. <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="1.6057780853529704E-306">Рекомендация: Приложение J2EE</a>).&nbsp; Эти пакеты создаются в виде архивных файлов,
+    которые должны соответствовать структуре каталога и отвечать правилам, определенным в модели компоновки и развертывания
+    приложения J2EE.
+</p>
+<p>
+    Процесс компоновки в RAD 6.0 значительно упрощен благодаря тому, что разработка компонентов приложения происходит в
+    рамках <em>Проекта</em>, который является либо модулем J2EE, либо приложением J2EE. При создании проекта в нем
+    автоматически создается структура каталога файлов, которая соответствует модели компоновки и развертывания приложения
+    J2EE. Поскольку компоненты впоследствии создаются с помощью мастеров, компоненты сохраняются по умолчанию в подходящей
+    папке проекта. Например, при создании файла JSP с помощью мастера <em>Создания файлов JSP</em> этот файл по умолчанию
+    записывается в папку <em>WebContent</em> Web-проекта, где хранятся все исходные файлы содержимого Web-страниц. RAD 6.0
+    также автоматически генерирует все необходимые продукты работы компоновки и развертывания J2EE, например, файл
+    манифеста и файлы описания. Поэтому процесс компоновки модуля или приложения J2EE включает только редактирование
+    соответствующих файлов описания и экспортирование проекта в архивный файл. В этой памятке по инструменту предусмотрены
+    следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#step1">Редактирование файла описания проекта</a>
+    </li>
+    <li>
+        <a href="#step2">Проверка проекта</a>
+    </li>
+    <li>
+        <a href="#step3">Экспорт проекта в архивный файл</a>
+    </li>
+</ul>
+<h3>
+    <a id="step1" href="#step3">Редактирование файла описания проекта</a>
+</h3>
+<ol>
+    <li>
+        Для редактирования файла описания (EAR) проекта <strong>Приложения J2EE</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE разверните меню <strong>Приложения J2EE &gt;
+                <em>проект</em></strong>.
+            </li>
+            <li>
+                Щелкните два раза на опции <strong>Файл описания: <em>проект</em></strong>. Откроется редактор файла
+                описания приложения.
+            </li>
+            <li>
+                Измените значения в файле описания. Для этого выберите соответствующую вкладку в нижней части панели
+                редактора.
+            </li>
+            <li>
+                Сохраните файл описания. Для этого в главном меню выберите <strong>Файл &gt; Сохранить</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для редактирования файла описания (WAR) <strong>Web</strong>-проекта выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE разверните меню <strong>Web-модули &gt;
+                <em>проект</em></strong>.
+            </li>
+            <li>
+                Щелкните два раза на опции <strong>Файл описания: <em>проект</em></strong>. Откроется редактор файла
+                описания Web-проекта.
+            </li>
+            <li>
+                Измените значения в файле описания. Для этого выберите соответствующую вкладку в нижней части панели
+                редактора.
+            </li>
+            <li>
+                Сохраните файл описания. Для этого в главном меню выберите <strong>Файл &gt; Сохранить</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для редактирования файла описания проекта <strong>EJB</strong> (EJB JAR) выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE разверните меню <strong>Модули EJB &gt;
+                <em>проект</em></strong>.
+            </li>
+            <li>
+                Щелкните два раза на опции <strong>Файл описания: <em>проект</em></strong>. Откроется редактор файла
+                описания проекта EJB.
+            </li>
+            <li>
+                Измените значения в файле описания. Для этого выберите соответствующую вкладку в нижней части панели
+                редактора.
+            </li>
+            <li>
+                Сохраните файл описания. Для этого в главном меню выберите <strong>Файл &gt; Сохранить</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для редактирования файла описания (JAR приложения-клиента) проекта <strong>Приложения-клиента</strong> выполните
+        следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE разверните меню <strong>Модули приложения-клиента &gt;
+                <em>проект</em></strong>.
+            </li>
+            <li>
+                Щелкните два раза на опции <strong>Файл описания: <em>проект</em></strong>. Откроется редактор файла
+                описания проекта приложения-клиента.
+            </li>
+            <li>
+                Измените значения в файле описания. Для этого выберите соответствующую вкладку в нижней части панели
+                редактора.
+            </li>
+            <li>
+                Сохраните файл описания. Для этого в главном меню выберите <strong>Файл &gt; Сохранить</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для редактирования файла описания (RAR) проекта <strong>Коннектора</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE разверните меню <strong>Модули коннектора &gt;
+                <em>проект</em></strong>.
+            </li>
+            <li>
+                Щелкните два раза на опции <strong>Файл описания: <em>проект</em></strong>. Откроется редактор XML в файле
+                <em>ra.xml</em>.
+            </li>
+            <li>
+                В файле XML измените значения файла описания.
+            </li>
+            <li>
+                Сохраните файл описания. Для этого в главном меню выберите <strong>Файл &gt; Сохранить</strong>.
+            </li>
+        </ol>
+    </li>
+</ol>
+<h3>
+    <a id="step2" href="#Top">Проверка проекта</a>
+</h3>
+<p>
+    При сохранении ресурсов по умолчанию проводится их проверка. Однако перед экспортом проекта в архивный файл
+    рекомендуется вручную провести проверку проекта. Обратите внимание, что заданные средства проверки проекта можно
+    изменить. Для этого щелкните правой кнопкой мыши на проекте и выберите <strong>Свойства &gt; Проверка</strong>.
+</p>
+<ol>
+    <li>
+        В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+        <em><strong>проект</strong></em>.
+    </li>
+    <li>
+        Выберите опцию <strong>Запустить проверку</strong>.
+    </li>
+    <li>
+        По завершении проверки откройте панель <em>Неполадки</em>. Если в ней указаны неполадки, исправьте их, а затем
+        перейдите к следующему шагу.
+    </li>
+</ol>
+<h3>
+    <a id="step3" href="#Top">Экспорт проекта в архивный файл</a>
+</h3>
+<ol>
+    <li>
+        Для экспорта проекта приложения J2EE в файл <strong>EAR</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+                <strong><em>проект</em></strong>.
+            </li>
+            <li>
+                Выберите <strong>Экспорт &gt; Файл EAR</strong>.
+            </li>
+            <li>
+                В мастере <em>Экспорта</em> укажите имя и расположение файла EAR.
+            </li>
+            <li>
+                При необходимости выберите: 
+                <ul>
+                    <li>
+                        <strong>Экспортировать исходные файлы</strong>
+                    </li>
+                    <li>
+                        <strong>Заменить существующий файл</strong> во избежание сообщений о замене файла, если экспорт
+                        производится в существующий файл EAR
+                    </li>
+                    <li>
+                        <strong>Добавить каталоги компоновки проекта и файлы метаданных</strong> для сохранения исходных
+                        имен проектов, добавленных или упоминаемых в проекте приложения, и создания зависимостей путей к
+                        классам (classpath). Это позволит впоследствии импортировать файл EAR в другие рабочие области и
+                        импортировать его модули как двоичные проекты.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Нажмите кнопку <strong>Готово</strong>. Мастер экспортирует содержимое проекта приложения в указанный файл
+                EAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для экспорта Web-проекта в файл <strong>WAR</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+                <strong><em>проект</em></strong>.
+            </li>
+            <li>
+                Выберите <strong>Экспорт &gt; Файл WAR</strong>.
+            </li>
+            <li>
+                В мастере <em>Экспорта</em> укажите имя и расположение файла WAR.
+            </li>
+            <li>
+                При необходимости выберите: 
+                <ul>
+                    <li>
+                        <strong>Экспортировать исходные файлы</strong>
+                    </li>
+                    <li>
+                        <strong>Заменить существующий файл</strong> во избежание сообщений о замене файла, если экспорт
+                        производится в существующий файл WAR
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Нажмите кнопку <strong>Готово</strong>. Мастер экспортирует содержимое Web-проекта в указанный файл WAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для экспорта проекта EJB в файл <strong>EJB JAR</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+                <strong><em>проект</em></strong>.
+            </li>
+            <li>
+                Выберите <strong>Экспорт &gt; Файл EJB JAR</strong>.
+            </li>
+            <li>
+                В мастере <em>Экспорта</em> укажите имя и расположение файла JAR.
+            </li>
+            <li>
+                При необходимости выберите: 
+                <ul>
+                    <li>
+                        <strong>Экспортировать исходные файлы</strong>
+                    </li>
+                    <li>
+                        <strong>Заменить существующий файл</strong> во избежание сообщений о замене файла, если экспорт
+                        производится в существующий файл JAR
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Нажмите кнопку <strong>Готово</strong>. Мастер экспортирует содержимое проекта EJB в указанный файл JAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для экспорта проекта приложения-клиента в файл <strong>JAR приложения-клиента</strong> выполните следующие
+        действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+                <strong><em>проект</em></strong>.
+            </li>
+            <li>
+                Выберите <strong>Экспорт &gt; Файл JAR приложения-клиента</strong>.
+            </li>
+            <li>
+                В мастере <em>Экспорта</em> укажите имя и расположение файла JAR.
+            </li>
+            <li>
+                При необходимости выберите: 
+                <ul>
+                    <li>
+                        <strong>Экспортировать исходные файлы</strong>
+                    </li>
+                    <li>
+                        <strong>Заменить существующий файл</strong> во избежание сообщений о замене файла, если экспорт
+                        производится в существующий файл JAR
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Нажмите кнопку <strong>Готово</strong>. Мастер экспортирует содержимое проекта приложения-клиента в
+                указанный файл JAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для экспорта проекта коннектора в файл <strong>RAR</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В панели <em>Проводник проекта</em> проекции J2EE щелкните правой кнопкой мыши на опции
+                <strong><em>проект</em></strong>.
+            </li>
+            <li>
+                Выберите <strong>Экспорт &gt; Файл RAR</strong>.
+            </li>
+            <li>
+                В мастере <em>Экспорта</em> укажите имя и расположение файла RAR.
+            </li>
+            <li>
+                При необходимости выберите: 
+                <ul>
+                    <li>
+                        <strong>Экспортировать исходные файлы</strong>
+                    </li>
+                    <li>
+                        <strong>Заменить существующий файл</strong> во избежание сообщений о замене файла, если экспорт
+                        производится в существующий файл RAR
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Нажмите кнопку <strong>Готово</strong>. Мастер экспортирует содержимое проекта коннектора в указанный файл
+                RAR.
+            </li>
+        </ol>
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Use-Case-Generalization in the Business Use-Case Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="use-case-generalization_in_the_business_use-case_model" name="uma.name">
+<meta content="Use-Case-Generalization in the Business Use-Case Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.7507761609726586E-307"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Use-Case-Generalization in the Business Use-Case Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Use-case-generalizations are used to show that workflows share structure, purpose, and behaviors.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html" guid="{89BEF367-5875-47E0-97D6-23E5BCCE52B8}">Business Use Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_use-case-generalization_in_business_use-case_model__guidelines_for" name="XE_use-case-generalization_in_business_use-case_model__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    Use-case-generalizations are used to show that workflows share structure, purpose, and behaviors. A parent use case may
+    be specialized into one or more child use cases that represent more specific forms of the parent. This is
+    generalization as applicable to use cases.
+</p>
+<p>
+    For comparison, see also <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/use-case_generalization_B301F53B.html" guid="3.7061366529594173E-305">Work
+    Product Guideline: Use-Case-Generalization</a> in the system use-case model, and <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/generalization_94751549.html" guid="1.839540980397304E-305">Technique:
+    Generalization</a>.
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a>
+</h3>
+<p>
+    Once you have outlined the workflow of each business use case, you will find structures and behavior that is common to
+    several business use cases. To avoid describing the same workflow several times, you can put the common behavior in a
+    business use case of its own.
+</p>
+<p>
+    A use-case instance executing a child use case will follow the flow of events described for the parent use case,
+    inserting additional behavior and modifying behavior as defined in the flow of events of the child use case.
+</p>
+<h3 align="left">
+    <font size="+0"><b><a id="Recommended Restrictions in Use" name="Recommended Restrictions in Use">Recommended
+    Restrictions in Use</a></b></font>
+</h3>
+<p>
+    You should reconsider models that have more than one level of use-case-generalizations. Layers of this kind make models
+    hard to understand, even if they are correct in all other aspects.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Create Test Scripts Using IBM Rational Functional Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_functional_test_script" name="uma.name">
+<meta content="Create Test Scripts Using IBM Rational Functional Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_functional_tester:IBM Rational Functional Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Functional Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_QWBsEMwCEdq9s5d23VYjZw", "_rPIR8MwBEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_QWBsEMwCEdq9s5d23VYjZw", "_rPIR8MwBEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_rPIR8MwBEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Create Test Scripts Using IBM Rational Functional Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Functional Tester to create a functional test script.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_functional_tester_65E9E232.html" guid="_QWBsEMwCEdq9s5d23VYjZw">IBM Rational Functional Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_test_failure_7E42EE55.html" guid="{EA0E3D2C-F87E-49CA-8832-F791886D5741}">Анализ ошибки при тестировании</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/execute_test_suite_492795DE.html" guid="{6B420194-5EB7-4A12-A061-09FAA5DC18DE}">Выполнение комплекта тестов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_suite_94F58DEC.html" guid="{1C759E0D-B364-4095-A7CF-CD9E39301689}">Реализация комплекта тестов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_the_test_implementation_AAB73625.html" guid="{ED9DF0C0-744A-443A-AEBA-604382E05A5F}">Создание реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    To create a test script in IBM&reg; Rational&reg; Functional Tester, you can start by recording a script, or you may elect to
+    create the script manually. For information on how to create a script manually, refer to the topic <img height="16"     alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> <em>Creating a New Functional Test Script without Recording</em> in
+    the Rational Functional Tester online Help.
+</p>
+<p>
+    This tool mentor describes how to create a script by recording it. There are many things you can do with script
+    creation. This tool mentor addresses one of the more commonly performed operations, namely, verification point
+    creation.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To create a test script using Rational Functional Tester, perform the following steps:
+</p>
+<ol>
+    <li>
+        Create a Folder to Contain the Scripts
+    </li>
+    <li>
+        Create the Script
+    </li>
+    <li>
+        Create Verification Points
+    </li>
+</ol>
+<h4>
+    1. Create a Folder to Contain the Scripts
+</h4>
+<p>
+    To begin creating scripts, it is helpful to create folders to contain the scripts. This will become useful once more
+    scripts are added to the test project.
+</p>
+<ol>
+    <li>
+        To create a folder, right-click the given project in the Projects view
+    </li>
+    <li>
+        Select <strong>Add Test Folder</strong> from the context menu
+    </li>
+    <li>
+        Enter a name for the folder and click <strong>Finish</strong>
+    </li>
+</ol>
+<h4>
+    2. Create the Script
+</h4>
+<p>
+    You can now populate the folder with scripts. (You may also choose to create scripts directly from the project itself.)
+    There are several ways to create test scripts. This tool mentor will focus on using the recording features of Rational
+    Functional Tester to create scripts.
+</p>
+<ol>
+    <li>
+        Right-click the folder in the Projects view.
+    </li>
+    <li>
+        Select <strong>Add Script Using Recorder</strong> from the context menu. The Record a New Function Test Script
+        Wizard appears.
+    </li>
+    <li>
+        Name the script and click <strong>Finish</strong>. The Functional Test Recording monitor appears. The Functional
+        Test Recording monitor allows you to start the application under test, record actions, record verification points,
+        and add data-driven elements to the given script while you are recording it.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on script recording, refer to
+    the following topics in the Rational Functional Tester online Help:
+</p>
+<ul>
+    <li>
+        <em>Configuring Functional Test Before You Record</em>
+    </li>
+    <li>
+        <em>Recording a Script</em>
+    </li>
+    <li>
+        <em>Functional Test Recording Monitor</em>
+    </li>
+</ul>
+<h4>
+    3. Create Verification Points
+</h4>
+<p>
+    In most cases, you will create a verification point while you are recording a script. You can also insert a
+    verification point from the Script Editor when you are not recording.
+</p>
+<p>
+    To create a verification point in your script, perform the following steps:
+</p>
+<ol>
+    <li>
+        Start your test application if it is not already open
+    </li>
+    <li>
+        Open the script you want to insert the verification point into so that it is displayed in the script window
+    </li>
+    <li>
+        Put the cursor at the place in the script where you want to insert the verification point
+    </li>
+    <li>
+        Right-click Verification Points in the Script Explorer, and click <strong>Insert Verification Point</strong>. The
+        Verification Point and Action Wizard opens
+    </li>
+    <li>
+        On the Select an Object page, use one of the selection methods to pick the object in your application, and click
+        <strong>Next</strong>
+    </li>
+    <li>
+        On the Select an Action page, select one of the verification point types. Click <strong>Next</strong>
+    </li>
+    <li>
+        Edit the verification point properties or data
+    </li>
+    <li>
+        Click <strong>Finish</strong>
+    </li>
+</ol>
+<p>
+    The verification point will be added to your script at the location of the cursor, and will be added to the Script
+    Explorer in the Verfication Points list.
+</p>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on how to create verification
+    points, refer to the topics <em>Creating a Properties Verification Point</em> and <em>Creating a Data Verification
+    Point</em> in the Rational Functional Tester online Help.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

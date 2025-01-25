@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Domain Design</title>
+<meta content="Concept" name="uma.type">
+<meta content="domain_design" name="uma.name">
+<meta content="Domain Design" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_qr6IQE6nEduhs-ki98mFFw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Domain Design</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">In this concept, the notion of a domain is outlined as the context or problem area in which development takes place. Three facets are further described: domain modeling, domain analysis, and domain engineering.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a id="Introduction" name="Introduction">Introduction</a>
+</h3>
+<p>
+    A key part of any development project is gaining a good understanding of the context, or domain, relevant to the
+    software or system being developed. Invariably the domain refers to the problem domain, which is understood as a
+    precursor to defining the solution domain. A description of the domain can take many forms. However, creating a model
+    of that domain aids understanding, helps stakeholders share a common view on the domain, provides the basis for scoping
+    the solution domain, and offers useful input to later analysis and design tasks.
+</p>
+<p>
+    Different people have different ideas about domain modeling, and the term "domain model" is heavily overused: It can
+    describe the various features of a specific domain, the commonality and variability of features in a domain, the
+    information being manipulated in a domain, and so on. Hence, this area can usefully be categorized into three main
+    activities:
+</p>
+<ul>
+    <li>
+        <a href="#Domain_Modeling">Domain Modeling</a>
+    </li>
+    <li>
+        <a href="#Domain_Analysis">Domain Analysis</a>
+    </li>
+    <li>
+        <a href="#Domain_Engineering">Domain Engineering</a>
+    </li>
+</ul>
+<h3>
+    <a id="Domain_Modeling" name="Domain_Modeling">Domain Modeling</a>
+</h3>
+<p>
+    A domain model is a model of the domain within which an organization conducts its business. Hence, in practice the
+    domain for one organization should be the same as that for any other organization conducting business in that domain.
+    In practice, however, variations in domain modeling are the result of two factors: the level of detail of the domain
+    model and how the model is used in the context of particular methodologies. At its simplest, the term domain model is
+    used to refer to the class diagram that is created to represent concepts in the domain and their primary relationships.
+    Typically, this will include classes with attributes and operations to represent conceptual domain elements. These
+    models may be annotated with informal information, supported by high level business use cases, and so on.
+</p>
+<p>
+    Domain modeling often includes understanding the existing software systems in use in a domain. In those instances, much
+    of the focus in domain modeling is to identify and model commonalities and differences that characterize the software
+    systems within the domain to provide an understanding of which aspects of the problem domain are currently addressed by
+    software. Domain modeling is used to define what the software systems are by systematically modeling the functions,
+    objects, data, and relationships of the software systems in the domain. This results in :
+</p>
+<ul>
+    <li>
+        An understanding of the features of the software systems used in the domain.
+    </li>
+    <li>
+        A common vocabulary capturing the various stakeholders' understanding of the domain.
+    </li>
+    <li>
+        Complete documentation of software systems in use, their primary function, and relations.
+    </li>
+</ul>
+<p>
+    A key output of domain modeling is an extensive domain dictionary that captures elements used in describing the
+    features and entities in the domain model, together with an overview of their primary purpose.
+</p>
+<p>
+    For more information, see also the <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Artifact: Business Analysis Model</a>.
+</p>
+<h3>
+    <a id="Domain_Analysis" name="Domain_Analysis">Domain Analysis</a>
+</h3>
+<p>
+    Domain analysis is "the process of identifying, collecting, organizing, and representing the relevant information in a
+    domain, based upon the study of existing systems and their development histories, knowledge captured from domain
+    experts, underlying theory, and emerging technology within a domain"[CMU/SEI-90-TR-21]
+</p>
+<p>
+    Domain Analysis should "carefully bound the domain being considered, consider commonalities and differences of the
+    systems in the domain, organize an understanding of the relationships between the various elements in the domain, and
+    represent this understanding in a useful way"[CARDS94].
+</p>
+<p>
+    Many different ways of analyzing the domain exist, depending on the form of the domain models being analyzed and the
+    different objectives for the analysis. For example, some techniques focus on analyzing similarities and differences in
+    product families. Feature Oriented Domain Analysis (FODA) is targeted at identifying distinctive user-visible features
+    within a class of related software systems. Other domain analysis techniques focus on particular viewpoints or concerns
+    within a domain. Cognitive Work and Safety Analysis (CWSA) focuses on the work that people do, the decisions they make,
+    and the strategies they use to support the identification of safety inadequacies in a system.
+</p>
+<h3>
+    <a id="Domain_Engineering" name="Domain_Engineering">Domain Engineering</a>
+</h3>
+<p>
+    Domain engineering is an approach to enabling greater efficiency and reuse for realizing a family of similar systems.
+    Domain engineering covers all the tasks for building software core assets. These tasks include identifying one or more
+    domains, capturing the variation within a domain, constructing an adaptable design, and defining the mechanisms for
+    translating requirements into systems created from reusable components. The products (or software assets) of these
+    tasks are domain models, design models, domain-specific languages, code generators, and code components. This set of
+    tasks is fundamental to the creation of a systematic approach to reuse in an organization.
+</p>
+<h3>
+    <a id="References" name="References">References</a>
+</h3>
+<p>
+    [CARDS94] CARDS: Nilson, Roslyn; Kogut, Paul; & Jackelen, George <i>Component Provider's and Tool Developer's
+    Handbook Central Archive for Reusable Defense Software</i> (CARDS). STARS Informal Technical Report
+    STARS-VC-B017/001/00. Unisys Corporation , March 1994.
+</p>
+<p>
+    [CMU/SEI-90-TR-21]<i>Feasibility Study</i> (CMU/SEI-90-TR-21, ADA 235785).
+</p>
+<p>
+    [EVANS03] E. Evans, <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i>, Addison-Wesley, 2003.
+</p>
+<p>
+    [FODA] Kang, Kyo C.; Cohen, Sholom G.; Hess, James A.; Novak, William E.; & Peterson, A. Spencer
+    <i>Feature-Oriented Domain Analysis</i> (FODA)
+</p>
+<p>
+    [SEI] <i>Domain Engineering at the Software Engineering Institute</i>:
+    http://www.sei.cmu.edu/domain-engineering/domain_eng.html
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

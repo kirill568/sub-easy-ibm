@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Развертывание Web-приложения на WebSphere Application Server</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="deploy_2_was" name="uma.name">
+<meta content="Развертывание Web-приложения на WebSphere Application Server" name="uma.presentationName">
+<meta content="Tool:rup_rational_application_developer:Rational Application Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Application Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{FF5C8D51-D0A1-48DE-B4EA-D351F9154F53}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{FF5C8D51-D0A1-48DE-B4EA-D351F9154F53}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "__hxOUEUCEdqMr9-tA4TBpQ", "{FF5C8D51-D0A1-48DE-B4EA-D351F9154F53}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{FF5C8D51-D0A1-48DE-B4EA-D351F9154F53}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Развертывание Web-приложения на WebSphere Application Server</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту приведены инструкции по развертыванию Web-приложений на сервере WebSphere Application Server с помощью среды моделирования RAD 6.0. </td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rational_application_developer_BCA25C88.html" guid="__hxOUEUCEdqMr9-tA4TBpQ">Rational Application Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/integrate_subsystem_E8F878D6.html" guid="{58FF0476-120F-411A-AD8C-16573032BE91}">Интегрирование подсистемы</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/integrate_system_9AFF7BFD.html" guid="{3233A207-6271-4492-A8BF-64E1D89D6C5E}">Интегрирование системы</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Перед развертыванием Web-приложения скомпонуйте его в архивный файл (<img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="1.5663580058239784E-305">Модуль
+    J2EE</a> или <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="1.6057780853529704E-306">Приложение J2EE</a>). После этого для развертывания приложения нужно будет только
+    установить архивный файл на сервере с помощью инструментов администрирования WebSphere. В этой памятке по инструменту
+    предусмотрены следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#step1">Создание архивного файла приложения</a>
+    </li>
+    <li>
+        <a href="#step2">Установка архивного файла на сервере WebSphere Application Server</a>
+    </li>
+</ul>
+<h3>
+    <a id="step1" href="#Top" name="step1">Создание архивного файла приложения</a>
+</h3>
+<p>
+    Если приложение было разработано в RAD 6.0, то для создания архивного файла выполните инструкции из раздела <a class="elementLinkWithUserText" href="./../../../tech.rad/guidances/toolmentors/assemble_j2ee_mod_app_6CEB1308.html" guid="{255EDC79-8B64-4C22-94B1-AC38FC04EB37}">Памятка по инструменту: Компоновка модулей и приложений J2EE с помощью
+    RAD 6.0</a>. Для создания архивных файлов других приложений используйте инструментарий <em>Assembly toolkit</em>,
+    который входит в WebSphere Application Server. Для этого выполните следующие шаги:
+</p>
+<ol>
+    <li>
+        Запустите Assembly Toolkit. 
+        <ol type="a">
+            <li>
+                В Windows выберите <strong>Пуск &gt; Программы &gt; IBM &gt; ASTK &gt; ASTK</strong>.
+            </li>
+            <li>
+                В окне <em>Application Server Toolkit</em> укажите имя Рабочей области и нажмите <strong>OK</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для создания файла <strong>EAR (Enterprise Application Archive)</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В проекции J2EE выберите <strong>Файл &gt; Создать &gt; Проект приложения J2EE</strong>.
+            </li>
+            <li>
+                С помощью мастера <em>Создания проекта приложения J2EE</em> выберите уровень J2EE, укажите имя и
+                расположение файла EAR и выберите, какие модули нужно включить в файл EAR (Web, EJB, приложение-клиент или
+                коннектор).
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для создания файла <strong>Web-архива (WAR)</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В проекции J2EE выберите <strong>Файл &gt; Создать &gt; Динамический Web-проект</strong>.
+            </li>
+            <li>
+                С помощью мастера <em>Создания Web-проектов</em> укажите имя и расположение файла WAR, свяжите его с файлом
+                EAR и задайте значения для опций Web-проекта.
+            </li>
+            <li>
+                После создания Web-проекта можно импортировать Web-содержимое приложения с помощью мастера
+                <em>Импорта</em>. Мастер импорта можно запустить из меню <strong>Файл</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для создания файла <strong>EJB JAR</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В проекции J2EE выберите <strong>Файл &gt; Создать &gt; Проект EJB</strong>.
+            </li>
+            <li>
+                С помощью мастера <em>Создания проектов EJB</em> выберите версию спецификации EJB, укажите имя и
+                расположение файла JAR, свяжите его с файлом EAR и задайте зависимости между модулями и файлом JAR.
+            </li>
+            <li>
+                После создания проекта EJB можно импортировать объекты EJB и связанные продукты работы кода с помощью
+                мастера <em>Импорта</em>. Мастер импорта можно запустить из меню <strong>Файл</strong>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для создания файла <strong>JAR приложения-клиента</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В проекции J2EE выберите <strong>Файл &gt; Создать &gt; Проект приложения-клиента</strong>.
+            </li>
+            <li>
+                С помощью мастера <em>Создания проекта приложения-клиента</em> выберите уровень J2EE, укажите имя и
+                расположение файла JAR, свяжите его с файлом EAR и задайте зависимости между модулями и файлом JAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для создания файла <strong>RAR адаптера ресурса</strong> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В проекции J2EE выберите <strong>Файл &gt; Создать &gt; Проект коннектора</strong>.
+            </li>
+            <li>
+                С помощью мастера <em>Создания проекта коннектора</em> укажите имя и расположение файла JAR, свяжите его с
+                файлом EAR и задайте зависимости между модулями и файлом JAR.
+            </li>
+        </ol>
+    </li>
+    <li>
+        При необходимости отредактируйте файлы описания модулей приложений-клиентов, EJB, Web или приложений J2EE. 
+        <ol type="a">
+            <li>
+                В панели Иерархия J2EE щелкните правой кнопкой мыши на модуле и выберите <strong>Открыть с помощью &gt;
+                Редактор файлов описания</strong>.
+            </li>
+            <li>
+                Для изменения значений параметров файла описания выберите соответствующую вкладку в нижней части панели
+                редактора.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Сгенерируйте код развертывания для модулей EJB. 
+        <ol type="a">
+            <li>
+                В панели Иерархия J2EE щелкните правой кнопкой мыши на модуле и выберите <strong>Открыть с помощью &gt; Код
+                развертывания и RMIC</strong>.
+            </li>
+            <li>
+                Убедитесь, что во время создания кода не появлялись сообщения об ошибках.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Сгенерируйте код развертывания для модулей Web-служб. 
+        <ol type="a">
+            <li>
+                В панели Иерархия J2EE щелкните правой кнопкой мыши на модуле и выберите <strong>Web-службы &gt; Развернуть
+                Web-службу</strong>.
+            </li>
+            <li>
+                Убедитесь, что во время создания кода не появлялись сообщения об ошибках.
+            </li>
+        </ol>
+    </li>
+</ol>
+<h3>
+    <a id="step2" href="#Top" name="step2">Установка архивного файла на сервере WebSphere Application Server</a>
+</h3>
+<p>
+    По завершении компоновки приложения разверните файлы EAR, WAR или JAR на сервере приложений с помощью инструментов
+    администрирования WebSphere. Для GUI используйте <em>Административную консоль</em>, а для интерфейса на базе сценариев
+    - утилиту <em>wsadmin</em>. Для работы с <em>Административной консолью</em> выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Запустите сервер приложений. Для этого в командной строке введите команду <strong>startServer</strong>.
+    </li>
+    <li>
+        Запустите административную консоль. Для этого откройте Web-браузер и введите адрес <strong>http://
+        имя_сервера:9090/admin</strong>.
+    </li>
+    <li>
+        Войдите в консоль.
+    </li>
+    <li>
+        Выполните инструкции по <a href="http://publib.boulder.ibm.com/infocenter/ws51help/topic/com.ibm.websphere.nd.doc/info/ae/ae/trun_app_instwiz.html" target="_blank">установке нового приложения</a>.
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

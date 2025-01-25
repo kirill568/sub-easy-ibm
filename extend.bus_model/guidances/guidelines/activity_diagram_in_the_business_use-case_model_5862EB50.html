@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Activity Diagram in the Business Use-Case Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="activity_diagram_in_the_business_use-case_model" name="uma.name">
+<meta content="Activity Diagram in the Business Use-Case Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.4038197112599951E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Activity Diagram in the Business Use-Case Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">An Activity Diagram can be used to represent a flow of a Business Use-Case in order to showcase the ordering of tasks that accomplish business goals. This guideline describes the UML notation for Activity Diagrams and how to use it.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html" guid="{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}">Business Use Case</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_use-case_model__activity_diagrams_guidelines_for" name="XE_business_use-case_model__activity_diagrams_guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    The workflow of a business use case describes what the business must do to provide the value the served business actor
+    requires. The business use case consists of a sequence of tasks that, together, produce something for the business
+    actor. The workflow often consists of a basic flow and one or more alternative flows. The structure of the workflow is
+    described graphically with the help of an activity diagram.
+</p>
+<p>
+    An activity diagram of a workflow explores the ordering of tasks that accomplish business goals. A task may be manual
+    or automated and completes a unit of work.&nbsp;
+</p>
+<p>
+    Activity diagram is a special case of a statechart diagram in which all or most of the states are activity states and
+    in which all or most of the transitions are triggered upon completion of actions in the source states.
+</p>
+<h3>
+    <a id="Basic Activity Diagrams" name="Basic Activity Diagrams">Basic Activity Diagrams</a>
+</h3>
+<p>
+    An activity diagram may have the following elements:
+</p>
+<ul>
+    <li>
+        <a id="XE_activity_states_(in_activity_diagrams)__in_business_use-case_model" name="XE_activity_states_(in_activity_diagrams)__in_business_use-case_model"><b>Activity states</b></a> represent
+        the performance of an task or step within the workflow.
+    </li>
+    <li>
+        <a id="XE_transition_(in_activity_diagrams)__in_business_use-case_model" name="XE_transition_(in_activity_diagrams)__in_business_use-case_model"></a><b>Transitions</b> show what activity
+        state follows another. This type of transition can be referred to as a completion transition. It differs from a
+        transition in that it does not require an explicit trigger event; instead it's triggered by the completion of the
+        task that the activity state represents.
+    </li>
+    <li>
+        <a id="XE_decision_(in_activity_diagrams)__business_use-case_model" name="XE_decision_(in_activity_diagrams)__business_use-case_model"></a><b>Decisions</b> for which a set of <a id="XE_guard_condition_(in_activity_diagrams)__business_use-case_model" name="XE_guard_condition_(in_activity_diagrams)__business_use-case_model"></a><b>guard conditions</b> are defined.
+        Guard conditions control which transition, of a set of alternative transitions, follows once the task is complete.
+        You may also use the decision icon to show where the threads merge again. Decisions and guard conditions allow you
+        to show <a id="XE_alternative_threads_(in_activity_diagrams)__business_use-case_model" name="XE_alternative_threads_(in_activity_diagrams)__business_use-case_model"></a><b>alternative threads</b> in the
+        workflow of a business use case.
+    </li>
+    <li>
+        <a id="XE_synchronization_bars_(in_activity_diagrams)__business_use-case_model" name="XE_synchronization_bars_(in_activity_diagrams)__business_use-case_model"></a><b>Synchronization bars</b> are
+        used to show parallel subflows. Synchronization bars allow you to show <a id="XE_concurrent_threads_(in_activity_diagrams)__business_use-case_model" name="XE_concurrent_threads_(in_activity_diagrams)__business_use-case_model"></a><b>concurrent threads</b> in the
+        workflow of a business use case.
+    </li>
+</ul>
+<p align="center">
+    <img height="505" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact.gif" width="474" />
+</p>
+<p class="picturetext">
+    An activity diagram for the business use case Individual Check-In in the business use-case model of Airport Check-In
+</p>
+<h3>
+    &nbsp;<a id="XE_activity_diagrams__conditional_threads" name="XE_activity_diagrams__conditional_threads"></a><a id="Conditional Threads" name="Conditional Threads">Conditional Threads</a>
+</h3>
+<p>
+    Guard conditions are used to show that one of a set of concurrent threads is conditional. For instance, in the
+    Individual Check-In example from the previous section, the passenger checking in might be a frequent-flyer member. In
+    that case, you need to award the passenger frequent flyer miles.
+</p>
+<p align="center">
+    <img height="277" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact4.gif" width="368" />
+</p>
+<p class="picturetext">
+    An activity diagram for the business use case Individual Check-In in the business use-case model of Airport Check-Ins
+</p>
+<h3>
+    <a id="XE_activity_diagrams__nested_diagrams" name="XE_activity_diagrams__nested_diagrams"></a><a id="Nested Activity Diagrams" name="Nested Activity Diagrams">Nested Activity Diagrams</a>
+</h3>
+<p>
+    An activity state may reference another activity diagram, that shows the internal structure of the activity state.
+    Stated another way, you can have nested activity graphs. You can either show the subgraph inside of the activity state
+    or let the activity state refer to another diagram.
+</p>
+<p align="center">
+    <img height="249" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact5.gif" width="254" />
+</p>
+<p class="picturetext">
+    A nested activity graph shown within an activity state
+</p>
+<p>
+    To show the subgraph inside of the activity state is convenient if you want to see all details of the workflow in one
+    diagram. However, if there is any level of complexity in the presented workflow, this can make the diagram difficult to
+    read.
+</p>
+<p align="center">
+    <img height="190" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact6.gif" width="261" />
+</p>
+<p class="picturetext">
+    Alternatively, put the subgraph in a separate diagram and let the activity state refer to it
+</p>
+<p>
+    <font size="3">To simplify the workflow graph, you may instead choose to put the subgraph in a separate diagram and let
+    the activity state that the subgraph details refer to that diagram.</font>
+</p>
+<h3>
+    <a id="XE_activity_diagrams__swimlanes" name="XE_activity_diagrams__swimlanes"></a><a id="Using Swimlanes" name="Using Swimlanes">Using Swimlanes</a>
+</h3>
+<p>
+    An activity diagram may be partitioned into <b>swimlanes</b> using solid vertical lines. Each swimlane represents a
+    responsibility for part of the overall workflow, carried by a part of the organization. Eventually, a swimlane may be
+    implemented by an business system or by a set of classes in the business analysis model.
+</p>
+<p>
+    The relative ordering of swimlanes has no semantic significance. Each activity state is assigned to one swimlane and
+    transitions may cross lanes.
+</p>
+<p align="center">
+    <img height="397" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact2.gif" width="220" />
+</p>
+<p class="picturetext">
+    An activity diagram illustrates the workflow of a business use-case that represents a generic sales process. In this
+    example, the swimlanes represent departments in the organization.
+</p>
+<h3>
+    <a id="Examples of Use" name="Examples of Use">Example of Use</a>
+</h3>
+<p>
+    What comes first, the activity diagram or the textual description of the workflow? This depends somewhat on how you are
+    used to working, and whether you think graphically or not. Some prefer to visually outline the structure in a diagram
+    first, and then develop the details in the text. Others would rather start with a bulleted list of the activity states,
+    agree on those, and then define the structure using a diagram.
+</p>
+<p>
+    Another valid question is whether you really need both the textual document and the diagram. The activity diagram
+    technique does allow you to write brief descriptions of each activity state, which should make the textual
+    specification of the workflow obsolete. Here you need to be sensitive to your audience and what format they expect for
+    the specification.
+</p>
+<p>
+    We present a sample activity diagram for the workflow of the business use case Proposal Process as defined in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use_case_2E2587D0.html" guid="1.2631093270419717E-306">Guideline: Business Use Case</a>, to show what an activity diagram adds to the
+    understanding of a workflow. This example is taken from an organization that sells telecom network solutions,
+    individually configured for each customer.
+</p>
+<p align="center">
+    <img height="535" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact3.gif" width="490" />
+</p>
+<p class="picturetext">
+    An activity diagram for the business use case Proposal Process
+</p>
+<blockquote>
+    <p>
+        The activity state named "Initial opportunity work" consists of three sub-steps that can be done in parallel. This
+        is illustrated in a subgraph to this activity state.
+    </p>
+</blockquote>
+<p align="center">
+    <img height="273" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact7.gif" width="387" />
+</p>
+<p class="picturetext">
+    Sub-diagram to the activity state "Initial opportunity work". Creating a sales plan is optional, which is indicated by
+    a guard condition on the incoming transition.
+</p>
+<p>
+    An activity state can represent a fairly large procedure (with substructure), as well as something relatively small. If
+    you're using activity diagrams to define the structure of a workflow, do not attempt to explore several levels of
+    activity graphs down to their most atomic level. Doing so will most probably make the diagram, or set of diagrams if
+    you are using separate subgraphs, very difficult to interpret. Aim to have one diagram that outlines the whole workflow
+    where a few of the activity states may have subgraphs.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

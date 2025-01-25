@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Business Event</title>
+<meta content="Guideline" name="uma.type">
+<meta content="business_event" name="uma.name">
+<meta content="Business Event" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.3382783818773036E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Business Event</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business events represent important occurrences in the day-to-day tasks of the business. This guideline explains how to model them.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_event_853992A0.html" guid="{EF5798CC-41AE-4137-B248-B308D465CF8A}">Business Event</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Explanation" name="Explanation"></a>Explanation
+</h3>
+<p>
+    Business events represent important occurrences in the day-to-day tasks of the business. Of course, there are thousands
+    of things happening in and around any business each day. Business events allow us to manage complexity by focusing
+    attention on what is really important, and in this sense they are architecturally significant. Business events have the
+    following characteristics:
+</p>
+<ul>
+    <li>
+        They represent an occurrence of significance, i.e., they are nontrivial.
+    </li>
+    <li>
+        They appear to occur at random, or at least unpredictably.
+    </li>
+    <li>
+        They occur independently of one another.
+    </li>
+    <li>
+        They result in some immediate action by the business.
+    </li>
+</ul>
+<p>
+    A business event that does not have one of these characteristics is suspect.
+</p>
+<p>
+    Business events are triggered and received by business actors, business workers, and business entities, while
+    interacting to realize a business use. Business events can be triggered:
+</p>
+<ul>
+    <li>
+        By business actors to indicate the start or end of a business use case. For example, when a supplier delivers
+        goods, a Delivery business event would indicate the start of the Deliver Goods business use case.
+    </li>
+    <li>
+        By business entities to indicate a change of state. For example, as part of the Recruit Employees business use
+        case, a CandidateQualified business event would indicate that the references of a potential employee have been
+        checked.
+    </li>
+    <li>
+        By business workers to indicate a specific point within a business use-case realization. For example, once a rocket
+        has been launched, a Launch business event would indicate that tracking the trajectory of the rocket can start.
+    </li>
+    <li>
+        By the elapse of time. For example, six hours after a patient has come out of the operating room, a PatientCoherent
+        business event would indicate that a nurse should go and check up on the patient.
+    </li>
+</ul>
+<h3>
+    <a id="Modeling Business Events" name="Modeling Business Events"></a>Modeling Business Events
+</h3>
+<p>
+    Business events can contain information that provides more context about the occurrence the event represents. This
+    information is modeled as attributes of the business event class, as shown in the figure. The attributes of a business
+    event can be determined by considering what information the receivers of the event require in order to take
+    action.&nbsp;
+</p>
+<p align="center">
+    <img height="121" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt1.gif" width="230" border="0" />
+</p>
+<p>
+    Business events that represent changes in the state of business entities should have an association to the business
+    entity to which they relate, as shown in the figure. This allows receivers of the business event to access the business
+    entity in question and retrieve the necessary information.
+</p>
+<p align="center">
+    <img height="106" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt2.gif" width="393" border="0" />
+</p>
+<p>
+    Business actors, business workers, and business entities can both trigger and receive business events. The class that
+    triggers a business event is called a <b>publisher</b>, while the class that receives a business event is called a
+    <b>subscriber</b>.
+</p>
+<p>
+    A publisher requires a &lt;&lt;send&gt;&gt; stereotyped dependency to the business events it will trigger, as shown in
+    the figure.
+</p>
+<p align="center">
+    <img height="122" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt3.gif" width="348" border="0" />
+</p>
+<p>
+    A subscriber requires an operation stereotyped &lt;&lt;business event&gt;&gt; with the same name as the business event
+    and parameters that match the attributes of the business event, as shown in the figure. Take note that the operation
+    signature needs to be kept consistent with the business event name and attributes.
+</p>
+<p align="center">
+    <img height="292" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt4.gif" width="522" border="0" />
+</p>
+<p>
+    An alternative approach is to invent a &lt;&lt;receive&gt;&gt; stereotyped dependency from the subscriber to the
+    business event, although this is not standard UML. The operation signatures can be deduced from all the
+    &lt;&lt;receive&gt;&gt; dependencies. An example of this nonstandard approach is shown in the figure.
+</p>
+<p align="center">
+    <img height="109" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt5.gif" width="465" border="0" />
+</p>
+<p>
+    Actual triggering of business events is shown in either interaction or activity diagrams. In interaction diagrams, the
+    publisher sends an asynchronous message to the receiver, with the name of the business event. An example of this is
+    shown in the figure. Note that the message is asynchronous. This indicates that the publisher does not wait for the
+    subscriber to finish processing the business event before continuing. Rather, the publisher triggers the business event
+    and continues directly with whatever it was doing. The subscriber in turn starts processing the business events as soon
+    as it is received. This represents real life more closely than synchronous messages.
+</p>
+<p align="center">
+    <img height="272" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt6.gif" width="442" border="0" />
+</p>
+<p>
+    In activity diagrams, the publisher is shown to trigger the business event. The receiver is shown to receive the
+    business event, either in the same diagram or in another diagram. An example of this is shown in the figure.
+</p>
+<p align="center">
+    <img height="382" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt7.gif" width="617" border="0" />
+</p>
+<h3>
+    <a id="Finding Business Events" name="Finding Business Events"></a>Finding Business Events
+</h3>
+<p>
+    When an association between a business actor and a business use case is named, a corresponding business event can be
+    used to signal when the business use case is initiated, which would be a significant occurrence for the business.
+</p>
+<p>
+    Analyze the interactions between business workers in sequence diagrams. For each message between business workers,
+    consider the following:
+</p>
+<ul>
+    <li>
+        Location-Messages passed between two business workers at different locations are candidate business events.
+    </li>
+    <li>
+        Time-Messages in which there is a significant time difference between triggering and receiving are candidate
+        business events.
+    </li>
+    <li>
+        Purpose-Messages that result in actions that have a different purpose in relation to the actions that triggered the
+        business event are candidate business events.
+    </li>
+    <li>
+        Responsibility-Messages that are performed by a business worker with different responsibilities are candidate
+        business events.
+    </li>
+</ul>
+<p>
+    Analyzing the boundaries of the business systems helps to identify differences in purpose or responsibility.
+</p>
+<p>
+    In activity diagrams, consider whether some action is required directly before or after each task, or whether some
+    party must be notified of the outcome of a decision point.
+</p>
+<p>
+    Business entities also provide clues for business events. Any significant operations of a business entity are candidate
+    business events. Statechart diagrams for business entities are very useful. State transitions indicate potential
+    business events because they may represent a change of state of the business.
+</p>
+<p>
+    When identifying business events, it is useful to imagine a paper office in which the business entities are dossiers,
+    and clerks read and change the dossiers and carry them around between inboxes and outboxes. As soon as part of a
+    dossier needs to be duplicated in full so that it can be routed to different destinations, you may have discovered a
+    business event-there are multiple recipients. Also, when a business worker must write a notice after performing a task,
+    with the purpose of informing somebody else, that task may also qualify as a business event. Of course the dossiers do
+    not lie around on desks the whole day-they are filed. When it is necessary to remove a dossier from the filing cabinet
+    or to place a dossier back into the filing cabinet, consider what led up to the need to remove or return the dossier.
+    The occurrence that led up to, or triggered, the need to remove or return a dossier may be a business event.
+</p>
+<h3>
+    <a id="Generalization of Business Events" name="Generalization of Business Events"></a>Generalization of Business
+    Events
+</h3>
+<p>
+    Business events may be categorized or grouped into "families" of events by defining generalization relationships
+    between more generalized and more specialized business events. This allows more than one type of business event to be
+    treated in the same way by parties not interested in the different subtypes of business events.
+</p>
+<p align="center">
+    <img height="214" alt="UML example for accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bevnt8.gif" width="367" border="0" />
+</p>
+<p align="left">
+    The diagram above shows that the Sickness, Missing, and Death of employees are all more specialized versions of the
+    absence of an employee. Defining the super-type Absence allows any one of the three subtypes to be treated as an
+    absence. In a consulting firm, for example, the account manager might need to inform the customer that an employee is
+    absent and arrange for a replacement, irrespective of the reason for the employee's absence. The account manager is
+    therefore interested only in the business event Absence. The receptionist, on the other hand, might need to undertake
+    specific action if an employee becomes ill, such as call a doctor or send flowers. The human resources manager and the
+    employee's manager might need to be informed if the employee has passed away.
+</p>
+<p align="left">
+    In this example, we see that specializations of business events are useful when different parties need to undertake
+    different actions in response to different (specific) circumstances. Generalizations of business events are useful when
+    certain parties need to respond in the same way to certain business events, irrespective of the specific circumstances.
+</p>
+<p align="left">
+    In practice, of course, the party will probably be notified of the actual (specialized) event. If an employee has
+    passed away, you can be sure that the account manager will also be informed of this, but the action undertaken will be
+    the same. Business event hierarchies do help to create a simpler, more understandable Business Analysis Model.
+</p>
+<h3>
+    <a id="Automation of Business Events" name="Automation of Business Events"></a>Automation of Business Events
+</h3>
+<p>
+    It makes sense to automate the definition, triggering, and propagation of business events, but this is not always
+    practical. Sometimes it costs more to build a system that does this than it takes to send an e-mail to a colleague.
+    Some issues that must be considered when contemplating the automation of business events are:
+</p>
+<ul>
+    <li>
+        the cost of purchasing or implementing and maintaining a system that automates aspects of event management
+    </li>
+    <li>
+        the technical feasibility of an automated solution
+    </li>
+    <li>
+        the cost of non-automated alternatives
+    </li>
+    <li>
+        the impact of not triggering or receiving certain events
+    </li>
+    <li>
+        the possibility that certain events may cross business boundaries in future
+    </li>
+    <li>
+        the currently available notification channels
+    </li>
+</ul>
+<p>
+    In a service-oriented architecture, messages are used to decouple software systems from each other and from physical
+    locations. Asynchronous messages can also be used to decouple software systems in time. Business events will be
+    implemented as messages in these types of software systems, although certainly not all messages will have an associated
+    business event. A very useful application of business events is in Enterprise Application Integration (EAI). Here each
+    application defines a number of business events to which other applications can subscribe. This allows applications to
+    interact without directly interacting.
+</p>
+<p>
+    For example, consider an insurance company that has one front-office system for managing customer interactions,
+    proposals, and contracts. It has a back-office system for administering products and policies. When a customer requests
+    a proposal, the front-office system collects the necessary information about the customer and insured object. Then the
+    product administration system calculates premiums based on the information and produces a preliminary insurance policy
+    that is linked to a proposal. Once the customer accepts the proposal, the policy administration system must finalize
+    the policy. In this example, there are two messages that are disconnected in time, location, and
+    responsibility-CalculatePremiums and FinalizePolicy. However, only FinalizePolicy would be modeled as a business event,
+    because it has some significance outside of the current context.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.empulsys.com/rupbm" target="_blank"><img height="24"                 alt="Empulsys : разработка программного обеспечения и управление" src="./../../../core.base_rup/guidances/supportingmaterials/resources/empulsys.jpg" width="100"                 border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.empulsys.com/rupbm" target="_blank">Empulsys Holding BV</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

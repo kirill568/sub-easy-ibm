@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Business Use-Case Realization</title>
+<meta content="Guideline" name="uma.type">
+<meta content="business_use-case_realization" name="uma.name">
+<meta content="Business Use-Case Realization" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.0660567082472948E-304"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Business Use-Case Realization</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">A Business Use-Case Realization is a collaboration of model elements that realize a Business Use-Case. This guideline explains how to develop Business Use-Case Realizations.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html" guid="{47F095EB-E651-4A34-B75B-BACE38ED90C7}">Business Use-Case Realization</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_use-case_realization__presenting_business_use-case_relationships" name="XE_business_use-case_realization__presenting_business_use-case_relationships"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    A business use-case model describes a business in terms of business actors and business use cases, corresponding, for
+    example,&nbsp;to customers and business processes. The business use-case model includes workflow descriptions that
+    identify <b>what</b> is done. <b>How</b> the work is performed in each business use case is described in the business
+    analysis model, and, in particular, in business use-case realizations.
+</p>
+<p>
+    The set of&nbsp;business systems and business workers which perform&nbsp;the work of a business use case, together with
+    the business&nbsp;entities they access and manipulate as part of the process, and a description of the interaction, is
+    called the business use-case realization. Instances of the same class (of business system, business worker or business
+    entity) can participate in several different business use-case realizations, reflecting that the same kind of resource
+    from time to time&nbsp;participates in different processes.
+</p>
+<p>
+    The business systems form a containment hierarchy for the business workers and business entities (and conceivably other
+    business systems), so you might expect that interactions by business systems would only occur only with other business
+    systems. In fact you are not prohibited from showing interactions between business systems and business workers, for
+    example, when you want to drill down inside a particular business system and expose its business workers and their
+    interactions with each other and external business systems, when realizing a business use case. However, if you decide
+    that a business system should&nbsp;present a well-defined boundary and interfaces in the business, you would not expose
+    its contents in this way when realizing a business use case. Rather, you would derive <em>subordinate</em> business use
+    cases for that business system (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html" guid="1.268342166757605E-304">Concept: Modeling Large Organizations</a>) and describe, at a&nbsp;subordinate level, how
+    these are realized by collaborations of the internal resources of the business system.
+</p>
+<h3>
+    <a id="Using Activity Diagrams" name="Using Activity Diagrams">Using Activity Diagrams</a>
+</h3>
+<p>
+    The first choice to document the realization of a business use case is to draw an activity diagram, where swimlanes (or
+    partitions) represent the participating business systems or business workers. For each business use-case realization,
+    there may be one or more activity diagrams to illustrate the workflow. A common way to organize is to have one overview
+    diagram without swimlanes that cover the whole workflow, and where you show activities that are at a high level. Then,
+    for each such activity there is a more detailed activity diagram that shows the swimlanes and the tasks at the business
+    worker level. For readability reasons, a goal should be that each diagram fit on a page.
+</p>
+<p>
+    See also <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Technique: Activity Diagram in the Business Analysis Model</a>.
+</p>
+<h3>
+    <a id="Using Communication and Sequence Diagrams" name="Using Communication and Sequence Diagrams">Using Communication
+    and Sequence Diagrams</a>
+</h3>
+<p>
+    For each business use-case realization there can be one or more interaction diagrams depicting its participating
+    business systems, business workers and business entities, and their interactions. There are two types of interaction
+    diagrams: Sequence diagrams and communication diagrams. They express similar information, but show it in different
+    ways:
+</p>
+<ul>
+    <li>
+        Sequence diagrams (as their name implies) show an explicit sequence of events and are better than activity diagrams
+        for more complex scenarios.
+    </li>
+    <li>
+        Communication diagrams show the communication links and messages between objects and are better for understanding
+        all of the effects on a given object.
+    </li>
+    <li>
+        If alternative flows are few, but there are many business entities involved, interaction diagrams are often a
+        better choice than the activity diagram to show the realization of the workflow.
+    </li>
+</ul>
+<p>
+    See <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Technique: Sequence Diagram in the Business Analysis Model</a> and <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Technique: Communication Diagram in the Business Analysis Model</a> for more information.
+</p>
+<h3>
+    <a id="Using Class Diagrams" name="Using Class Diagrams">Using Class Diagrams</a>
+</h3>
+<p>
+    For each business use-case realization there may be one or more component diagrams or class diagrams depicting its
+    participating business systems, business workers and business entities. A diagram of this kind can be a useful help
+    when coordinating all the requirements on a business system, business worker or business entity that participates in
+    several business use-case realizations. See <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Technique: Class Diagram in the Business Analysis Model</a>.
+</p>
+<h3>
+    <a id="How to Map Use-Case Relationships" name="How to Map Use-Case Relationships">How to Map Use-Case
+    Relationships</a>
+</h3>
+<p>
+    Relationships between business use cases correspond to relationships in the business analysis model. By studying what
+    happens in the business, you can understand how to map the business use-case relationships to links between objects of
+    the business use-case realizations. For more on use-case relationships, see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html" guid="3.9905535055726305E-306">Guideline: Business Use-Case Model</a>.
+</p>
+<p>
+    Suppose a business use case (base) includes another business use case (inclusion). At a given moment, the employees
+    will need to cease following the instructions of the base and switch to following the instructions of the inclusion as
+    described in the documentation of the respective business use-case realizations. The following happens:
+</p>
+<ul>
+    <li>
+        An identifiable state is reached in the execution of a process according to the base use case-a business worker has
+        finished a certain task for example.
+    </li>
+    <li>
+        A change in state is noticed by someone who is ready to start working according to the realization of the
+        inclusion. Either the person sees some phenomenon, or is informed by someone in the inclusion.
+    </li>
+</ul>
+<p>
+    A business worker in the realization of the base interacts with the business workers in the realization of the
+    inclusion to inform them of what is going on. The most natural modeling approach is:
+</p>
+<ul>
+    <li>
+        A realization of the inclusion has one object for each base it is included by. The objects originating from the
+        base each have a link to the business worker individual that starts the work in the inclusion.
+    </li>
+</ul>
+<p align="center">
+    <img height="160" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bucr1.gif" width="455" />
+</p>
+<p class="picturetext">
+    Each business worker in the realization of the base business use cases needs a link to the business worker that starts
+    the work according the inclusion business use case.
+</p>
+<ul>
+    <li>
+        A realization of the base business use case does not have objects representing the inclusion.
+    </li>
+</ul>
+<p>
+    In the case of a business use case being extended by an another business use case, you will end up with a similar
+    solution. In the realization of the extension, you will have one object representing the base, that has a link to an
+    object initiating the work described within the extension.
+</p>
+<p align="center">
+    <img height="167" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bucr2.gif" width="328" />
+</p>
+<p class="picturetext">
+    Each business worker in the base business use cases needs a link to the business worker that starts the extension.
+</p>
+<p>
+    For use-case-generalization, the solution is again similar. In the realization of the parent use case, you will see an
+    object representing the child.
+</p>
+<p align="center">
+    <img height="177" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bucr3.gif" width="439" />
+</p>
+<p class="picturetext">
+    There are business workers representing the child use cases in the realization of the parent.
+</p>
+<p>
+    The use-case relationships have different interpretations. When it comes to their representations in the business
+    analysis model, the difference is found in why the work defined in the inclusion, the extension or the parent business
+    use case is initiated and how the business worker interprets the information. How the objects in the business use-case
+    realizations interact follow the same structure in all cases.
+</p>
+<h3>
+    <a id="XE_business_use-case_realization__characteristics_of_a_good" name="XE_business_use-case_realization__characteristics_of_a_good"></a><a id="Characteristics of Good Business Use-Case Realizations" name="Characteristics of Good Business Use-Case Realizations">Characteristics of Good Business Use-Case
+    Realizations</a>
+</h3>
+<ul>
+    <li>
+        The participating business systems, business workers and business entities perform the business use-case workflow,
+        including all alternative and optional subflows.
+    </li>
+    <li>
+        Workflow description covers all the tasks described.
+    </li>
+    <li>
+        The business systems, business workers and business entities have all the relationships needed to perform the
+        business use-case workflow.
+    </li>
+    <li>
+        At least one business system or business worker handling the interaction between the business actors and the
+        business.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

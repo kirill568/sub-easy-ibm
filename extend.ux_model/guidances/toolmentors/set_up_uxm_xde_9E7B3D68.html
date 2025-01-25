@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Setting Up User Experience Modeling for a Project Using Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="set_up_uxm_xde" name="uma.name">
+<meta content="Setting Up User Experience Modeling for a Project Using Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_ljIgkFdiEdqD4uIGCNz_kw"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_ljIgkFdiEdqD4uIGCNz_kw"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_ljIgkFdiEdqD4uIGCNz_kw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_ljIgkFdiEdqD4uIGCNz_kw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ljIgkFdiEdqD4uIGCNz_kw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Setting Up User Experience Modeling for a Project Using Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to set up Rational XDE™ to include a User-Experience Model, as well as the how to install the user-experience stereotypes and icons. </td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_tools_FBA37850.html" guid="{78C58888-2969-4A74-BF76-5F77AFA36F9C}">Настройка инструментов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The steps for setting up user-experience modeling in XDE&nbsp;are described below:
+</p>
+<ul>
+    <li>
+        <a href="#Install the XDE Support Files">Install the XDE Support Files</a>
+    </li>
+    <li>
+        <a href="#Create the User-Experience Model">Create the User-Experience Model</a>
+    </li>
+    <li>
+        <a href="#Associate the User-Experience Stereotype Icons">Associate the User-Experience Stereotype
+        Icons</a>
+    </li>
+</ul>
+<p>
+    Links to topics in the Rational XDE&trade; online help are marked with <img height="16" alt="helpbook icon"     src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" />.
+</p>
+<h3>
+    <a id="Install the XDE Support Files" name="Install the XDE Support Files">Install the XDE Support Files</a>
+</h3>
+<p>
+    To support user-experience modeling in XDE, a set of support files have been provided. The XDE support files include an
+    XDE model template for the User-Experience Model that reflects the User-Experience Model packaging structure described
+    in <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="2.642273465977998E-305">Guideline: User-Experience Model</a>, as well as customized icons for the user-experience
+    modeling stereotypes.
+</p>
+<p>
+    The following steps should be performed in order to install these support files:
+</p>
+<ol>
+    <li>
+        Unzip the zip file containing the XDE support files for the User-Experience Modeling plug-in (<a href="./../../../extend.ux_model/guidances/toolmentors/resources/uxm_support_xde.zip">uxm_support_xde.zip</a>)
+        into some directory<br />
+         (Suggestion: Create a subdirectory called "UX Modeling" in the <font face="Courier New, Courier, mono"><b>&lt;XDE
+        install directory/Addins&gt;</b></font> directory).<br />
+         Two subdirectories will be created: "templates", which contains the XDE model template files, and "icons", which
+        contains the user-experience modeling stereotype icons.
+    </li>
+    <li>
+        Move the User-Experience Model XDE model template files (all files in the <font         face="Courier New, Courier, mono"><b>templates</b></font> subdirectory) to the XDE template directory. The XDE
+        template directory is different depending on what platform you are executing XDE on. 
+        <ul>
+            <li>
+                For XDE for IBM WSSAD, the template directory is: <font face="Courier New, Courier, mono"><b>&lt;directory
+                where WSSAD was installed&gt;\plugins\com.rational.hshell.ratltool\templates\Rational XDE</b></font>.<br />
+                 For example: <b><font face="Courier New, Courier, mono">C:\Program Files\IBM\Application
+                Developer\plugins\com.rational.hshell.ratltool\templates\Rational XDE</font></b>.
+            </li>
+            <li>
+                For XDE for Microsoft&reg;&nbsp; VS .NET, the template directory is: <font                 face="Courier New, Courier, mono"><b>&lt;directory where XDE was installed&gt;\XDEPkg\Rational
+                XDE</b></font>.<br />
+                 For example: <b><font face="Courier New, Courier, mono">C:\Program Files\Rational\XDE\XDEPkg\Rational
+                XDE</font></b>.
+            </li>
+        </ul>
+    </li>
+    <li>
+        You can delete the <b><font face="Courier New, Courier, mono">templates</font></b> directory as it should now be
+        empty.
+    </li>
+</ol>
+<p>
+    To confirm that the templates installed correctly, perform the following steps:
+</p>
+<ol>
+    <li>
+        Launch XDE.
+    </li>
+    <li>
+        Right click a project.&nbsp;<br />
+         If you are using XDE for IBM WSSAD, select New&gt;Model.<br />
+         If you are using XDE for Microsoft&reg;&nbsp; VS .NET, Add&gt;Add New Item.
+    </li>
+    <li>
+        In the File Types list, select Rational XDE.<br />
+         "User-Experience Model" should be included in the list of templates.
+    </li>
+</ol>
+<p>
+    You can further specialize this downloaded template to reflect your project-specific guidelines. Rational XDE lets you
+    set operating defaults, called properties, and options that essentially establish the "rules" to follow when you are
+    working with the XDE model. This includes default fonts, colors, line styles, file storage options, the ways in which
+    which stereotypes and other information are presented, and the profiles that are applied.
+</p>
+<p>
+    Project-specific defaults can be defined for the User-Experience Model by editing the provided User-Experience Model
+    template, setting its defaults, and exporting it as a model template.
+</p>
+<p>
+For more information, refer to <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+     ReferenceHelpTopic("Setting Up and Managing the Modeling Environment","rs","rs_o_set_model_environ");             
+//]]>
+</script>
+     .
+</p>
+<h3>
+    <a id="Create the User-Experience Model" name="Create the User-Experience Model">Create the User-Experience Model</a>
+</h3>
+<p>
+    In this step, you create the XDE model file that will contain the User-Experience Model, using the previously installed
+    XDE model template and stereotypes.
+</p>
+<p>
+    The User-Experience Model is represented in an XDE "Blank Model" model file named "User-Experience Model".
+</p>
+<p>
+    In XDE, all models must exist with a project (where "project" is defined by the underlying IDE platform). It is
+    recommended that the XDE model file containing the User Experience Model exist within a project that represents the
+    entire application.
+</p>
+<p>
+    Perform the following steps to create the User-Experience Model in XDE.
+</p>
+<ol>
+    <li>
+        Right click your project (usually the application project) and select New&gt;&gt;Model.
+    </li>
+    <li>
+        In the File Types list, select "Rational XDE".
+    </li>
+    <li>
+        In the model template list, select "User-Experience Model".
+    </li>
+    <li>
+        An XDE model will be created and opened.
+    </li>
+</ol>
+<p>
+    The created User-Experience Model file contains some sample packages, User-Experience Elements (&lt;&lt;screen&gt;&gt;
+    and &lt;&lt;input form&gt;&gt; classes) and User-Experience Storyboards (&lt;&lt;storyboard&gt;&gt; collaborations).
+    These elements should be replaced with elements for the application being developed. If special stereotype icons are
+    not displayed for the User-Experience Elements, then perform the steps in the next section, <a href="#Associate the User-Experience Stereotype Icons">Associate the User-Experience Stereotype Icons</a>.
+</p>
+<p>
+For more information, refer to <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+     ReferenceHelpTopic("Creating New Models","rs","rs_t_create_new_mdl");             
+//]]>
+</script>
+     .
+</p>
+<h3>
+    <a id="Associate the User-Experience Stereotype Icons" name="Associate the User-Experience Stereotype Icons">Associate
+    the User-Experience Stereotype Icons</a>
+</h3>
+<p>
+    The steps in this section only need to be performed if special stereotype icons are not displayed for the sample
+    User-Experience Elements in the User-Experience Model file created in the <a href="#Create the User-Experience Model">previous</a> section.
+</p>
+<p>
+    To associate the installed icons with the installed user-experience stereotypes, perform the following steps for each
+    stereotype:
+</p>
+<ol>
+    <li>
+        Select a model element with that stereotype.
+    </li>
+    <li>
+        From the stereotype properties dialog box, set the explorer and diagram icons to the appropriate installed graphics
+        files (see table below).
+    </li>
+</ol>
+<p>
+    The explorer and diagram icons for each of the user-experience modeling stereotypes are listed in the following table
+    (all pathnames are relevant to the directory where you unzipped the user-experience modeling XDE support files):
+</p>
+<table style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"  cellspacing="0" bordercolordark="#808080" cellpadding="4" width="50%" bordercolorlight="#808080" border="1">
+    <tbody valign="top">
+        <tr>
+            <td width="50%">
+                <b>Stereotype</b>
+            </td>
+            <td width="50%">
+                <b>Explorer Icon</b>
+            </td>
+            <td width="50%">
+                <b>Diagram Icon</b>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                &lt;&lt;screen&gt;&gt;
+            </td>
+            <td width="50%">
+                icons/list/screen.bmp
+            </td>
+            <td width="50%">
+                icons/diagram/screen.emf
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                &lt;&lt;input form&gt;&gt;
+            </td>
+            <td width="50%">
+                icons/list/screen-input-form.bmp
+            </td>
+            <td width="50%">
+                icons/diagram/screen-input-form.emf
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+For more information, see <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+     ReferenceHelpTopic("Adding Custom Stereotype Graphics to Model Elements and Shapes","rs","rs_t_add_custom_stereos");             
+//]]>
+</script>
+     .
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

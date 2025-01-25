@@ -1,0 +1,105 @@
+[
+
+{objectId: "_ht2_IMTyEdqFa53q1f4vmA", title: "Разработчик", url: "tech.rad/customcategories/rad_view_FDC4BF2.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "_oLmeoMTyEdqFa53q1f4vmA", title: "Дисциплины", url: "tech.rad/customcategories/rad_disciplines_27904D28.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "_yd3ExNnmEdmO6L4XMImrsA", title: "Реализация", url: "core.base_rup/disciplines/rup_implementation_discipline_263E22DB.html", nodeDocType: "c107cfc", 
+children: [
+
+{objectId: "{F2AD342D-0F3B-4E19-A351-75ECDCB806F5}", title: "Реализация", url: "core.base_rup/capabilitypatterns/implementation_8FF0AAD4.html", nodeDocType: "2ebe500e"},
+{objectId: "{5131A5BB-5B95-499E-A68B-788A2F0957C3}", title: "Анализ поведения среды выполнения", url: "core.base_rup/tasks/analyze_runtime_behavior_B2DD7652.html", nodeDocType: "eb56c7fb"},
+{objectId: "{55EAEE66-A254-457F-BCC3-D1C21ED88134}", title: "Выполнение тестов разработчика", url: "core.base_rup/tasks/perform_developer_test_512B18D9.html", nodeDocType: "eb56c7fb"},
+{objectId: "{58FF0476-120F-411A-AD8C-16573032BE91}", title: "Интегрирование подсистемы", url: "core.base_rup/tasks/integrate_subsystem_E8F878D6.html", nodeDocType: "eb56c7fb"},
+{objectId: "{3233A207-6271-4492-A8BF-64E1D89D6C5E}", title: "Интегрирование системы", url: "core.base_rup/tasks/integrate_system_9AFF7BFD.html", nodeDocType: "eb56c7fb"},
+{objectId: "{197B2D0F-6B49-4998-8A71-0799BC29D13F}", title: "Планирование интеграции подсистемы", url: "core.base_rup/tasks/plan_subsystem_integration_9CF14B68.html", nodeDocType: "eb56c7fb"},
+{objectId: "{11538D9A-7439-4FDD-8333-9E2E47E5E173}", title: "Планирование интеграции системы", url: "core.base_rup/tasks/plan_system_integration_2B706402.html", nodeDocType: "eb56c7fb"},
+{objectId: "{9EC0DF69-EEE1-4B41-8F48-9FB6B0DB7F72}", title: "Проверка кода", url: "core.base_rup/tasks/review_code_27AD7580.html", nodeDocType: "eb56c7fb"},
+{objectId: "{17DB85D6-7609-4D2B-BC62-51807A09EB7A}", title: "Реализация критериев пригодности к тестированию", url: "core.base_rup/tasks/implement_testability_elements_B067C866.html", nodeDocType: "eb56c7fb"},
+{objectId: "{862F3EC5-70C3-4D9C-BF0E-EF93AE1BF936}", title: "Реализация теста разработчика", url: "core.base_rup/tasks/implement_developer_test_66FE6BEE.html", nodeDocType: "eb56c7fb"},
+{objectId: "{35272424-8A0A-4DDD-BA74-C91B80A8D046}", title: "Создание структуры модели реализации", url: "core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html", nodeDocType: "eb56c7fb"},
+{objectId: "{3293F4F7-EFCD-4476-BFF1-81AC3812B512}", title: "Элементы проекта реализации", url: "core.base_rup/tasks/implement_component_AE366827.html", nodeDocType: "eb56c7fb"},
+{objectId: "1.0139590031965295E-304", title: "Важные решения в сфере реализации", url: "core.base_rup/guidances/guidelines/important_decisions_in_implementation_BC39CD13.html", nodeDocType: "eeccbda6"},
+{objectId: "1.424219730601675E-305", title: "Переход от проектирования к разработке кода", url: "core.base_rup/guidances/concepts/mapping_from_design_to_code_D1454680.html", nodeDocType: "699c271e"}]},
+{objectId: "_yeA1xNnmEdmO6L4XMImrsA", title: "Управление конфигурацией и изменениями", url: "core.base_rup/disciplines/rup_config_and_change_manage_discipline_CC612E7A.html", nodeDocType: "c107cfc", 
+children: [
+
+{objectId: "{C85C9CC0-AD92-46C9-85BA-4C0672D6571E}", title: "Управление конфигурацией и изменениями", url: "core.base_rup/capabilitypatterns/configuration_change_management_5C81A290.html", nodeDocType: "2ebe500e"},
+{objectId: "{A56F93A6-DAD6-4453-936D-D7AE4A34D45D}", title: "Внесение изменений", url: "core.base_rup/tasks/make_changes_to_configuration_items_9F1D8304.html", nodeDocType: "eb56c7fb"},
+{objectId: "{B1FB20EA-CDF6-4F7B-BF65-22CFBF38CDC6}", title: "Доставка изменений", url: "core.base_rup/tasks/deliver_changes_8A8C78F4.html", nodeDocType: "eb56c7fb"},
+{objectId: "{766CE150-54BC-4BD3-9EAB-09857114B268}", title: "Контроль конфигурации", url: "core.base_rup/tasks/perform_configuration_audit_9EB6566A.html", nodeDocType: "eb56c7fb"},
+{objectId: "{63B1E843-8F9D-41E4-9A33-5E0F648F8159}", title: "Написание плана управления конфигурацией (CM)", url: "core.base_rup/tasks/write_cm_plan_9BAE9ACA.html", nodeDocType: "eb56c7fb"},
+{objectId: "{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}", title: "Настройка среды управления конфигурацией (CM)", url: "core.base_rup/tasks/setup_cm_environment_78ABEDF9.html", nodeDocType: "eb56c7fb"},
+{objectId: "{E8D29B61-6D79-4F73-983B-96BD8C902247}", title: "Обновите запрос изменения", url: "core.base_rup/tasks/update_change_request_A387AF69.html", nodeDocType: "eb56c7fb"},
+{objectId: "{D6FFB987-F032-4B65-9290-2A501FBB9FF8}", title: "Обновите рабочую область", url: "core.base_rup/tasks/update_workspace_59C1448.html", nodeDocType: "eb56c7fb"},
+{objectId: "{1393CA8E-5CA4-4494-93FE-587F51931896}", title: "Оформление запроса изменения", url: "core.base_rup/tasks/submit_change_request_29FC7F2E.html", nodeDocType: "eb56c7fb"},
+{objectId: "{23EFB27B-DADC-483B-BF97-5B05089E3E56}", title: "Подтверждение повторного или отклоненного запроса изменения", url: "core.base_rup/tasks/confirm_duplicate_or_rejected_cr_8AB600B7.html", nodeDocType: "eb56c7fb"},
+{objectId: "{1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}", title: "Проверка запросов изменений", url: "core.base_rup/tasks/review_change_request_E7D91346.html", nodeDocType: "eb56c7fb"},
+{objectId: "{C6DE470A-C26B-41D7-9807-6D3DE566920E}", title: "Проверка изменений в компиляции", url: "core.base_rup/tasks/verify_changes_in_release_build_15F355EE.html", nodeDocType: "eb56c7fb"},
+{objectId: "{9139A97B-D458-490D-A9D5-CDBB86968475}", title: "Продвижение контрольных версий", url: "core.base_rup/tasks/promote_baseline_623F1B0E.html", nodeDocType: "eb56c7fb"},
+{objectId: "{0A40D5A0-2119-4D42-9B35-72D9B42BB4FA}", title: "Реализация процесса управления изменениями", url: "core.base_rup/tasks/establish_project_change_control_process_159A3B7A.html", nodeDocType: "eb56c7fb"},
+{objectId: "{E45B1CBF-29EB-431E-9417-F40E45BBAFD1}", title: "Реализация стратегий управления конфигурацией (CM)", url: "core.base_rup/tasks/establish_project_cm_policies_6B9785AC.html", nodeDocType: "eb56c7fb"},
+{objectId: "{85EC2AE2-FEAF-4DAE-B633-A4D97A9136D2}", title: "Создайте рабочие области интеграции", url: "core.base_rup/tasks/create_integration_workspace_791B9994.html", nodeDocType: "eb56c7fb"},
+{objectId: "{0E165955-5075-424D-9DC3-E244DE0A7315}", title: "Создание блока развертывания", url: "core.base_rup/tasks/create_deployment_unit_F25BA1CB.html", nodeDocType: "eb56c7fb"},
+{objectId: "{F8256B31-5CE3-49C0-9DC2-ECB57DD48867}", title: "Создание контрольных версий", url: "core.base_rup/tasks/create_baseline_30FA138.html", nodeDocType: "eb56c7fb"},
+{objectId: "{500A96BD-80F5-4E04-BCAB-CCE48F98639C}", title: "Создание отчета о состоянии конфигурации", url: "core.base_rup/tasks/report_on_configuration_status_9ECFA6E8.html", nodeDocType: "eb56c7fb"},
+{objectId: "{99C2684A-E22A-4DF3-9A66-A204F67F868B}", title: "Создание рабочей области разработки", url: "core.base_rup/tasks/create_development_workspace_25C973CF.html", nodeDocType: "eb56c7fb"},
+{objectId: "9.443126080601602E-306", title: "Change Management", url: "core.base_rup/guidances/supportingmaterials/manage_change_63A0327F.html", nodeDocType: "209bc5e"},
+{objectId: "4.634602406965372E-305", title: "Важные решения в сфере управления конфигурацией и изменениями", url: "core.base_rup/guidances/guidelines/important_decisions_in_configuration_change_management_3798119B.html", nodeDocType: "eeccbda6"},
+{objectId: "3.4400958589714374E-305", title: "Рабочие области", url: "core.base_rup/guidances/concepts/workspaces_3B55A225.html", nodeDocType: "699c271e"},
+{objectId: "4.4540149642001026E-305", title: "Создание контрольной версии", url: "core.base_rup/guidances/concepts/baselining_88B2C018.html", nodeDocType: "699c271e"},
+{objectId: "1.0000976176375565E-304", title: "Унифицированное управление изменениями (UCM)", url: "core.base_rup/guidances/concepts/unified_change_management_ucm_EF604C17.html", nodeDocType: "699c271e"}]}]},
+{objectId: "_sBWBIMTyEdqFa53q1f4vmA", title: "Продукты работы", url: "tech.rad/customcategories/rad_work_products_8FD24673.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "_M6RHkN7IEdm8G6yT7-Wdqw", title: "Реализация", url: "core.base_rup/domains/implementation_442FA5B0.html", nodeDocType: "2c9c27ba", 
+children: [
+
+{objectId: "{53728CD9-FA47-4B58-A443-E9F9DC196916}", title: "Компиляция", url: "core.base_rup/workproducts/rup_build_BA336272.html", nodeDocType: "8bd595b6"},
+{objectId: "{157E9B67-C619-410D-A927-F2CD217BF8FE}", title: "Модель реализации", url: "core.base_rup/workproducts/rup_implementation_model_5858DB65.html", nodeDocType: "ceabaf2b"},
+{objectId: "{FA56B557-857D-4122-8E60-7A4A84418EB1}", title: "План компоновки интеграции", url: "core.base_rup/workproducts/rup_integration_build_plan_31CE4B79.html", nodeDocType: "8fbf9400"},
+{objectId: "{74C60DFE-7221-45F1-BB8B-922A81C5AA98}", title: "Тест разработчика", url: "core.base_rup/workproducts/rup_developer_test_44109C5.html", nodeDocType: "67e3019f"}]}]},
+{objectId: "_uvXGkMTyEdqFa53q1f4vmA", title: "Роли", url: "tech.rad/customcategories/rad_roles_33456127.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "{DB21F5EF-810B-4994-B120-79FA8774FA9D}", title: "Проектировщик", url: "core.base_rup/roles/rup_designer_BA8DE74E.html", nodeDocType: "f3e5326c"},
+{objectId: "{75501BAA-0CCE-4852-A7B2-B10CA71C002A}", title: "Реализатор", url: "core.base_rup/roles/rup_implementer_D145E819.html", nodeDocType: "f3e5326c"},
+{objectId: "{502B4138-0772-4A4E-A183-C647497AFCB8}", title: "Интегратор", url: "core.base_rup/roles/rup_integrator_284A604C.html", nodeDocType: "f3e5326c"}]},
+{objectId: "_xLntoMTyEdqFa53q1f4vmA", title: "Памятки по инструменту", url: "tech.rad/customcategories/rad_tool_mentors_D6E16D6D.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", title: "Rational ClearCase", url: "core.base_rup/tools/rup_clearcase_9665C.html", nodeDocType: "ae795536", 
+children: [
+
+{objectId: "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}", title: "Настройка модели реализации с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/setup_implementation_model_40C73358.html", nodeDocType: "609e7ef"},
+{objectId: "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}", title: "Настройка модели реализации с помощью UCM Using Rational ClearCase", url: "core.base_rup/guidances/toolmentors/setting_up_impl_model_with_ucm_C9DD9D5A.html", nodeDocType: "609e7ef"},
+{objectId: "{9EE4A89E-5DB3-433D-A9C9-1798D1BC7E61}", title: "Создание нескольких сайтов с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/creating_multiple_sites_rup_clearcase_env_92CE96A6.html", nodeDocType: "609e7ef"},
+{objectId: "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}", title: "Привязка управления конфигурацией и запросами изменений с помощью Rational ClearQuest и Rational ClearCase", url: "core.base_rup/guidances/toolmentors/linking_cm_and_crm_FD3C62D6.html", nodeDocType: "609e7ef"},
+{objectId: "{34E8BA17-21F6-45B0-A034-8FD698677912}", title: "Добавление элементов к управлению исходным кодом с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/add_elements_to_source_ctrl_D0A62BB6.html", nodeDocType: "609e7ef"},
+{objectId: "{12294137-8815-4CC8-B79E-09BE5046C6D8}", title: "Обновление рабочей области проекта с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/updating_your_project_workarea_DE9AB16A.html", nodeDocType: "609e7ef"},
+{objectId: "{DD0A5FB2-76C7-4B86-BBBD-FFF767EA07FA}", title: "Доставка работы с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/delivering_your_work_4891CF09.html", nodeDocType: "609e7ef"},
+{objectId: "{C7D320FC-FD99-4842-9193-28565FC50FEB}", title: "Применение наборов изменений UCM в Rational ClearCase", url: "core.base_rup/guidances/toolmentors/using_ucm_change_sets_with_clearcase_46E66835.html", nodeDocType: "609e7ef"},
+{objectId: "{AECDE96A-18C0-485F-9B06-1A975A33301C}", title: "Создание рабочей области интеграции и компоновки с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/create_integration_workspace_tm_D5723B43.html", nodeDocType: "609e7ef"},
+{objectId: "{46A461EE-F00E-4E39-B5E5-855815F621FF}", title: "Создание рабочей области разработки с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/create_private_workspace_29AA0B4A.html", nodeDocType: "609e7ef"},
+{objectId: "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}", title: "Создание контрольных версий с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/creating_baselines_EFAE6E4.html", nodeDocType: "609e7ef"},
+{objectId: "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}", title: "Продвижение контрольной версии проекта с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/promoting_project_baselines_728AA53B.html", nodeDocType: "609e7ef"},
+{objectId: "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}", title: "Сравнение контрольных версий с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/comparing_baselines_4AE6F3E4.html", nodeDocType: "609e7ef"},
+{objectId: "{A7DB751F-6724-468A-8FA0-7C4B54DC2AF6}", title: "Настройка стратегий в Rational ClearCase", url: "core.base_rup/guidances/toolmentors/setting_up_policies_F0724BD9.html", nodeDocType: "609e7ef"},
+{objectId: "{3D4CC908-5E3C-48C5-99F6-D4137834D9A4}", title: "Добавление и удаление элементов конфигурации с помощью Rational ClearCase", url: "core.base_rup/guidances/toolmentors/check_out_check_in_203CEEC2.html", nodeDocType: "609e7ef"}]},
+{objectId: "{ED0B771E-CA09-4317-AB43-F88489AA520F}", title: "Rational ClearQuest", url: "core.base_rup/tools/rup_clearquest_3C7831BD.html", nodeDocType: "6be2251f", 
+children: [
+
+{objectId: "{FB4F9056-6E9F-4E1A-8190-099CAFE40736}", title: "Создание отчета о тенденциях неполадок и их состоянии с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/report_defect_trends_status_345B6B16.html", nodeDocType: "609e7ef"},
+{objectId: "{B1604683-0DD2-4DF6-80D6-F566B7E4741C}", title: "Создание нескольких сайтов с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/creating_multiple_sites_57D10B26.html", nodeDocType: "609e7ef"},
+{objectId: "{35F5A82B-F683-4CF2-9909-47E0E4E59376}", title: "Создание отчета о просмотре и состоянии работы с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/report_review_work_status_54297CBD.html", nodeDocType: "609e7ef"},
+{objectId: "{6B0AF30D-B49E-4B4C-9DF5-EE231510BA74}", title: "Изменение состояния запроса на изменений с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/change_cr_state_5E0FCB3F.html", nodeDocType: "609e7ef"},
+{objectId: "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}", title: "Установка процесса запроса изменения с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/establish_cr_process_57610929.html", nodeDocType: "609e7ef"},
+{objectId: "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}", title: "Определение уведомлений об изменении и проверке с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/define_change_review_notifications_C7510E4.html", nodeDocType: "609e7ef"},
+{objectId: "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}", title: "Просмотр хронологии изъяна с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/view_defect_history_E065C8BA.html", nodeDocType: "609e7ef"},
+{objectId: "{5B77C491-E5E9-4BE3-86BD-E4C8A82F8E32}", title: "Отправка запросов изменений с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/submit_change_request_form_4C353A19.html", nodeDocType: "609e7ef"},
+{objectId: "{01D34674-59D2-4758-B057-E62CA610EE26}", title: "Оформление запросов с помощью инструмента Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/work_with_query_741C61F5.html", nodeDocType: "609e7ef"},
+{objectId: "{31689E0E-AE26-4B15-A04A-1C4B3A575DD0}", title: "Работа с диаграммами с помощью Rational ClearQuest", url: "core.base_rup/guidances/toolmentors/work_with_chart_FED3FD68.html", nodeDocType: "609e7ef"}]}]}]}
+]
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Create a Test Project Using IBM Rational Performance Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_perf_test_project" name="uma.name">
+<meta content="Create a Test Project Using IBM Rational Performance Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_performance_tester:IBM Rational Performance Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Performance Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_WDwD4MwCEdq9s5d23VYjZw", "_GHKrYMwCEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_WDwD4MwCEdq9s5d23VYjZw", "_GHKrYMwCEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_GHKrYMwCEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Create a Test Project Using IBM Rational Performance Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to create a performance test project.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_performance_tester_C23B7486.html" guid="_WDwD4MwCEdq9s5d23VYjZw">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_approach_51A370C3.html" guid="{87F96887-83EF-4F0F-8F79-E98043406B52}">Определение подхода к тестированию</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_details_2B6BD36F.html" guid="{1F825D50-70B1-48BA-B99F-010F6B44B77B}">Определение сведений о тесте</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/identify_test_targets_693323A6.html" guid="{FFBDC174-FA91-4712-ABE2-7580A5670E8D}">Определение цели теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    A performance test project allows you to locate your performance testing artifacts centrally. You can use the
+    performance test project as a basis for capturing test artifacts for the performance test effort. From the IBM&reg;
+    Rational&reg; Performance Tester project, you can create artifacts such as project folders, performance schedules,
+    performance test reports, data pools, performance tests, StatCon files, and others. To begin you performance testing,
+    you need to create a performance test project.
+</p>
+<h4>
+    Create the Performance Test Project
+</h4>
+<p>
+    Performance test projects are containers for performance tests.
+</p>
+<p>
+    A performance test project is a project created with a source folder. You can store performance tests in standard
+    projects that contain source folders.
+</p>
+<p>
+    When you create a project, Rational Performance Tester provides a convenient wizard option for beginning to record a
+    test. You have the option to record the test at this point, or to record the test at a later time.
+</p>
+<p>
+    To create a new performance test project and optionally record a test:
+</p>
+<ol>
+    <li>
+        Select <strong>File &gt; New &gt; Performance Test Project</strong>.
+    </li>
+    <li>
+        The New Performance Test dialog box opens.
+    </li>
+    <li>
+        If the New menu does not display the Performance Test Project option, this indicates that you are not in the Test
+        perspective. You can switch to the Test perspective, or you can select <strong>File &gt; New &gt; Other &gt; Test
+        &gt; Performance Test Project</strong>. Whichever way you select this option, it switches you to the Test
+        perspective.
+    </li>
+    <li>
+        In the <strong>Project Name</strong> field, type a name for the project
+    </li>
+    <li>
+        Click <strong>Finish</strong>. The project is created, you are switched to the Test perspective, and you are asked
+        whether you want to record a performance test now.
+    </li>
+    <li>
+        If you click <strong>Yes</strong>, the Create Test wizard starts.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on recording a test, see the
+    topic <em>Recording a Test</em> in the Rational Performance Tester online Help.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

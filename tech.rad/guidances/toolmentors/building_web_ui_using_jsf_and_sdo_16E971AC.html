@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Разработка пользовательских Web-интерфейсов с помощью JSF и SDO</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="building_web_ui_using_jsf_and_sdo" name="uma.name">
+<meta content="Разработка пользовательских Web-интерфейсов с помощью JSF и SDO" name="uma.presentationName">
+<meta content="Tool:rup_rational_application_developer:Rational Application Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Application Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{A85C5E3E-C9D3-4C1F-8EFF-4C551BD993D2}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "__hxOUEUCEdqMr9-tA4TBpQ", "{A85C5E3E-C9D3-4C1F-8EFF-4C551BD993D2}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "__hxOUEUCEdqMr9-tA4TBpQ", "{A85C5E3E-C9D3-4C1F-8EFF-4C551BD993D2}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{A85C5E3E-C9D3-4C1F-8EFF-4C551BD993D2}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Разработка пользовательских Web-интерфейсов с помощью JSF и SDO</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описан способ создания Web-страниц JSF (JavaServer Faces), которые получают доступ к базовым данным с помощью SDO (Server Data Objects) и среды моделирования RAD 6.0. </td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rational_application_developer_BCA25C88.html" guid="__hxOUEUCEdqMr9-tA4TBpQ">Rational Application Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_component_AE366827.html" guid="{3293F4F7-EFCD-4476-BFF1-81AC3812B512}">Элементы проекта реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту предполагается, что для приложения уже создан динамический Web-проект, и все необходимые
+    компоненты SDO разработаны и включены в этот проект. В этой памятке по инструменту предусмотрены следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#create">Создание файла Faces JSP.</a>
+    </li>
+    <li>
+        <a href="#visually">Визуальное составление макетов страниц.</a>
+    </li>
+    <li>
+        <a href="#configure">Настройка параметров и атрибутов компонентов.</a>
+    </li>
+    <li>
+        <a href="#add_event">Добавление контроля над операциями и проверкой</a>
+    </li>
+    <li>
+        <a href="#test">Тестирование страницы</a>
+    </li>
+</ul>
+<p>
+    Ссылки на дополнительные ресурсы приведены в следующем разделе:
+</p>
+<ul>
+    <li>
+        <a href="#more_info">Дополнительная информация</a>
+    </li>
+</ul>
+<h3>
+    <a id="create" href="#Top" name="create">Создание файла Faces JSP</a>
+</h3>
+<p>
+    Создайте файл Faces JSP в папке <em>WebContent</em> Web-проекта приложения. Для этого выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Запустите мастер <em>Создания файлов Faces JSP</em>.
+    </li>
+    <li>
+        Выберите модель страницы (<em>Простая</em> или <em>Простая с кэшированием данных на стороне клиента</em>).
+    </li>
+    <li>
+        При необходимости укажите значения для опций Шаблон страницы, Библиотека тегов и CSS.
+    </li>
+    <li>
+        Нажмите кнопку Готово, после чего новая страница откроется в Проектировщике страниц.<br />
+    </li>
+</ol>
+<h3>
+    <a id="visually" href="#Top" name="visually">Визуальное составление макетов страниц</a>
+</h3>
+<p>
+    В Проектировщик страниц включена панель <em>Палитра</em>. В нее входят составители, содержащие широкий выбор
+    предопределенных компонентов пользовательского интерфейса.
+</p>
+<ol>
+    <li>
+        Перетащите на страницу компонент JSF из составителя <em>Компоненты Faces</em> или <em>Компоненты Faces Client</em>
+        (доступен только для Faces JSP с кэшированием на стороне клиента).
+    </li>
+    <li>
+        Из составителя <em>Данные</em> перетащите на страницу компонент SDO. Откроется соответствующий мастер компонента
+        данных, позволяющий указать источник компонента и задать начальные свойства конфигурации.
+    </li>
+    <li>
+        При необходимости из панели Палитра перетащите на страницу другие компоненты пользовательского интерфейса.
+    </li>
+</ol>
+<h3>
+    <a id="configure" href="#Top" name="configure">Настройка параметров и атрибутов компонентов</a>
+</h3>
+<p>
+    Компоненты пользовательского интерфейса на странице можно настроить с помощью специальных панелей (например, панелей
+    <em>Свойства</em>, <em>Данные страницы</em> и <em>Данные клиента</em>) или с помощью мастеров, которые всплывают при их
+    перетаскивании на страницу.
+</p>
+<ol>
+    <li>
+        Настройка компонента JSF. В панели <em>Свойства</em> можно выполнять следующие действия: 
+        <blockquote>
+            <p>
+                a. Настраивать внешний вид компонентов.<br />
+                 b. Привязывать значения компонентов к данным, указанным в панелях <em>Данные страницы</em> или <em>Данные
+                клиента</em>.<br />
+                 c. Задавать правила навигации для управляющих компонентов (например, для командной кнопки) на основе
+                псевдонимов, возвращенных из фрагментов кода Java.
+            </p>
+        </blockquote>
+    </li>
+    <li>
+        Настройка компонента SDO. 
+        <blockquote>
+            <p>
+                a. После перемещения всплывающего мастера на страницу можно указать источник данных SDO (например, имя
+                класса JavaBean или имена базы данных и таблиц)<br />
+                 b. Для реляционных данных SDO мастер позволяет настраивать дополнительные опции, например, автоматическое
+                создание ключей и управление параллелизмом.<br />
+                 c. В панели <em>Свойства</em> можно указать формат данных SDO и задать опцию разделения на страницы.
+            </p>
+        </blockquote>
+    </li>
+    <li>
+        Настройка других компонентов пользовательского интерфейса. Для просмотра и настройки опций, доступных для каждого
+        компонента, используйте панель <em>Свойства</em>.
+    </li>
+</ol>
+<h3>
+    <a id="add_event" href="#Top" name="add_event">Добавление контроля над операциями и проверкой</a>
+</h3>
+<p>
+    Для контроля над операциями и для управления проверкой в панели <em>Быстрое редактирование</em> можно добавить
+    фрагменты кода Java.
+</p>
+<ol>
+    <li>
+        В панели <em>Свойства</em> компонента задайте простые правила проверки (например, Указывать значения).
+    </li>
+    <li>
+        В панели <em>Быстрое редактирование</em> можно добавить проверку пользовательского кода.
+    </li>
+    <li>
+        В панели <em>Быстрое редактирование</em> можно задать код контроля над операциями компонента (например, Возвращать
+        значение псевдонима для контроля за навигацией).
+    </li>
+</ol>
+<h3>
+    <a id="test" href="#Top" name="test">Тестирование страницы</a>
+</h3>
+<p>
+    Для тестирования страницы в меню Проектировщика страниц выберите <em>Выполнить как &gt; Запустить на сервере</em>.
+    Обратите внимание, что для поддержки SDO на Web-странице необходимо в качестве среды тестирования выбрать сервер
+    WebSphere 5.1 или более поздних версий. После запуска сервера в панели браузера откроется страница, готовая для
+    тестирования.
+</p>
+<h3>
+    <a id="more_info" href="#Top" name="more_info">Дополнительная информация</a>&nbsp;
+</h3>
+<ol>
+    <li>
+        Запустите Rational Application Developer v6.0.
+    </li>
+    <li>
+        В панели меню выберите <em>Справка &gt; Учебники</em>.
+    </li>
+    <li>
+        Просмотрите следующие разделы: <em>Наглядное обучение</em>, <em>Обучение-игра</em> и <em>Обучение на практике</em>.
+    </li>
+</ol><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

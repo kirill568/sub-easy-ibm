@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Business Architecture</title>
+<meta content="Concept" name="uma.type">
+<meta content="business_architecture" name="uma.name">
+<meta content="Business Architecture" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.6275891002471178E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Business Architecture</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business architecture is defined as an organized set of elements with clear relationships to one another, which together form a whole defined by its functionality.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_architect_bom_26A8745F.html" guid="_RqlJIBpWEdqUwb9RAn2tTA">Business Architect</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html" guid="_xfhhcBpWEdqUwb9RAn2tTA">Business Architectural Analysis</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html" guid="{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}">Business Architecture Document</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_designer_30BD5E18.html" guid="{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}">Business Designer</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/domains/business_modeling_rup_CDDF8485.html" guid="_8loI0CuREdqL6tsHh4YXGw">Business Modeling</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_process_analyst_B9668ABF.html" guid="{76FAC4FE-AA09-48AC-85A5-68BD1EE8A86A}">Business-Process Analyst</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_business_architecture" name="XE_business_architecture"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Introduction<img height="20" alt="To top of page"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    We define business architecture as an organized set of elements with clear relationships to one another, which together
+    form a whole defined by its functionality. The elements represent the organizational and behavioral structure of a
+    business system and show abstractions of the key processes and structures of the business [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html" guid="7.755968586980351E-308">NDL97</a>], [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html" guid="7.755968586980351E-308">ERI00</a>].
+</p>
+<h3>
+    <a id="Context of Business Architecture" name="Context of Business Architecture">Context of Business Architecture<img     height="20" alt="To top of page" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Different people have different backgrounds and perspectives. When attempting to achieve a common understanding on
+    something as complex as the organization-including its processes, structure, and strategy-we need a way to describe
+    architecture and architecturally significant issues in a way that will be understood by each impacted group. This is
+    done by describing three different-yet-related architectures as shown and described later in this document.
+</p>
+<p align="center">
+    <img height="334" alt="Image described by content" src="./../../../extend.bus_model/guidances/concepts/resources/co_barc1.gif" width="683" border="0" />
+</p>
+<p>
+    <b>Business architecture</b> is a description of the significant aspects of the organization. <b>Application
+    architecture</b> is a description of the software applications that support the business, including how those
+    applications are used and how they interact with each other. <b>Technical architecture</b> is a description of the
+    hardware infrastructure that supports the software applications.
+</p>
+<p>
+    The business architecture must govern the application architecture, which in turn must govern the technical
+    architecture. This does not imply a hierarchical relationship wherein the business architecture prescribes to the
+    application architecture, and the application architecture prescribes to technical architecture. Rather, it means that
+    goals and constraints (called drivers) are communicated in one direction, and any architectural decisions (called
+    tradeoffs) that affect the governing architecture must be made at the level of the governing architecture. An
+    architectural goal implies a desired condition, while an architectural constraint implies mandatory compliance.
+    However, even constraints can be intentionally ignored. For example, a constraint that requires the business to comply
+    with certain legislation might be ignored because the cost of making the changes necessary to comply far exceed the
+    penalties incurred by noncompliance.
+</p>
+<p>
+    Architecting is about balancing forces and making tradeoffs to create a solution that optimally satisfies conflicting
+    requirements. This means that the business architecture defines goals and constraints that describe the support that it
+    requires from application architecture. The same applies to the application and the technical architecture. Where
+    conflicts arise, as they always do, localized sub-optimal solutions must be found in order to ensure an optimum overall
+    solution. When these decisions have a broad impact, they are termed <b>architectural issues</b> and must be formally
+    agreed to by stakeholders represented by an architecture board.
+</p>
+<p>
+    These different architectures must always be considered when communicating with stakeholders. Discussing only one of
+    them with an individual who does not understand its form, application, or notation results in ineffective
+    communication. Furthermore, it can cause that individual to misunderstand the consequences of his or her decisions
+    regarding the other architectures. The impact of decisions in one of the architectures must be translated to the other
+    ones. This helps stakeholders understand the benefits and disadvantages of tradeoffs, which leads to architectural
+    alignment. Architectural alignment helps us understand the consequences of decisions.
+</p>
+<h3>
+    <a id="Business Architecture is a Framework for Change" name="Business Architecture is a Framework for Change">Business
+    Architecture as a Framework for Change<img height="20" alt="To top of page" src="./../../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h3>
+<p>
+    The business architecture is what we use to communicate with different stakeholders about the business to ensure a
+    common, consistent understanding. We can describe the business architecture as the framework within which we make
+    changes to the organization to enable the business to ultimately realize the business idea, as shown in the figure.
+</p>
+<p align="center">
+    <img height="300" alt="Image described by content" src="./../../../extend.bus_model/guidances/concepts/resources/co_barc2.gif" width="473" border="0" />
+</p>
+<h3>
+    <a id="Architectural Views" name="Architectural Views">Business Architectural Views<img height="20"     alt="To top of page" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Because business architecture is complex and difficult to measure, we divide it into a number of different views. Much
+    as the software architecture is defined in <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/software_architecture_4269A354.html" guid="3.066252221588648E-305">Concept:
+    Software Architecture</a>, the architectural views of the business will be defined here.
+</p>
+<p>
+    Each view describes one aspect of the entire business. It therefore contains an architecturally significant subset of
+    what would be a complete definition. In other words, an architectural view contains the 20% that really matters to that
+    aspect of the business [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html" guid="7.755968586980351E-308">ROY98</a>].
+</p>
+<p>
+    The architectural views are helpful in discussing the business architecture with different stakeholders. Because each
+    stakeholder has one or several views that are of particular interest, he or she can focus on those aspects of the
+    organization that are associated with those views without having to understand everything else as well.
+</p>
+<p>
+    Note that not all views apply to all situations. Some views can be ignored when they add no value, and sometimes it
+    might be necessary to define new views. Here are some typical business architectural views:
+</p>
+<ul>
+    <li>
+        <b>Market View</b> describes the markets in which the business operates, customer profiles and offerings, or the
+        products and services that the business offers to customers in the target markets.
+    </li>
+    <li>
+        <b>Business Process View</b> describes the significant goals of the business and outlines the key business use
+        cases that support these goals.&nbsp;When business use cases are used to document business processes, this view is
+        called the Business Use Case View.
+    </li>
+    <li>
+        <b>Organization View</b> describes the groupings of roles and responsibilities within the business and the
+        realization of business use cases.
+    </li>
+    <li>
+        <b>Human Resource View</b> describes remuneration profiles and incentive mechanisms, key cultural characteristics
+        and mechanisms, competence profiles, and education and training mechanisms.
+    </li>
+    <li>
+        <b>Domain View</b> describes the major business concepts and information structures used by the business.
+    </li>
+    <li>
+        <b>Geographic View</b> describes the distribution of organizational structure, function and resources&nbsp;across
+        physical locations such as cities and countries.
+    </li>
+    <li>
+        <b>Communication View</b> describes the communication pathways within the business.
+    </li>
+</ul>
+<h4>
+    Mapping of the Business Architectural Views to RUP Viewpoints&nbsp;
+</h4>
+<p>
+    RUP Viewpoints are described in <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/system_architecture_5F3B1E17.html" guid="_1om3AOM9EdmaZcY4PeqVxA">Concept:
+    System Architecture</a>. These viewpoints are applicable to system development generally. When the 'system' under
+    consideration is a business, the Business Architectural Views form a more pertinent specialization of the generic
+    viewpoints. The following table shows how they are related. Note that the Business Architectural Views, by the
+    definitions offered in <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/system_architecture_5F3B1E17.html" guid="_1om3AOM9EdmaZcY4PeqVxA">Concept:
+    System Architecture</a>, in some cases cover multiple views (where a view is the intersection of viewpoint and
+    abstraction level).<br />
+    <br />
+</p>
+<table style="WIDTH: 525px; HEIGHT: 650px" cellspacing="2" cellpadding="2" width="525" align="center" border="1">
+    <tbody>
+        <tr>
+            <td>
+                <strong>Business Architectural Views</strong>
+            </td>
+            <td>
+                <strong>RUP Viewpoints</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Market View
+            </td>
+            <td>
+                <p>
+                    The market view defines, at least partially,&nbsp;the context for the business - it focuses on actual
+                    and potential products and services offered to customers in the chosen markets. It maps to the
+                    intersection of the <em>Logical Viewpoint</em> and <em>Context Level</em>. For the purposes of the <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html" guid="{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}">Work Product: Business Architecture Document</a>, the
+                    Market View is limited to those factors that impact the architecture, and areas where changes to the
+                    architecture would affect performance in chosen markets.
+                </p>
+                <p>
+                    More general discussion of markets and the rationale for business strategy choices is found in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_vision_55FFBD95.html" guid="{C1A31211-2C05-4665-8DC5-6BFB63F4FCE4}">Work Product: Business Vision</a>.
+                </p>
+                <p>
+                    The Market View may be used to set new <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_goal_D99D08F9.html" guid="{6DC6732B-E7F1-495E-B5EC-AEBFD7BE80FE}">Work Product: Business Goal</a>s, which, in
+                    turn,&nbsp;may influence the Business Architecture.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Business Process View
+            </td>
+            <td>
+                This mapping is straightforward - to the intersection of the <em>Process Viewpoint</em> and <em>Context
+                Level.</em>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Organization View
+            </td>
+            <td>
+                The organization view is about the way the business is structured to realize business use cases, not about
+                positional or staff hierarchies and networks. You would expect, for example,&nbsp;to see collaborations of
+                <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Work Product: Business System</a>s in this view. It therefore
+                maps to the intersection of the <em>Logical Viewpoint</em> and <em>Analysis Level</em>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Human Resource View
+            </td>
+            <td>
+                The human resource view extends the <em>Worker Viewpoint,</em> potentially at all levels, most
+                significantly at the <em>Context Level</em> where policy is defined, but at <em>Analysis</em> and
+                <em>Design Levels</em> too, with, for example,&nbsp;the application of competence profiles.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Domain View
+            </td>
+            <td>
+                The domain view maps fairly well to the intersection of the <em>Information Viewpoint</em> and <em>Context
+                Level.</em>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Geographic View and Communication View
+            </td>
+            <td>
+                These views together map to the intersection of the <em>Distribution Viewpoint</em> and <em>Context
+                Level</em> (the <em>Enterprise Locality View</em>), with localities relating to the geographic aspect and
+                connectors to the communication aspect.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.empulsys.com/rupbm" target="_blank"><img height="24"                 alt="Empulsys : разработка программного обеспечения и управление" src="./../../../core.base_rup/guidances/supportingmaterials/resources/empulsys.jpg" width="100"                 border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.empulsys.com/rupbm" target="_blank">Empulsys Holding BV</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

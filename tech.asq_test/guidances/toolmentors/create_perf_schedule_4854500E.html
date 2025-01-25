@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Create a Performance Schedule Using IBM Rational Performance Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_perf_schedule" name="uma.name">
+<meta content="Create a Performance Schedule Using IBM Rational Performance Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_performance_tester:IBM Rational Performance Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Performance Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_WDwD4MwCEdq9s5d23VYjZw", "_C6cQsMwCEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_WDwD4MwCEdq9s5d23VYjZw", "_C6cQsMwCEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_C6cQsMwCEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Create a Performance Schedule Using IBM Rational Performance Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to create a performance test schedule.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_performance_tester_C23B7486.html" guid="_WDwD4MwCEdq9s5d23VYjZw">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_details_2B6BD36F.html" guid="{1F825D50-70B1-48BA-B99F-010F6B44B77B}">Определение сведений о тесте</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    A schedule allows you to order, group, and run tests. With schedules, you can run tests remotely, establish the order
+    of tests (sequential, random, or weighted order), run tests at a specific rate, or specify the number of times a given
+    test runs. You can also use schedules to run tests against specified builds.
+</p>
+<p>
+    IBM&reg; Rational&reg; Performance Tester provides a convenient wizard for creating schedules. To create a performance
+    schedule, right-click your project and then click <strong>New &gt; Performance Schedule</strong>.
+</p>
+<p>
+    In the Performance Schedule Wizard, enter the name of the schedule and click <strong>Finish</strong>. At this point, a
+    new schedule with one user group appears. User groups allow you to create logical groupings by using various
+    characteristics representing various types of users on your system. In order to achieve a more realistic distribution
+    of users, you may want to create various groups to represent different categories, such as <i>buyers</i>,
+    <i>sellers</i>, <i>users checking on the status of an order</i>, or <i>browsers</i>. The user group types will be
+    determined by the characteristic of the users of your system.
+</p>
+<p>
+    In the Perforance Schedule Wizard, you can also easily add tests. With the schedule you just created open, right-click
+    the user group and select <strong>Add &gt; Test</strong>. In the Select Performance Test window, select the test you
+    want to add to your schedule. You can also alternate start times for users in the User Load section of the schedule by
+    selecting the check box <strong>Add a delay between starting each user</strong>.
+</p>
+<p>
+    In general, when you are building a schedule, you will want to achieve a random arrival delay with every transaction.
+    You will also want to prevent authentication rejections by ramping up user numbers slowly, or by starting with random
+    delays. You can, for example, start with 1 to 4 users per second and ramp-up, or start with 10 to 20 with random delays
+    over several minutes. Finally, when you are building your schedule, make sure that the test runs long enough to get
+    steady state results. This can be achieved by making the workload last a long time relative to ramp-up.
+</p>
+<p>
+    For more information on working with schedules using Rational Performance Tester, see the <a class="elementLinkWithUserText" href="./../../../tech.asq_test/guidances/toolmentors/edit_perf_schedule_865B9BD.html" guid="_HxMkQMwCEdq9s5d23VYjZw">Tool Mentor: Editing Schedules with Rational Performance Tester</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Extend-Relationship in the Business Use-Case Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="extend-relationship_in_the_business_use-case_model" name="uma.name">
+<meta content="Extend-Relationship in the Business Use-Case Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="3.452362968952187E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Extend-Relationship in the Business Use-Case Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Extend-relationships optionally, or conditionally, add a flow to a business use case that is already complete in itself.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html" guid="{89BEF367-5875-47E0-97D6-23E5BCCE52B8}">Business Use Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_extend-relationship_in_business_use-case_model__guidelines_for" name="XE_extend-relationship_in_business_use-case_model__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    Extend-relationships optionally, or conditionally, add a flow to a business use case that is already complete in
+    itself. For example, Special Baggage Handling is inserted into Individual Check-in in cases where the passenger must go
+    to the special baggage counter.
+</p>
+<p>
+    For comparison, see also <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/extend-relationship_EF38D814.html" guid="3.679940320411645E-305">Work Product
+    Guideline: Extend-Relationship</a> in the system use-case model.
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a>
+</h3>
+<p>
+    Once you have outlined the workflow of a business use case, you may find behavior that is conditional or optional. If
+    this part of the behavior is substantial you will probably want to describe it separately. The most natural approach is
+    to describe it in a separate subsection of the workflow documentation, but an alternative is describing it in a
+    separate business use case that is an extension to the original business use case.
+</p>
+<p>
+    The latter approach is especially interesting if the extracted part is also substantial, logically connected, naturally
+    delimited, and if you want to keep the original business use case simple. Or if the same optional extension is relevant
+    to several business use cases.
+</p>
+<p>
+    An instance of a business use case that is optionally extended by another use case first follows the description of the
+    base use case and then, if some condition is fulfilled, turns to follow the extending business use case?s description
+    instead. When it reaches the end of the extension use case, it returns to following the description of the base.
+</p>
+<p align="center">
+    <img height="185" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bext1.gif" width="91" />
+</p>
+<p class="picturetext">
+    The workflow of the Special Baggage Handling use case is inserted into the Individual Check-in use case with an
+    extend-relationship.
+</p>
+<p>
+    The business use cases being extended <b>have to</b> be meaningful and complete in themselves, even if the workflow of
+    the added business use case is not executed. Most extending business use cases cannot be executed on their own.
+</p>
+<p>
+    For example, use an extend-relationship to augment a business use case to:
+</p>
+<ul>
+    <li>
+        Model conditional, or optional behavior in a business use case by describing the workflows in different use cases,
+        where conditional or optional behavior is distinguished from mandatory behavior.
+    </li>
+    <li>
+        Model a complex workflow that seldom occurs.
+    </li>
+    <li>
+        Model a separate subflow that is only run under certain conditions.
+    </li>
+    <li>
+        Model several different business use cases that can be inserted at a certain point (the order being governed by the
+        business actor).
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

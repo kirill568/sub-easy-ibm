@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Diagrams in the Business Analysis Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="diagrams_in_the_business_analysis_model" name="uma.name">
+<meta content="Diagrams in the Business Analysis Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.967860873569252E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Diagrams in the Business Analysis Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This guideline is an overview of the main diagrams that can be used in illustrating the structure of a Business Analysis Model.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/tasks/detail_a_business_entity_11E120FA.html" guid="{06A9A8AA-171C-4A9C-8CD8-A366F32AA77F}">Detail a Business Entity</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_object_model__activity_diagrams_guidelines_for" name="XE_business_object_model__activity_diagrams_guidelines_for"></a> 
+<h4>
+    Topics
+</h4>
+<ul>
+    <li>
+        <a href="#ActivityDiagrams">Activity Diagrams</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#ActivityDiagramsUsingSwimlanes">Using swimlanes</a>
+            </li>
+            <li>
+                <a href="#ActivityDiagramsUsingObjectFlows">Using object flows</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#ClassDiagrams">Class Diagrams</a>
+    </li>
+    <li>
+        <a href="#CommunicationDiagrams">Communication Diagrams</a>
+    </li>
+    <li>
+        <a href="#SequenceDiagrams">Sequence Diagrams</a>
+    </li>
+    <li>
+        <a href="#StatechartDiagrams">Statechart Diagrams</a>
+    </li>
+</ul>
+<h2>
+    <a id="ActivityDiagrams" name="ActivityDiagrams">Activity Diagrams</a>
+</h2>
+<p>
+    The activity diagram notation is further explained in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/activity_diagram_in_the_business_use-case_model_5862EB50.html" guid="1.4038197112599951E-306">Technique: Activity Diagram in the Business Use Case Model</a>. This page exemplifies
+    how the notation is applied to describe a business use case realization.
+</p>
+<p>
+    An activity diagram of a business use case realization explores the ordering of tasks that accomplish business goals,
+    and that satisfy commitments between external business actors and internal business workers. A task may be manual
+    automated and completes a unit of work.&nbsp;
+</p>
+<p>
+    Activity diagrams help:
+</p>
+<ul>
+    <li>
+        Provide a rationale for and understanding of the introduction of information systems into the business.&nbsp;
+    </li>
+    <li>
+        Establish objectives for system development projects to implement business transformation initiatives.&nbsp;
+    </li>
+    <li>
+        Justify automation investment based on detailed business process metrics.&nbsp;
+    </li>
+</ul>
+<p>
+    Compared to a sequence diagram, which could be perceived as having a similar purpose, an activity diagram with
+    swimlanes and object flows focuses on how you divide responsibilities into classes, whereas the sequence diagram helps
+    you understand how objects interact and in what sequence. Activity diagrams focus on the workflow, while sequence
+    diagrams focus on handling business entities. Activity diagrams and sequence diagrams could be used as complementary
+    techniques, where a sequence diagram shows what happens in an activity state.
+</p>
+<h3>
+    <a id="ActivityDiagramsUsingSwimlanes" name="ActivityDiagramsUsingSwimlanes">Using Swimlanes</a>
+</h3>
+<p>
+    <a id="XE_activity_diagrams__swimlanes_for_realizations" name="XE_activity_diagrams__swimlanes_for_realizations"></a>If
+    you are using swimlanes and the swimlanes are coupled to classes (mainly business workers) in the business analysis
+    model, you are using the activity diagram to document business use case realizations, rather than business use cases.
+</p>
+<p>
+    As an example, we show an activity diagram of the realization of the business use case Proposal process, which you can
+    find described <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use_case_2E2587D0.html" guid="1.2631093270419717E-306">Technique:
+    Business Use Case</a>.
+</p>
+<p align="center">
+    <img height="404" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact8.gif" width="546" />
+</p>
+<p class="picturetext">
+    The realization of the business use case Proposal Process
+</p>
+<p>
+    The activity diagram provides the details of what happens within the business by examining people playing specific
+    roles (the business workers) and the tasks they perform. For application-development projects, these diagrams provide a
+    detailed understanding of the business area that will be supported or impacted by the new application. They help
+    establish connection points to the proposed new system, and these connection points give rise to system use
+    cases.&nbsp;
+</p>
+<h3>
+    <a id="ActivityDiagramsUsingObjectFlows" name="ActivityDiagramsUsingObjectFlows">Using Object Flows</a>
+</h3>
+<p>
+    <a id="XE_activity_diagrams__object_flows" name="XE_activity_diagrams__object_flows"></a><a id="XE_object_flows__in_activity_diagrams" name="XE_object_flows__in_activity_diagrams"></a>In this context, object
+    flows are used to show how business entities are created and used in a workflow. Object flows allow you to show inputs
+    and outputs from activity states in an activity graph. There are two elements to the notation:&nbsp;
+</p>
+<ul>
+    <li>
+        The <b>object flow state</b> represents an object of a class that participates in the workflow the activity graph
+        represents. The object may be the output of one task and the input of many other tasks.&nbsp;
+    </li>
+    <li>
+        The <b>object flow</b> is a kind of control flow with an object flow state as input or an output.&nbsp;
+    </li>
+</ul>
+<p>
+    The object flow symbol represents the existence of an object in a particular state, not just the object itself. The
+    same object can be manipulated by a number of successive tasks that change the object's state. The object can then be
+    displayed multiple times in an activity graph, with each appearance representing a different state during its life. The
+    object's state at each point may be placed in brackets and appended to the name of the class.&nbsp;
+</p>
+<p align="center">
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><img      height="511" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact9.gif" width="522"     v:shapes="_x0000_i1025" /></span>
+</p>
+<p class="picturetext">
+    A generic sales process presented using object flows to show how an order changes it state while executing the
+    workflow.&nbsp;&nbsp;See <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/activity_diagram_in_the_business_use-case_model_5862EB50.html" guid="1.4038197112599951E-306">Technique: Activity Diagram in the Business Use Case Model</a>
+</p>
+<p>
+    An object flow state may appear as the target of one object flow (transition) and the source of multiple object flows
+    (transitions).&nbsp;
+</p>
+<p align="center">
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><img      height="610" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bact10.gif" width="610"     v:shapes="_x0000_i1025" /></span>
+</p>
+<p class="picturetext">
+    An activity diagram for the Proposal process, using object flows to show key business entities involved
+</p>
+<p>
+    Object flows can be compared to data flows within the workflow of a business use case. Unlike traditional data flows,
+    however, object flows exist at a definite point within an activity graph.
+</p>
+<h2>
+    <a id="ClassDiagrams" name="ClassDiagrams">Class Diagrams</a>
+</h2>
+<p>
+    Class diagrams show associations, aggregations and generalizations between business workers and business entities. The
+    following kinds of class diagrams might be of interest:
+</p>
+<ul>
+    <li>
+        Inheritance hierarchies.
+    </li>
+    <li>
+        Aggregates of business workers and business entities.
+    </li>
+    <li>
+        How business workers and entities are related by means of associations.
+    </li>
+</ul>Class diagrams show generic structures in the business domain model, but can also be part of the documentation of a
+business use case realization (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_realization_65988530.html" guid="1.0660567082472948E-304">Technique: Business Use Case Realization</a>) by showing it participating business workers
+and business entities.&nbsp; 
+<p align="center">
+    <br />
+     <img height="308" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bcoldm1.gif" width="426" border="0" />
+</p>
+<p class="picturetext">
+    A class diagram showing participating business workers and business entities in the business use case Individual
+    Check-in.
+</p>
+<h2>
+    <a id="CommunicationDiagrams" name="CommunicationDiagrams">Communication Diagrams</a>
+</h2>
+<p>
+    A communication diagram is semantically identical to a sequence diagram, but focuses on the objects, while the latter
+    focuses on the interactions. A communication diagram should present the subset of objects relevant to the affected
+    working sequence, including their links, messages, and message sequences.
+</p>
+<h2>
+    <a id="SequenceDiagrams" name="SequenceDiagrams">Sequence Diagrams</a>
+</h2>
+<p>
+    A sequence diagram graphically depicts the details of the interaction among business workers, business actors, and how
+    business entities are accessed, during the performance of a business use case. A sequence diagram briefly describes
+    what the participating business workers do, and how the business entities are manipulated, in terms of activations, and
+    how they communicate by sending messages to one another.
+</p>
+<p align="center">
+    <img height="286" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bseqdm1.gif" width="327" />
+</p>
+<p class="picturetext">
+    A sequence diagram of part of an Individual Check-in business use case.
+</p>
+<p>
+    The same information that can be found in a sequence diagram can be presented in a communication diagram instead.
+</p>
+<h2>
+    <a id="StatechartDiagrams" name="StatechartDiagrams">Statechart Diagrams</a>
+</h2>
+<p>
+    Generally, you can use a state diagram to illustrate which states a business worker or a business entity can have - the
+    events that cause a transition from one state to another; and the actions that result from a state change. A statechart
+    diagram often simplifies the validation of the class design.
+</p>
+<p>
+    For each state that an object of the class can enter, a diagram shows the messages it can receive, the actions to be
+    carried out, and the state the object of the class will be in thereafter.
+</p>
+<p align="center">
+    <img height="363" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/md_bstat.gif" width="142" />
+</p>
+<p class="picturetext">
+    The business entity Baggage described with a statechart diagram.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

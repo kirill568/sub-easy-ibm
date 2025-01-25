@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Create a Performance Test Using IBM Rational Performance Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_perf_test" name="uma.name">
+<meta content="Create a Performance Test Using IBM Rational Performance Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_performance_tester:IBM Rational Performance Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Performance Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_WDwD4MwCEdq9s5d23VYjZw", "_E1C8MMwCEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_WDwD4MwCEdq9s5d23VYjZw", "_E1C8MMwCEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_E1C8MMwCEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Create a Performance Test Using IBM Rational Performance Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to create a performance test.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_performance_tester_C23B7486.html" guid="_WDwD4MwCEdq9s5d23VYjZw">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_details_2B6BD36F.html" guid="{1F825D50-70B1-48BA-B99F-010F6B44B77B}">Определение сведений о тесте</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    A performance test allows you to record sessions with an HTTP application, and generates tests from the recording.
+    Creating a Performance test involves three steps (starting a recording, starting an application, and starting a test
+    generator). IBM&reg; Rational&reg; Performance Tester automates these steps for you.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To create a performance test, perform the following steps:
+</p>
+<ol>
+    <li>
+        Create a Performance Test
+    </li>
+    <li>
+        Creating Tests with the Create Test Wizard
+    </li>
+    <li>
+        Creating Tests with the Test Editor
+    </li>
+</ol>
+<h4>
+    1. Create a Performance Test
+</h4>
+<p>
+    There are several ways you can create a performance test.
+</p>
+<ol>
+    <li>
+        When you create a project (see the <a class="elementLinkWithUserText" href="./../../../tech.asq_test/guidances/toolmentors/create_perf_test_project_1A26076F.html" guid="_GHKrYMwCEdq9s5d23VYjZw">Tool Mentor: Create a Test Project Using IBM Rational Performance Tester</a>), you
+        are asked whether you want to record a performance test at this point.
+    </li>
+    <li>
+        Another way to create a performance test is by highlighting a performance test project -- or a folder in a
+        performance test project -- in the Test Navigator view.
+    </li>
+</ol>
+<h4>
+    2. Creating Tests with the Test Creation Wizard
+</h4>
+<p>
+    Once you start the recorder, a test creation wizard starts. The Create Test Wizard combines into one flow recording a
+    session with a Web application, generating a test from the recording, and opening the test in the test editor. You can
+    record tests from Microsoft&reg; Internet Explorer, Mozilla, Netscape, or another browser.
+</p>
+<ol>
+    <li>
+        If you create a project and are prompted to create a test, click <strong>Yes</strong>.
+    </li>
+    <li>
+        If you have already created your project, right-click on the project (or on a folder in the project), select
+        <strong>New</strong> and then select <strong>Record Performance Test</strong>. This starts the Create Test Wizard.
+    </li>
+    <li>
+        In the HTTP Proxy Recorder window, enter a name for the test and click <strong>Finish</strong>. This starts the
+        Recorder.
+    </li>
+    <li>
+        After the Recorder is started, either a ReadMe page or an about:blank page is opened. This is where you will begin
+        your test.
+    </li>
+    <li>
+        Enter the URL in the address bar and start recording tests.
+    </li>
+    <li>
+        Once you are finished with your test, close the browser. This will stop the Rational Performance Tester recording
+        session.
+    </li>
+    <li>
+        Rational Performance Tester then generates your test and opens it in the Test editor.
+    </li>
+</ol>
+<h4>
+    3. Creating Tests with the Test Editor
+</h4>
+<p>
+    After you close the browser from a performance test session, Rational Performance Tester generates the script and opens
+    it in the Test editor. The Test editor lists by title a test's HTTP pages that, when expanded, show the request and
+    response data in each page. You can use the editor to inspect or customize a test that was automatically generated from
+    a recorded session, or you can code a test.
+</p>
+<p>
+    There are two main areas in the Test editor, the Test Contents and the Test Elements Details. The Test Contents area
+    displays the test's HTTP page hierarchy. The Test Elements Details area contains details on the currently selected item
+    in the test hierarchy. From the Test editor, you can expand a test page and see a list of the requests of a page
+    organized into separate folders. Each folder contains response and connection data.
+</p>
+<p>
+    For more information on the Test editor, see the <a class="elementLinkWithUserText" href="./../../../tech.asq_test/guidances/toolmentors/edit_perf_test_90B7937C.html" guid="_JIpfYMwCEdq9s5d23VYjZw">Tool
+    Mentor: Edit Tests with IBM Rational Performance Tester</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

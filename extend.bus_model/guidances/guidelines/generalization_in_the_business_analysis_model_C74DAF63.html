@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Generalization in the Business Analysis Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="generalization_in_the_business_analysis_model" name="uma.name">
+<meta content="Generalization in the Business Analysis Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.410487898839562E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Generalization in the Business Analysis Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Many things in real life have common properties. This guideline shows how to model commonalities in the Business Analysis Model through generalization relationships.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_generalizations_in_business_object_model__guidelines_for" name="XE_generalizations_in_business_object_model__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    Many things in real life have common properties. For example, both dogs and cats are animals. Classes can have common
+    properties as well. Relationships of this type between classes can be clarified by means of a <b>generalization</b>. By
+    extracting common properties into classes of their own, the business model will be easier to change in the future.
+</p>
+<p>
+    A class that inherits general characteristics from another class is called a descendant. The class from which the
+    descendant has inherited is called the ancestor. A generalization shows that one class inherits from another. This
+    means that the definition of the ancestor, including any attributes or operations, is also valid for the descendant.
+    The ancestor's relationships are also inherited.
+</p>
+<p>
+    Generalization can take place in several stages, which makes it possible to model complex, multileveled inheritance
+    hierarchies, although the number of levels should be restricted for easier understanding. General properties are placed
+    in the upper part of the inheritance hierarchy, and special properties lower down in the hierarchy. In other words, the
+    generalization-relationship can be used to model specializations of a more general concept.
+</p>
+<h5>
+    Example:
+</h5>
+<p class="example">
+    Passengers arriving at the airport check-in bring different kinds of baggage, Normal Baggage, Hand Baggage and Special
+    Baggage. From the airline's viewpoint, they have a few common properties, besides being baggage-each bag has an owner
+    and a weight, for example. These common properties can be modeled by attributes and operations in a separate class
+    called Baggage. Normal Baggage, Hand Baggage and Special Baggage will inherit from this class.
+</p>
+<p align="center">
+    <img height="147" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bgener1.gif" width="176" />
+</p>
+<p class="picturetext">
+    Normal Baggage, Hand Baggage, and Special Baggage classes have common properties. They are all specializations of the
+    general concept Baggage.
+</p>
+<p>
+    A class can inherit several other classes-this is called "multiple inheritance"-although normally it will inherit only
+    one. If the class inherits several classes, it is important to check how the associations, the attributes, and the
+    operations are named in the ancestors. If the same name appears in several ancestors, you must describe what this means
+    to the specific inheriting class.
+</p>
+<h3>
+    <a id="Concrete and Abstract Classes" name="Concrete and Abstract Classes">Concrete and Abstract Classes</a>
+</h3>
+<p>
+    A class that exists only so that other classes can inherit it is an abstract class. An abstract class is never
+    instantiated. However, an object of a class that inherits an abstract class conforms to its own description and the
+    description of the inherited class. Classes that are instantiated in the business are concrete classes<b>.</b>
+</p>
+<p>
+    In this context, "abstract" means something completely different to what it means in ordinary speech. Something may
+    very well be abstract in the ordinary sense of the word without being represented by an abstract class. Lessons in
+    school are abstract phenomena, or concepts' because they cannot be touched. However, if you model school tasks, a
+    lesson would most likely resemble a concrete class-one that is instantiated. Similarly, concrete phenomena, such as
+    products and persons, can be said to produce abstract classes if they have properties in common with other classes.
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a>
+</h3>
+<p>
+    The main purpose of using inheritance is to achieve an object model that accommodates change. However, inheritance
+    should be used carefully:
+</p>
+<ul>
+    <li>
+        Inheritance is "only" a way to structure the description. You visualize which phenomena have some properties in
+        common.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        When it comes to realization, you still have to find an employee capable of performing both the job of the
+        ancestor, and that of the descendant whenever a descendant class should be instantiated.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        Use generalizations only between classes of the same stereotype.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        Because different class stereotypes have different purposes, a generalization from a class of one stereotype to a
+        class of another stereotype would not make sense. If you let a business worker class inherit a business entity, for
+        instance, the business worker would become a kind of hybrid.
+    </p>
+</blockquote><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

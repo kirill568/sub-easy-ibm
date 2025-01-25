@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Business Operation</title>
+<meta content="Artifact" name="uma.type">
+<meta content="rup_bm_operation" name="uma.name">
+<meta content="Business Operation" name="uma.presentationName">
+<meta content="WorkProductType:model_element:Элементы модели" name="uma.category">
+<meta content="Artifact" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_n7ZcgN7REdmjRZts2c4ZjQ", "_Wg_T4BpVEdqUwb9RAn2tTA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Wg_T4BpVEdqUwb9RAn2tTA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Артефакт: Business Operation</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/artifact.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">A business service that can be requested from an object to effect behavior. An operation specifies the name, type, parameters, and constraints for invoking an associated behavior.</td>
+</tr>
+<tr>
+<td>Типы рабочих продуктов: <a href="./../../core.base_rup/workproducttypes/model_element_74CA3914.html" guid="_n7ZcgN7REdmjRZts2c4ZjQ">Элементы модели</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The primary purpose of the Operations is to capture the provided and required business services that an element
+    supports or needs.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Артефакт-контейнер</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Ответственный:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_designer_30BD5E18.html" guid="{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}">Business Designer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Изменен:
+								</span></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Основное описание</th><td class="sectionTableCell"><p>
+    An operation specification has the following outline:
+</p>
+<ul>
+    <li>
+        Description
+    </li>
+    <li>
+        Input/Output Parameters
+    </li>
+    <li>
+        Non-functional requirements: 
+        <ul>
+            <li>
+                These are derived from the non-functional requirements associated with the steps in the various Business
+                Use Cases that this operation supports.
+            </li>
+            <li>
+                The context in which the operation is used (i.e. a particular Business Use Case) may be not be captured
+                (e.g. it may be specified in terms of supporting the minimum performance requirement when all Business Use
+                Cases are considered)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Pre-conditions
+    </li>
+    <li>
+        Post-conditions
+    </li>
+    <li>
+        Superordinate system traceability
+    </li>
+    <li>
+        Optional: business use-case (steps) traceability
+    </li>
+</ul>
+<p>
+    In most of the cases, the Operations are defined for the business system and the main subsystems, going with the
+    decomposition as deep as needed, in a recursive fashion. The Operations are grouped around interfaces along the main
+    responsibilities of the (sub)system under consideration.
+</p>
+<p>
+    Depending on the granularity level and the usage context, different roles specify, define, refine or use operations as
+    main inputs for their associated tasks:
+</p>
+<ul>
+    <li>
+        <b>Business Architects</b> will describe the main services supported by the architecturally significant elements.
+    </li>
+    <li>
+        <b>Business Analysts</b> will work with the <b>Business Architects</b> for mapping the business use-case steps into
+        the system's operations.
+    </li>
+    <li>
+        <b>Business Designers</b> will use them as inputs during the refinement and refactoring stages, the operations
+        being the building blocks for the Interface/Contract Specifications.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Ключевые условия</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell">The Business Designer is responsible for the integrity of the operation set, ensuring that: 
+<ul>
+    <li>
+        the operations are unique and there is no overlap between them
+    </li>
+    <li>
+        the related operations are logically grouped around interfaces
+    </li>
+    <li>
+        each operation is properly documented
+    </li>
+    <li>
+        the traceability relationships to other operations and/or business use-case steps have been established
+    </li>
+    <li>
+        proper coverage of the business use cases or system's operations, based on the scope of the current iteration
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Опции представления</th><td class="sectionTableCell"><p>
+    The operation-based approach is a more formal, rigorous way of defining the services supported by the business system
+    and its main subsystems. Usually the starting point are the&nbsp;business use cases, so there is an assumption that
+    operations will be used in conjunction with business use cases.
+</p>
+<p>
+    The main tailoring decisions are:
+</p>
+<ul>
+    <li>
+        describe only architectural significant operations (those which relate to the most important business&nbsp;use
+        cases)?
+    </li>
+    <li>
+        how "deep" the subsystem logical decomposition should go?
+    </li>
+    <li>
+        fully describe pre-conditions and post-conditions?
+    </li>
+    <li>
+        need to maintain traceability between operations and business system operations and/or business&nbsp;use cases?
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

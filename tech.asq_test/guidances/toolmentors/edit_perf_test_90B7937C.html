@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Edit Tests with IBM Rational Performance Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="edit_perf_test" name="uma.name">
+<meta content="Edit Tests with IBM Rational Performance Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_performance_tester:IBM Rational Performance Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Performance Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_WDwD4MwCEdq9s5d23VYjZw", "_JIpfYMwCEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_WDwD4MwCEdq9s5d23VYjZw", "_JIpfYMwCEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_JIpfYMwCEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Edit Tests with IBM Rational Performance Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to edit a performance test.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_performance_tester_C23B7486.html" guid="_WDwD4MwCEdq9s5d23VYjZw">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_details_2B6BD36F.html" guid="{1F825D50-70B1-48BA-B99F-010F6B44B77B}">Определение сведений о тесте</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    With the test editor, you can manually write a test for a Web application. But more typically, you use the editor to
+    inspect or customize a test that was automatically generated from a recorded session with an application that you
+    started from your browser.
+</p>
+<p>
+    You can edit tests in a number of ways by, for example, providing tests with variable data, correlating response and
+    request data in a test, adding verification points to a test, adding elements to a test, and extending tests with
+    custom code. In this tool mentor, the focus will be on one fo the more frequently encountered types of editing, namely
+    <i>adding a verification point</i> (VP) to a test.
+</p>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on editing a test in IBM&reg;
+    Rational&reg; Performance Tester, see the topic <em>Editing Tests</em> in the online Help.
+</p>
+<p>
+    A verification point is used to determine whether or not expected behavior occurred. In cases where the expected
+    behavior does not occur at a verification point, an error is reported. In Rational Performance Tester, three types of
+    verification points are supported:
+</p>
+<ul>
+    <li>
+        <strong>Page Title VPs</strong>: reports an error if no page title, or a title different from what you expected,
+        was returned
+    </li>
+    <li>
+        <strong>Response Code VPs</strong>: reports an error if a response code different from what you expected was
+        returned
+    </li>
+    <li>
+        <strong>Response Size VPs</strong>: reports an error if the size of a response is different from what you expected
+    </li>
+</ul>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To edit a test by adding a verficiation point, perform the following steps:
+</p>
+<ol>
+    <li>
+        Open the test.
+    </li>
+    <li>
+        In the Test Editor, set the scope of the verification point by clicking either the test name, a test page, or a
+        page request. Depending on which item you choose, the verification point you select is added to all test pages, to
+        a particular page in the test, or to a particular request in a page.
+    </li>
+    <li>
+        Right-click and select one of the following:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Enable Page Title VPs
+            </li>
+            <li>
+                Enable Response Code VPs
+            </li>
+            <li>
+                Enable Response Size VPs
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on verification points and
+    editing performance tests in general, see the following topics in the Rational Performance Tester online Help:
+</p>
+<ul>
+    <li>
+        <em>Specifying the Expected Content</em>
+    </li>
+    <li>
+        <em>Specifyting the Expected Page Title</em>
+    </li>
+    <li>
+        <em>Specifying the Expected Response Code</em>
+    </li>
+    <li>
+        <em>Specifying the Expected Response Size</em>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

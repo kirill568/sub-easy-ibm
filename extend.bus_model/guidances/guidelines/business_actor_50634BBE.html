@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Business Actor</title>
+<meta content="Guideline" name="uma.type">
+<meta content="business_actor" name="uma.name">
+<meta content="Business Actor" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.2693993331889331E-304"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Business Actor</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business Actor is the role someone, or something, plays while interacting with the business. This guideline explains how to model Business Actors.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_actor_25438422.html" guid="{EAD1B7E7-30C9-4494-B369-7F9E16A5329B}">Business Actor</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_actor__guidelines_for" name="XE_business_actor__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    To fully understand the purpose of a business you must know <b>who</b> the business interacts with; that is, who puts
+    demands on it, or is interested in its output. The different types of "interactors" are represented as <b>business
+    actors</b><i>.</i>
+</p>
+<p>
+    The term actor means the role someone, or something plays while interacting with the business. The following types of
+    business users are examples of potential business actors:
+</p>
+<ul>
+    <li>
+        Customers
+    </li>
+    <li>
+        Suppliers
+    </li>
+    <li>
+        Partners
+    </li>
+    <li>
+        Potential customers (the "market place")
+    </li>
+    <li>
+        Local authorities
+    </li>
+    <li>
+        Colleagues in parts of the business not modeled.
+    </li>
+</ul>
+<p>
+    Hence, an actor normally corresponds to a human user. However, there are situations where, for instance, an information
+    system plays the role of an actor. If your bank's on-line services are so good that your business can manage most of
+    its bank transactions from a PC on your own premises, your use cases interacting with the "money supplier" actor, the
+    bank, will in fact interact with an information system.
+</p>
+<p>
+    An actor represents a particular type of business user rather than a real physical user. Several physical users of a
+    business can play the same role in relation to it; that is, they act as instances of one and the same actor. Also, the
+    same user can act as several different actors. This means that one and the same person can embody instances of
+    different actors.
+</p>
+<h3>
+    <a id="How to Name Business Actors" name="How to Name Business Actors">How to Name Business Actors</a>
+</h3>
+<p>
+    A business actor should be given a name that reflects its role towards the business. The name should be applicable to
+    any person-or any information system-playing the role.
+</p>
+<h3>
+    <a id="Business Actor Characteristics" name="Business Actor Characteristics">Business Actor Characteristics</a>
+</h3>
+<p>
+    The characteristics of a business actor should cover the following topics:&nbsp;
+</p>
+<ul>
+    <li>
+        Prior knowledge and experience.
+    </li>
+    <li>
+        Physical characteristics.
+    </li>
+    <li>
+        Social and physical environment.&nbsp;
+    </li>
+    <li>
+        Job, tasks, and requirements.
+    </li>
+    <li>
+        Cognitive characteristics.
+    </li>
+</ul>
+<p>
+    This information is useful to define the business use cases in a way that is meaningful to the business actor. It is
+    only relevant for "human" business actors.&nbsp;
+</p>
+<h3>
+    <a id="Characteristics" name="Characteristics">Checklist for Good Business Actors</a>
+</h3>
+<ul>
+    <li>
+        All actors are found. Everything in the business environment interactions-both human and mechanical-is modeled with
+        actors. You cannot be sure of finding every actor until you have found and described every use case.
+    </li>
+    <li>
+        Each human actor expresses a role, not a specific person. You should be able to name at least two persons that can
+        play the role of each actor. If you can't, you may have modeled a person, not a role. Of course, there are
+        situations in which you can find only one person who can play a role.
+    </li>
+    <li>
+        Each actor models something outside the business.
+    </li>
+    <li>
+        Each actor is involved with at least one use case. If an actor does not interact with at least one use case, you
+        should remove it.
+    </li>
+    <li>
+        A specific actor does not interact with the business in several completely different ways. If an actor interacts in
+        several completely different ways, you have probably assigned several roles to one actor. In that case, you should
+        split the actor into several actors, each representing a different role.
+    </li>
+    <li>
+        Each actor has an explanatory name and description. An actor's name should represent the role it plays in relation
+        to the business. The name must be understandable to people outside the business-modeling team.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

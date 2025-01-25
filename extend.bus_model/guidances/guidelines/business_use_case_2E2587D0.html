@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Business Use Case</title>
+<meta content="Guideline" name="uma.type">
+<meta content="business_use_case" name="uma.name">
+<meta content="Business Use Case" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.2631093270419717E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Business Use Case</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business Use Cases define the processes of a business. This guideline explains how to develop a Business Use-Case.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html" guid="{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}">Business Use Case</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_use_case__guidelines_for" name="XE_business_use_case__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    <a id="XE_business_use_case__categories_of" name="XE_business_use_case__categories_of"></a>The processes of a business
+    are defined as a number of different business use cases, each of which represents a specific workflow in the business.
+    A business use case defines what should happen in the business when it is performed; it describes the performance of a
+    sequence of actions that produces a valuable result to a particular business actor. A business process either generates
+    value for the business or mitigates costs to the business.&nbsp;
+</p>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bucm1.gif" />
+</p>
+<p class="picturetext" align="center">
+    A passenger can either travel individually or with a group. When traveling with a group, a passenger is accompanied by
+    a tour guide.
+</p>
+<p>
+    A business use case describes "a sequence of actions performed in a business that produces a result of observable value
+    to an individual actor of the business". Hence, from an individual actor's perspective, a business use case defines the
+    complete workflow that produces the desired results. This is similar to what is generally called a "business process",
+    but "a business use case" has a much more precise definition.
+</p>
+<p>
+    The definition of the business use case concept contains a number of keywords, which are essential to understanding
+    what a business use case is:
+</p>
+<ul>
+    <li>
+        Business use case instance - the definition above is really describing a specific business workflow; that is, an
+        instance. In reality, there are a great number of possible workflows, many of them very similar.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        To make the use-case model understandable, similar workflows are grouped together into a business use case-a
+        "class" in terms of the object model. To identify and describe a business use case means to identify and describe
+        the class-like business use case, not the individual use case instances. Thus a business use case will define
+        decision points and alternative flows; which path is taken will depend on the state of the business, business
+        events,&nbsp;and input from the business actor.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        An individual actor - The actor is probably the real key to finding the correct business use case. Starting with
+        individual actors-or really instances of actors-helps avoid business use cases that are too large or complex.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        When determining suitable actors, first try to name at least two or three different people who could perform as the
+        actor in question, then critically evaluate the support each individual requires. For example, suppose you
+        initially identify an actor called "customer". Later, as you look deeper into the support each individual customer
+        requires, you might find three rather different customers: the normal "user" of the product, the "purchaser" and
+        the "evaluator", who are competent to compare the product with its competitors. Each of these may require a
+        separate business use case because they represent different roles that can be played in the business.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        A result of observable value - This expression is very important in determining the correct extent of a business
+        use case, which should be neither too small nor too big. Stating that the business use case should give a result of
+        observable value, that is, both perceived and measurable, helps you to find a complete flow, and avoid business use
+        cases that are too small.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        A good business use case helps an actor perform a task that has an identifiable value. It may be possible to put a
+        price on a successfully performed business use case. A too-small business use case will have a limited scope, thus
+        also little re-engineering potential.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        In a business - The words "actions performed in a business", means both that the business provides the business use
+        case to the actor, and that the business use case only covers what is actually done within the business. Supporting
+        work done elsewhere is not included.
+    </li>
+    <li>
+        Action - The actions are invoked either on request from an actor to the business or at a certain point in time.
+        Actions include internal tasks and decisions, as well as requests to either the invoked actor or other actors.
+    </li>
+</ul>
+<p>
+    Business use cases&nbsp;specify the interactions between the subject business and its (external) business actors,
+    <em>and the effect that they have on the business</em> - the performance of a business use case may change the state of
+    the business (and thus may change the way the business responds to future events or interactions), and the business use
+    case must specify these state changes.
+</p>
+<p>
+    What the business directly and explicitly provides to its environment are <em>services</em> (the business from this
+    perspective is simply the top level Business System and should therefore encapsulate its resources and provide
+    well-defined services to its environment -&nbsp;see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html" guid="5.503233494422666E-306">Guideline:
+    Business System</a>), and the interaction between the Business Actor and the business, as described in the Business Use
+    Case, will take place through the invocation of one or more of those services. Note that for new business development
+    (<a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/business_creation_ABCA16F6.html" guid="_x8e2CdnmEdmO6L4XMImrsA">business creation</a>, for example), or when changing the business,&nbsp;Business Use
+    Cases are one way of identifying services that the business must support.
+</p>
+<p>
+    The collected set of business use cases constitute all the possible ways of using the business. See also <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html" guid="3.9905535055726305E-306">Guideline: Business Use-Case Model</a>.
+</p>
+<h3>
+    <a id="XE_business_use-case_realization__business_use_case_vs." name="XE_business_use-case_realization__business_use_case_vs."></a><a id="XE_business_use_case__business_use-case_realizations_vs." name="XE_business_use_case__business_use-case_realizations_vs."></a><a id="Business Use Cases vs. Business Use-Case Realizations" name="Business Use Cases vs. Business Use-Case Realizations">Business Use Cases vs. Business Use-Case Realizations</a>
+</h3>
+<p>
+    In a use-case driven business modeling project, you develop two views of the business.
+</p>
+<p>
+    The business use case itself presents an external view of the business, which defines <b>what</b> is essential to
+    perform for the business to deliver the desired results to the actor. It also defines <b>what</b> interaction (the
+    business actor-business input-response sequence)&nbsp;the business should have with the actors when the business use
+    case is executed. Such a view must be developed when you are deciding and agreeing on what should be done in each
+    business use case. A collection of business use cases gives an overview of the business that is very useful for
+    informing employees of what different parts of the business are doing, and what results are expected. A business use
+    case description does this without reference to the actual internal structure of the business. Note that the business
+    use case should also describe any state changes in the business that occur when it is executed, as well as any
+    significant business events raised or received. The business use case does not prescribe how business state is to be
+    established and maintained internally, or how business events are to be communicated internally - but it does specify
+    <strong>what</strong> the state changes are and <strong>what</strong> the significant business events are, to be able
+    to present a complete view of required business behavior.
+</p>
+<p>
+    A business use-case realization, on the other hand, gives an internal view of the business use case, which defines
+    <b>how</b> the work should be organized and performed in order to achieve the same desired results. A realization
+    encompasses the business workers and business entities that are involved in the execution of a business use case and
+    the relationships between them that are required to do the job. Such views must be developed to decide and agree on how
+    the work in each business use case must be organized to achieve the desired results. The Business Designer ensures that
+    there are consistent mappings between the specification (the <strong>what</strong>), in the business use case, and the
+    realization (the <strong>how</strong>), in the business use-case realization, for the business state changes and
+    business events, to achieve the desired behavior across <em>all</em> business use cases.
+</p>
+<p>
+    Both views of the business use case are primarily intended for people within the business - the external view for
+    people who work outside the business use case, the internal view for people who work inside the business use case.
+</p>
+<h3>
+    <a id="XE_business_use_case__classes_and_instances_of" name="XE_business_use_case__classes_and_instances_of"></a><a id="Classes and Instances of Business Use Cases" name="Classes and Instances of Business Use Cases">Classes and
+    Instances of Business Use Cases</a>
+</h3>
+<p>
+    As a business operates, you will find that you can identify an almost unlimited number of separate workflows. A
+    use-case instance is simply a specific workflow, or scenario. It corresponds to the work that a number of collaborating
+    business members perform in their roles defined in the object model, and not to any particular business member or any
+    role that the member is playing.
+</p>
+<p>
+    A business use case is what you normally work with to make the use-case model understandable, and to avoid drowning in
+    details. It represents the union of a number of business use-case instances with workflows that are similar, but
+    normally not identical.
+</p>
+<p>
+    Typically, an employee who is competent to act in a certain role will do this in instances of several different
+    business use cases.
+</p>
+<h5>
+    Example:
+</h5>
+<p class="example">
+    At the airport check-in counter, the two business use cases, Individual Check-in and Group Check-in both require the
+    same competencies from the employee at the check-in counter, as well as access to the same information about a certain
+    departure. Thus, both use cases can and should be designed using the same Check-in Agent business worker and Departure
+    entity.
+</p>
+<h3>
+    <a id="XE_business_use_case__extent_of" name="XE_business_use_case__extent_of"></a><a id="Extent of a Business Use Case" name="Extent of a Business Use Case">Extent of a Business Use Case</a>
+</h3>
+<p>
+    It is sometimes hard to decide if a service is one, or several business use cases. Apply the definition of a business
+    use case to the airport check-in process. A passenger hands his ticket and baggage to the check-in agent, who finds a
+    seat for the passenger, prints a boarding pass and starts baggage-handling. If the passenger has normal baggage, the
+    check-in agent prints baggage tag and customer claim check, and terminates the business use case by applying the tag to
+    the baggage, and giving the customer claim check, together with the boarding pass, to the passenger. If the baggage has
+    a special shape or special contents so that it cannot be transported normally, the passenger must take it to a special
+    baggage counter. If the baggage is heavy, the passenger must continue on to the airport ticket office to pay for it,
+    because check-in agents do not handle money.
+</p>
+<p>
+    Do you need one business use case at the check-in counter, another at the special baggage counter and a third at the
+    ticket office? Or do you need just a single business use case? Surely, this transaction involves three different types
+    of actions. But the question is, will any of them be of value to a passenger carrying special baggage if he does not do
+    the others? No, it is only the complete procedure-from the moment the passenger approaches the check-in counter until
+    he has paid the extra charge-that has value (and that makes sense to the passenger). Thus, the complete procedure
+    involving the three different counters is a complete case of usage-a business use case.
+</p>
+<p>
+    In addition to this criteria, it is practical to keep descriptions of closely related services together, so that you
+    can review them at the same time, modify them together, test them together, write manuals for them, and in general
+    manage them as a unit.
+</p>
+<p>
+    Notice also that two independent business use cases can have similar beginnings.
+</p>
+<h5>
+    Example:
+</h5>
+<p class="example">
+    In an insurance company, the business use cases Handle Claim and Handle Request both start when someone (an actor)
+    makes contact with a claim handler. The claim handler and the actor exchange some information to make it clear whether
+    the actor is filing a claim or requesting some information. Then, and only then, is it possible to decide which
+    business use case is performing. Although the two business use cases have similar beginnings, they are not connected.
+</p>
+<h3>
+    <a id="Name" name="Name">Name</a>
+</h3>
+<p>
+    The name of the business use case should express what happens when an instance of the business use case is performed.
+    The form of the name should therefore be active, typically described by the gerund form of the verb (Checking-in) or a
+    verb and a noun together.
+</p>
+<p>
+    The names can either describe the tasks in the business use case from an external or an internal viewpoint, for
+    instance placing an order or receiving an order. Although a business use case describes what happens within the
+    business, it is often most natural to name the business use case from its primary actor's point of view. Once you have
+    made a decision which style is to prefer in your case, you should follow the same rule for all business use cases in
+    the business model.
+</p>
+<h3>
+    <a id="Goals" name="Goals">Goals</a>
+</h3>
+<p>
+    The goal of a business use case should be specified from at least two perspectives:
+</p>
+<ul>
+    <li>
+        For the business actors the business process interacts with, specify the value those business actors expect from
+        the business (external goals).&nbsp;
+    </li>
+    <li>
+        From the perspective of the organization performing the business processes, define what the objectives are of
+        having this business process in place and what you hope to achieve by performing it (internal goals).&nbsp;
+    </li>
+</ul>
+<h3>
+    <a id="Performance Goals" name="Performance Goals">Performance Goals</a>
+</h3>
+<p>
+    Some common metrics categories are:&nbsp;
+</p>
+<ul>
+    <li>
+        Time - an approximation of the time it should take to execute the workflow, or part of the workflow.&nbsp;
+    </li>
+    <li>
+        Cost - an approximation of the cost of executing the workflow, or part of the workflow.
+    </li>
+    <li>
+        Quality - for example, "no more than 2% of products should be defective when they come off the production line".
+    </li>
+</ul>
+<p>
+    A major challenge is to understand what scenarios (business use-case instances) are relevant to measure. Criteria to
+    use are frequency of the scenario, or business relevance of the scenario. If you can determine that a particular part
+    of the workflow has importance, you may save yourself some effort by only measuring the cost or time of that
+    subflow.&nbsp;
+</p>
+<h3>
+    <a id="Workflow - Structure" name="Workflow - Structure">Workflow - Structure</a>
+</h3>
+<p>
+    Most workflows may be thought of as several subflows, which together yield the total flow. Sometimes several business
+    use cases in the business have a common subflow, or the same subflow appears in different parts of one business use
+    case. If this common behavior has any substantial volume, it should be performed by the same business workers.
+</p>
+<p>
+    If a subflow is substantial, common to several business use cases, and also forms an independent and naturally
+    delimited part, the model might be clearer if this behavior is partitioned out to a separate business use case. This
+    new business use case is then either included in the original use case (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/include-relationship_in_the_business_use-case_model_F3DC3A5B.html" guid="8.096716256124967E-305">Guideline: Include-Relationship in the Business Use-Case Model</a>), an extension to it
+    (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/extend-relationship_in_the_business_use-case_model_17CD0314.html" guid="3.452362968952187E-305">Guideline: Extend-Relationship in the Business Use-Case Model</a>), or a parent use case
+    to it (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/use-case-generalization_in_the_business_use-case_model_7244BA6B.html" guid="1.7507761609726586E-307">Guideline: Use-Case-Generalization in the Business Use-Case Model</a>).
+</p>
+<h5>
+    Example:
+</h5>
+<p class="example">
+    At the airport check-in counter, the two business use cases, Individual Check-in and Group Check-in both use the same
+    procedure to handle an individual passenger's baggage. Because the subflow is independent of the ticket handling, and
+    is logically connected, it is modeled separately in the business use case, Baggage Handling.
+</p>
+<p>
+    The workflow of a business use case can be visualized using activity diagrams, see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/activity_diagram_in_the_business_use-case_model_5862EB50.html" guid="1.4038197112599951E-306">Guideline: Activity Diagram in the Business Use-Case Model</a>.
+</p>
+<p>
+    For more information on structuring and describing the workflow of a business use case, see <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/use_case_CC89870D.html" guid="4.1983217662266927E-305">Guideline: Use Case</a>, the discussions on Flow of Events.
+</p>
+<h3>
+    <a id="Workflow - Example" name="Workflow - Example">Workflow - E</a><a id="Workflow - Example" name="Workflow - Example">xample</a>
+</h3>
+<p>
+    Following is a description of the workflow of the business use case Proposal Process in an organization that sells
+    solutions configured to each individual customer. In <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/activity_diagram_in_the_business_use-case_model_5862EB50.html" guid="1.4038197112599951E-306">Technique: Activity Diagrams in the Business Use-Case Model</a>, the section on Examples
+    of Use, you find an example of an activity diagram visualizing the structure of this workflow:
+</p>
+<p>
+    <b>1. Basic Workflow</b>
+</p>
+<p>
+    <b>1.1. Initial Contact</b>
+</p>
+<p>
+    This process starts with an initial contact between the Customer and The Company. This may happen in one of the
+    following ways:
+</p>
+<ul>
+    <li>
+        The Customer contacts The Company with an inquiry or a set of requirements
+    </li>
+    <li>
+        The Company decides that it has products that would add value to the Customer and revenue to The Company.
+    </li>
+</ul>
+<p>
+    The Company interacts with the Customer to establish:
+</p>
+<ul>
+    <li>
+        Customer contact person,
+    </li>
+    <li>
+        The Company contact person,
+    </li>
+    <li>
+        Whether this is a new customer to The Company,
+    </li>
+    <li>
+        Any competitive information about the proposal or bidding situation surrounding this agreement.
+    </li>
+</ul>
+<p>
+    <b>1.2. Initial Opportunity Work</b>
+</p>
+<p>
+    There are two main purposes of this section:
+</p>
+<ul>
+    <li>
+        Gather customer requirements,
+    </li>
+    <li>
+        Decide about further actions on this opportunity.
+    </li>
+</ul>
+<p>
+    The steps, Gather Preliminary customer requirements, Create sales plan (optional), and Perform Opportunity Analysis can
+    be performed in an iterative manner, and may be performed somewhat in parallel.
+</p>
+<p>
+    <b>1.2.1 Gather Preliminary Customer Requirements</b>
+</p>
+<p>
+    Gather both product requirements and customer business requirements by doing the following:
+</p>
+<ul>
+    <li>
+        ask the Customer
+    </li>
+    <li>
+        look at whatever customer input there is
+    </li>
+    <li>
+        perform a preliminary site survey (optional)
+    </li>
+    <li>
+        look at any available customer information
+    </li>
+</ul>
+<p>
+    A complete set of requirements would include:
+</p>
+<ul>
+    <li>
+        choice of technology (could be several, if the customers wants alternatives investigated)
+    </li>
+    <li>
+        any product preferences
+    </li>
+    <li>
+        functional requirements (market analysis)
+    </li>
+</ul>
+<blockquote>
+    <ul>
+        <li>
+            building structure and environmental characteristics
+        </li>
+        <li>
+            demography
+        </li>
+        <li>
+            mobility/capacity
+        </li>
+        <li>
+            network growth projection
+        </li>
+        <li>
+            installed base information
+        </li>
+    </ul>
+</blockquote>
+<ul>
+    <li>
+        timelines
+    </li>
+    <li>
+        service requirements
+    </li>
+    <li>
+        price requirements
+    </li>
+</ul>
+<p>
+    <b>1.2.2 Create Sales Plan (optional)</b>
+</p>
+<p>
+    The Company works with the Customer to determine how it is going to propose a solution meeting the customer
+    requirements. This creation is called a sales plan, and includes the network and switch characteristics for the
+    potential solution. The strategic positioning of The Company and its network is also discussed so that we can prepare
+    for future needs.<br />
+     This sales plan is then reviewed with the Customer for accuracy and completeness. It will then be used throughout the
+    proposal process as a guide when deciding which products, market packages, and line items to propose, and which
+    assumptions to make when putting together the proposal.
+</p>
+<p>
+    <b>1.2.3 Perform Opportunity Analysis</b>
+</p>
+<p>
+    The Company will obtain the high-level price and cost of the potential solution. This is done in order to understand
+    the potential value of this opportunity, not to provide an accurate dollar amount to a Customer.<br />
+     The Company then looks at the customer requirements to determine:
+</p>
+<ul>
+    <li>
+        risks in the opportunity (product availability, competition, customer risk)
+    </li>
+    <li>
+        costs compared to revenue
+    </li>
+    <li>
+        type of opportunity (simple, complex, etc.)
+    </li>
+    <li>
+        probability of sales
+    </li>
+    <li>
+        anticipated number for size of sales
+    </li>
+    <li>
+        estimated schedule
+    </li>
+</ul>
+<p>
+    Based on this evaluation, The Company makes a decision whether or not to continue the opportunity.
+</p>
+<p>
+    <b>1.3. Create Proposal Project Plan</b>
+</p>
+<p>
+    The Company will create a plan for creating and offering the proposal. The plan will include the assignments to the
+    individuals completing the parts of the proposal.
+</p>
+<p>
+    <b>1.4. Create Delivery Project Plan</b>
+</p>
+<p>
+    The Company develops a tentative project plan for delivery of the solution based on:
+</p>
+<ul>
+    <li>
+        time lines in customer requirements
+    </li>
+    <li>
+        resource availability
+    </li>
+    <li>
+        factory capacity
+    </li>
+    <li>
+        new product availability
+    </li>
+    <li>
+        availability of third party products
+    </li>
+</ul>
+<p>
+    This project plan will be used for future factory planning.<br />
+     Additionally, this project plan will be updated and modified during the Quote Process.
+</p>
+<p>
+    <b>1.5. Prepare a Quote</b>
+</p>
+<p>
+    This flow is defined in detail in the business use case Quote Process, which is included.<br />
+     The result of the Quote Process is an engineered solution that may have various levels of certainty, along with a
+    price.
+</p>
+<p>
+    <b>1.6. Compile Additional Information</b>
+</p>
+<p>
+    The Company compiles information to respond to any inquiries (usually regarding future development of products) that
+    might be a part of the customer business requirements. This may also include information The Company thinks the
+    Customer should know. The inquiries are generally of the following types:
+</p>
+<ul>
+    <li>
+        technology
+    </li>
+</ul>
+<blockquote>
+    <ul>
+        <li>
+            capability now
+        </li>
+        <li>
+            capability in future
+        </li>
+        <li>
+            compliance to standards
+        </li>
+        <li>
+            compliance to future standards
+        </li>
+    </ul>
+</blockquote>
+<ul>
+    <li>
+        services offered now
+    </li>
+    <li>
+        services offered in the future.
+    </li>
+</ul>
+<p>
+    <b>1.7. Analyze and Finalize the Proposal</b>
+</p>
+<p>
+    The Company compiles a proposal that includes the following items:
+</p>
+<ul>
+    <li>
+        the quote(s)
+    </li>
+    <li>
+        marketing literature (off the shelf)
+    </li>
+    <li>
+        product information (off the shelf)
+    </li>
+    <li>
+        financing terms and conditions
+    </li>
+    <li>
+        scheduling information
+    </li>
+    <li>
+        roll up the financial analysis to the proposal level
+    </li>
+    <li>
+        penalties and liabilities of both the Customer and The Company
+    </li>
+    <li>
+        legal 'environmental' statements
+    </li>
+    <li>
+        any assumptions made when creating the solutions in the proposal
+    </li>
+</ul>
+<p>
+    <b>1.8. Present the Proposal</b>
+</p>
+<p>
+    The Company presents/proposes the above information to the Customer.
+</p>
+<p>
+    <b>1.9. Obtain Customer Decision</b>
+</p>
+<p>
+    The Customer will give feedback on the proposal. The Company obtains an agreement from the Customer on quotes within
+    the proposal. Such an agreement may have different format depending on the character of the solution and who the
+    Customer is.<br />
+     It may be:
+</p>
+<ul>
+    <li>
+        a signed purchase order
+    </li>
+    <li>
+        a verbal agreement that the Customer will submit a purchase order
+    </li>
+    <li>
+        a signed contract
+    </li>
+    <li>
+        a verbal agreement
+    </li>
+    <li>
+        a negative decision occurs when there is no decision and validity expires
+    </li>
+</ul>
+<p>
+    <b>2. Alternative Workflows</b>
+</p>
+<p>
+    <b>2.1. Business Opportunity Rejected</b>
+</p>
+<p>
+    If in 1.2., it turns out the business opportunity is rejected, the following actions may be taken:
+</p>
+<ul>
+    <li>
+        completely rejected
+    </li>
+    <li>
+        attempt joint venture with other Supplier
+    </li>
+    <li>
+        redirect to other region
+    </li>
+    <li>
+        pass the request to another distributor/Supplier
+    </li>
+    <li>
+        attempt to change customer requirements
+    </li>
+</ul>
+<p>
+    <b>2.2. Unable to Meet Customer Requirements</b>
+</p>
+<p>
+    If in Perform Opportunity Analysis or Prepare a quote, The Company is unable to suggest a solution to the customer
+    requirements, then the following actions may happen:
+</p>
+<ul>
+    <li>
+        suggest another manufacturer's equipment
+    </li>
+    <li>
+        re-evaluate the customer requirements
+    </li>
+    <li>
+        contact The Company to find out about future products
+    </li>
+    <li>
+        attempt to change customer requirements
+    </li>
+    <li>
+        decide to develop new products
+    </li>
+    <li>
+        seek joint venture or supplier
+    </li>
+    <li>
+        seek alternative forms of financing
+    </li>
+    <li>
+        apply different discount policy
+    </li>
+</ul>
+<p>
+    <b>2.3. Critical Information Not Known</b>
+</p>
+<p>
+    If at any point in the Proposal Process The Company identifies some critical information not known or available then he
+    does one of the following:
+</p>
+<ul>
+    <li>
+        Obtain the information
+    </li>
+    <li>
+        Make assumption and continue
+    </li>
+</ul>
+<p>
+    If any assumptions are made, then they are logged and given to the Customer in an attached document in the proposal.
+</p>
+<p>
+    <b>2.4. New/Incomplete or Incorrect General Customer Profile</b>
+</p>
+<p>
+    If The Company determines that the general customer profile is inaccurate for some reason, the following actions may be
+    taken.
+</p>
+<ul>
+    <li>
+        If the Customer is new, then negotiate an agreement
+    </li>
+    <li>
+        Include/determine customer preferences
+    </li>
+    <li>
+        Determine installed base
+    </li>
+    <li>
+        Request an update to records
+    </li>
+</ul>
+<h3>
+    <a id="Possibilities" name="Possibilities">Possibilities</a>
+</h3>
+<p>
+    The possibilities of a business use case should reflect the improvement potential you can see for the business use
+    case, where in the process, as well as scale. Refer to the metrics you have specified for the business use case.&nbsp;
+</p>
+<h3>
+    <a id="Extension Points" name="Extension Points">Extension Points</a>
+</h3>
+<p>
+    An <b>extension point</b> opens up the business use case to the possibility of an extension. It has a name, and a list
+    of references to one or more locations within the workflow of the business use case.
+</p>
+<p>
+    See also <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/extend-relationship_in_the_business_use-case_model_17CD0314.html" guid="3.452362968952187E-305">Guideline: Extend-Relationship in the Business Use-Case Model</a>.
+</p>
+<h3>
+    <a id="XE_business_use_case__characteristics_of_a_good" name="XE_business_use_case__characteristics_of_a_good"></a><a id="Characteristics of a Good Business Use Case" name="Characteristics of a Good Business Use Case">Characteristics of
+    a Good Business Use Case</a>
+</h3>
+<ul>
+    <li>
+        Its name and brief description are clear and easy to understand, even to people outside the business modeling team.
+    </li>
+    <li>
+        Each business use case is complete from an outside (actor's) perspective. For example, the business use case Handle
+        Claim in an insurance company starts when a customer files a claim. The Handle Claim business use case is not
+        complete unless it includes a notification about the decision from the insurance company to the customer and (if
+        appropriate) a compensatory payment.
+    </li>
+    <li>
+        Each business use case normally is involved with at least one actor. Business use cases are initiated by actors,
+        interact with actors to perform the tasks, and deliver results.
+    </li>
+    <li>
+        It is possible, but unusual, for a supporting use case not to interact with an actor*. This is true if a business
+        use case is initiated by an internal event and does not have to interact with an actor to perform its tasks.
+    </li>
+</ul>
+<p>
+    *This may seem counter to the UML definition of use case, but see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html" guid="3.9905535055726305E-306">Guideline: Business Use-Case Model</a>, section describing 'Internal Business Use
+    Case',&nbsp;for clarification.
+</p>
+<h3>
+    <a id="XE_business_use-case_workflow__characteristics_of_a_good" name="XE_business_use-case_workflow__characteristics_of_a_good"></a><a id="Characteristics of a Good Workflow Description" name="Characteristics of a Good Workflow Description">Characteristics of a Good Workflow Description</a>
+</h3>
+<ul>
+    <li>
+        It must be clear and easy to understand, even for people outside the business modeling team.
+    </li>
+    <li>
+        It describes the workflow, not just the purpose of the business use case.
+    </li>
+    <li>
+        It describes only those tasks that are inside the business.
+    </li>
+    <li>
+        It describes all possible tasks in the business use case. For example, what happens if a condition is met, as well
+        as what happens if it is not.
+    </li>
+    <li>
+        It does not mention actors who do not communicate with it. If it did mention other actors, it would make the
+        description difficult to understand and maintain.
+    </li>
+    <li>
+        It describes only those tasks that belong to it, not what is going on in other business use cases that work
+        parallel to it.
+    </li>
+    <li>
+        It does not mention other business use cases with which it does not have relationships. If the business use case
+        requires that some results exist in the business before it can start, this should be described as a precondition.
+        The precondition should not have any references to the business use cases in which the result was created.
+    </li>
+    <li>
+        It indicates if the order of any tasks described for the business use case is not fixed.
+    </li>
+    <li>
+        It is structured so that it is easy to read and understand.
+    </li>
+    <li>
+        The description clearly describes the start and end of the workflow.
+    </li>
+    <li>
+        Each extend-relationship is described clearly so that it is obvious how and when to insert the business use case.
+    </li>
+</ul>
+<h3>
+    <a id="XE_abstract_business_use_case__characteristics_of_a_good" name="XE_abstract_business_use_case__characteristics_of_a_good"></a><a id="Characteristics of a Good Abstract Business Use Case" name="Characteristics of a Good Abstract Business Use Case">Characteristics of a Good Abstract Business Use Case</a>
+</h3>
+<ul>
+    <li>
+        It is substantial. Remember, a concrete business use case must be easy to read, together with its abstract business
+        use cases. Therefore, an abstract business use case should not be too small. If an abstract business use case is
+        not substantial, it should be eliminated and its tasks should be described in the affected concrete business use
+        cases.
+    </li>
+    <li>
+        It contains logically related tasks.
+    </li>
+    <li>
+        It exists for a specific reason. An abstract business use case should contain any of three kinds of tasks: those
+        that are common across several business use cases; those that are optional; or those that are important enough that
+        you want to emphasize them in the model.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

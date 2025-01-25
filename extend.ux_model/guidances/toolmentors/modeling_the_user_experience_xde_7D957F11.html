@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Modeling the User Experience Using Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="modeling_the_user_experience_xde" name="uma.name">
+<meta content="Modeling the User Experience Using Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_R5VPcFdiEdqD4uIGCNz_kw"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_R5VPcFdiEdqD4uIGCNz_kw"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_R5VPcFdiEdqD4uIGCNz_kw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "_R5VPcFdiEdqD4uIGCNz_kw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_R5VPcFdiEdqD4uIGCNz_kw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Modeling the User Experience Using Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describe how to develop the User-Experience Model using Rational XDE™. </td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/design_user_interface_DAABE09F.html" guid="{7414C358-6188-4E5C-8C35-F9D4DF3E0123}">Проектирование интерфейса</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This tool mentor assumes that a <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{34EE80D4-460E-494D-BC01-E34D5CB7756A}">User-Experience Model</a> has been created using <a class="elementLinkWithUserText" href="./../../../extend.ux_model/guidances/toolmentors/set_up_uxm_xde_9E7B3D68.html" guid="_ljIgkFdiEdqD4uIGCNz_kw">Tool Mentor: Setting Up User Experience Modeling for a Project Using Rational XDE
+    Developer</a>. It also assumes that&nbsp;<a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_actor_1F9CE9.html" guid="{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}">Actor</a>s have
+    already been created (see <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Tool Mentor: Finding Actors and Use Cases Using Rational XDE
+    Developer</a>).
+</p>
+<p>
+    The following are performed in this tool mentor:
+</p>
+<ul>
+    <li>
+        <a href="#Modeling_User_Experience_Elements">Modeling User-Experience Elements</a>
+    </li>
+    <li>
+        <a href="#Modeling_User_Experience_Storyboards">Modeling User-Experience Storyboards</a>
+    </li>
+    <li>
+        <a href="#Modeling_the_User_Experience_Navigation_Map">Modeling the User-Experience Navigation Map</a>
+    </li>
+</ul>
+<p>
+    Links to topics in the Rational XDE&trade; online help are marked with <img height="16" alt="helpbook icon"     src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" />.
+</p>
+<p>
+    For more information on modeling the User-Experience Model, see <a class="elementLinkWithUserText" href="./../../../extend.ux_model/guidances/guidelines/user_experience_modeling_7EA3D391.html" guid="9.116940284467516E-305">Guideline: Modeling the User Experience</a>.
+</p>
+<h3>
+    <a id="Modeling_User_Experience_Elements" name="Modeling_User_Experience_Elements">Modeling User-Experience
+    Elements</a>
+</h3>
+<p>
+    Capture new&nbsp;<img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{359C3727-8E7C-4C08-BBAA-D428674CB552}">User-Experience Element</a> as follows:
+</p>
+<ol>
+    <li>
+        Navigate to the User-Experience Model package that is to contain the User-Experience Elements. For more information
+        on the structure of the User-Experience Model, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="2.642273465977998E-305">Guideline: User-Experience Model</a>.
+    </li>
+    <li>
+        If necessary, add class diagrams as needed to capture the User-Experience Elements. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Add new User-Experience Elements as they are identified. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<p>
+    Describe each of the User-Experience Elements as follows:
+</p>
+<ol>
+    <li>
+        Add a description to each User-Experience Element class. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Enter actions that can be performed on the User-Experience Element as operations of the User-Experience Element
+class. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Operations to Classifiers","rs","rs_t_add_oper_clssfr");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Enter content to be displayed on the User-Experience Element as attributes of the User-Experience Element class.
+See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Attributes to Classifiers","rs","rs_t_add_attributes_clssfr");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        (optional) Associate a document with the class. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Linking External Files to Model Elements","rs","rs_t_lnk_extrn_file_mdl_ele");                                  
+//]]>
+</script>
+         . This document could be a screen shot from an user-interface prototyping tool.
+    </li>
+</ol>
+<p>
+    For more information on modeling User-Experience Elements, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="9.763858677053972E-306">Guideline: User-Experience Element</a>.
+</p>
+<h3>
+    <a id="Modeling_User_Experience_Storyboards" name="Modeling_User_Experience_Storyboards">Modeling User-Experience
+    Storyboards</a>
+</h3>
+<p>
+    The following sections describe how to model a <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{7346D963-ECD9-4D3F-B633-E429B43B7BD7}">User-Experience Storyboard</a>:
+</p>
+<ul>
+    <li>
+        <a href="#Creating_a_User_Experience_Storyboard">Creating a User-Experience Storyboard</a>
+    </li>
+    <li>
+        <a href="#Modeling_a_User_Experience_Storyboard_Participants_Diagram">Modeling a User-Experience Storyboard
+        Participants Diagram</a>
+    </li>
+    <li>
+        <a href="#Modeling_the_User_Experience_Storyboard_Flows_of_Events">Modeling the User-Experience Storyboard Flows of
+        Events</a>
+    </li>
+    <li>
+        <a href="#Modeling_User_Experience_Storyboard_Flow_Diagrams">Modeling User-Experience Storyboard Flow Diagrams</a>
+    </li>
+</ul>
+<p>
+    For more information on modeling storyboards, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="1.795569619094057E-305">Guideline: User-Experience Storyboard</a>.
+</p>
+<h4>
+    <a id="Creating_a_User_Experience_Storyboard" name="Creating_a_User_Experience_Storyboard">Creating a User-Experience
+    Storyboard</a>
+</h4>
+<ol>
+    <li>
+        Navigate to the User-Experience Model package where&nbsp;<img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{7346D963-ECD9-4D3F-B633-E429B43B7BD7}">User-Experience Storyboard</a>s are to be created. For more
+        information on the structure of the User-Experience Model, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="2.642273465977998E-305">Guideline: User-Experience Model</a>.
+    </li>
+    <li>
+        Create a use-case diagram to capture the User-Experience Storyboards (unless one already exists). See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Add a collaboration instance (the User-Experience Storyboard) to the diagram. Assign it the same name as the Use
+        Case it realizes. Assign it a stereotype of &lt;&lt;use-case storyboard&gt;&gt;. Reference: <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+ , <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Assigning Stereotypes","rs","rs_t_assign_stereos");                                  
+//]]>
+</script>
+ , <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Collaboration Instances","rs","rs_c_collab_instance");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Drag and drop the Use Case onto the diagram. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Add a realization relationship to the Use Case. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Realization Relationships","rs","rs_t_add_realztn_relshp");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<h4>
+    <a id="Modeling_a_User_Experience_Storyboard_Participants_Diagram" name="Modeling_a_User_Experience_Storyboard_Participants_Diagram">Modeling a User-Experience Storyboard Participants
+    Diagram</a>
+</h4>
+<p>
+    Capture the participants (User-Experience Elements) in the User-Experience Storyboard as follows:
+</p>
+<ol>
+    <li>
+        Navigate to the User-Experience Storyboard, and create an associated Participants Diagram (a class diagram). See
+<img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Drag and drop Actors and the previously identified participating User-Experience Elements onto the diagram. See
+<img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<p>
+    Define the navigation paths between the User-Experience Elements as follows:
+</p>
+<ol>
+    <li>
+        On the participants diagram, add association relationships between User-Experience Elements to represent the
+navigation. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Association Relationships","rs","rs_t_add_assoc_rels");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Name and provide a brief description of the navigation. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<p>
+    For more information on modeling User-Experience Elements in Rational XDE, see the <a href="#Modeling_User_Experience_Elements">Modeling User-Experience Elements</a> section of this tool mentor.
+</p>
+<h4>
+    <a id="Modeling_the_User_Experience_Storyboard_Flows_of_Events" name="Modeling_the_User_Experience_Storyboard_Flows_of_Events">Modeling the User-Experience Storyboard Flows of
+    Events</a>
+</h4>
+<p>
+    Describe the User-Experience Storyboard's flows of events in terms of the participating User-Experience Elements. The
+    resulting detailed flow of events can be captured in a separate document "attached" to the User-Experience Storyboard
+(see <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Linking External Files to Model Elements","rs","rs_t_lnk_extrn_file_mdl_ele");                                  
+//]]>
+</script>
+     ), or the detailed flows of events can be included as a script on the User-Experience Storyboard flow diagrams (see
+    the <a href="#Modeling_User_Experience_Storyboard_Flow_Diagrams">Modeling User-Experience Storyboard Flow Diagrams</a>
+    section).
+</p>
+<h4>
+    <a id="Modeling_User_Experience_Storyboard_Flow_Diagrams" name="Modeling_User_Experience_Storyboard_Flow_Diagrams">Modeling User-Experience Storyboard Flow Diagrams</a>
+</h4>
+<ol>
+    <li>
+        <p>
+            For each User-Experience Storyboard flow of events create one or more interaction instances. (In the Model
+            Explorer, right-click the User-Experience Storyboard, click Add UML, and then click on Interaction Instance.)
+        </p>
+    </li>
+    <li>
+        <p>
+            Create a sequence diagram for this interaction instance. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");                                  
+//]]>
+</script>
+             .
+        </p>
+    </li>
+    <li>
+        (optional) Enter a brief description of the flow of events that the sequence diagram depicts. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Drag and drop the participating Actors and User-Experience Elements onto the sequence diagram. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Add messages between the objects. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Messages or Stimuli","rs","rs_t_add_messages");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        (optional) Describe the message. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        To describe how object behaves when it receives the message, assign an operation to the message. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Assigning Operations to Messages or Stimuli","rs","rs_t_assgn_op_mess");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        If the flow between the User-Experience Elements is not clear from the messages, use notes to annotate the diagram.
+See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+         .<br />
+    </li>
+</ol>
+<h3>
+    <a id="Modeling_the_User_Experience_Navigation_Map" name="Modeling_the_User_Experience_Navigation_Map">Modeling the
+    User-Experience Navigation Map</a>
+</h3>
+<p>
+    If a <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{C012CDE6-D566-4120-A518-13D1FD51D63E}">User-Experience Navigation Map</a> has not been created yet, perform the
+    following steps:
+</p>
+<ol>
+    <li>
+        Open the User-Experience Model.
+    </li>
+    <li>
+        Navigate to the package or packages that are to contain navigation map diagram(s). For recommendations on where in
+        the User-Experience Model structure to create navigation map diagrams, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="2.642273465977998E-305">Guideline: User-Experience Model</a>.
+    </li>
+    <li>
+        Add a class diagram(s) to document the navigation map. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<p>
+    The user interface elements are captured as&nbsp;<img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="{359C3727-8E7C-4C08-BBAA-D428674CB552}">User-Experience Element</a>s in the navigation map as follows:
+</p>
+<ol>
+    <li>
+        Open the User-Experience Model.
+    </li>
+    <li>
+        Navigate to the class diagram that represents the navigation map.
+    </li>
+    <li>
+        Add classes to the diagram, stereotyped as &lt;&lt;screen&gt;&gt; or &lt;&lt;input form&gt;&gt;. Reference: <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Shapes to Diagrams","rs","rs_t_add_shp_dgm");                                  
+//]]>
+</script>
+ , <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Assigning Stereotypes","rs","rs_t_assign_stereos");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Add a description to each class. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        (optional) Associate a document with the class. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Linking External Files to Model Elements","rs","rs_t_lnk_extrn_file_mdl_ele");                                  
+//]]>
+</script>
+         . This document could be a bitmap from an user-interface prototyping tool, a screen mock-up, etc.
+    </li>
+</ol>
+<p>
+    Capture the navigation associations between the User-Experience Elements as follows:
+</p>
+<ol>
+    <li>
+        Define navigation paths between the User-Experience Elements by adding directed association relationships between
+        the User-Experience Elements to represent the navigation. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Adding Association Relationships","rs","rs_t_add_assoc_rels");                                  
+//]]>
+</script>
+         .
+    </li>
+    <li>
+        Name and provide a brief description of the navigation. See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Documenting Model Elements","rs","rs_t_doc_model_elem");                                  
+//]]>
+</script>
+         .
+    </li>
+</ol>
+<p>
+    To reduce clutter on the navigation map diagrams, you can reduce the amount of information displayed for each of the
+    User-Experience Elements. For example, you could just include the User-Experience Element, its name, and the navigation
+    associations, and not include the User-Experience Element content (attributes) or actions (operations). See <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Showing and Hiding Compartment Items","rs","rs_t_show_compart_item");                                  
+//]]>
+</script>
+     .
+</p>
+<p>
+For more information, refer to <img height="16" alt="helpbook icon" src="./../../../extend.ux_model/guidances/toolmentors/resources/helpbook.gif" width="16" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+  ReferenceHelpTopic("Working with Class Diagrams","rs","rs_o_work_w_class_dgms");                                  
+//]]>
+</script>
+     .
+</p>
+<p>
+    For more information on modeling navigation maps, see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="9.453117380007355E-306">Guideline: User-Experience Navigation Map</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Aggregation in the Business Analysis Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="aggregation_in_the_business_analysis_model" name="uma.name">
+<meta content="Aggregation in the Business Analysis Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="5.888288202551755E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Aggregation in the Business Analysis Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Sometimes a group of objects act as a single unit. This can be modeled using the aggregation relationship and this guideline explains how. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_aggregation_in_business-object_model__guidelines_for" name="XE_aggregation_in_business-object_model__guidelines_for"></a><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    Sometimes a group of people act as a single unit in a use case, or, more generally, a phenomenon is composed of other
+    independent phenomena. For example, School Class consists of Students. Such a phenomenon is called an aggregate.
+</p>
+<p>
+    Aggregates are modeled with a separate class for the composite phenomenon. Such classes have aggregations to the
+    classes that represent its constituents. This construction makes it possible to both refer to the components
+    individually and handle them as a single unit. The uniting class does not necessarily have many properties of its own.
+    Its essential characteristic may very well be the aggregations of the different components.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<blockquote>
+    <p>
+        A company's board of directors consists of the chairman, the chief executive officer, and several owner
+        representatives.
+    </p>
+</blockquote>
+<p align="center">
+    <img height="137" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/baggr1.gif" width="208" />
+</p>
+<p class="picturetext" align="center">
+    An aggregate class holds other classes together.
+</p>
+<p>
+    See also <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/aggregation_A53E33AB.html" guid="1.1538495077622037E-304">Guideline: Aggregation</a> for more general information.
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a>
+</h3>
+<p>
+    You should use aggregates only if they are necessary; that is, if both the aggregate and any of its constituents are
+    supposed to act or be useful on their own. A good aggregate is a natural, coherent part of a business analysis
+    model-its meaning should be easy to understand from the context.
+</p>
+<p>
+    Aggregations should only be used with classes representing the same kind of phenomenon. For example, it does not make
+    sense for a business entity to be an aggregate of business workers.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

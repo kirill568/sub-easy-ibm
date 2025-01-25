@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Component Business Modeling</title>
+<meta content="Concept" name="uma.type">
+<meta content="business_component_modeling" name="uma.name">
+<meta content="Component Business Modeling" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uKecsC7xEdu14aFGpEDchg"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Component Business Modeling</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">The use of a component-based development approach in modeling businesses has many advantages in both the creation, management and analysis of businesses. The similarity between modeling a business and component modeling, and object modeling, has been noted elsewhere; this concept attempts to give a cohesive overview to the techniques of business component modeling.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html" guid="_xfhhcBpWEdqUwb9RAn2tTA">Business Architectural Analysis</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_architecture_document_A73E67D4.html" guid="{D3A0CA96-30AD-4461-9386-A3EC9A7E879F}">Business Architecture Document</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_domain_FAAADFBF.html" guid="__IIS0ExMEduGSMz-5zscXg">Business Domain</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Business System</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_target_organization_assessment_850E5BD3.html" guid="{1C96F563-092E-4584-A1C9-1A8CF58C7FA6}">Target-Organization Assessment</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This concept describes how to use modeling tools and techniques common in software development and other engineering
+    disciplines to the modeling of businesses. The approach described here is based upon the Component Business Model (CBM)
+    developed and used by IBM Global Business Services, however the question of how to integrate such a model with more
+    traditional business models leads us to present this guidance.
+</p>
+<p>
+    This topic draws heavily upon existing guidance in the RUP Business Modeling plug-in and as such demonstrates that
+    there are more similarities between these two methods than there are differences, albeit that CBM models are often
+    used&nbsp;for different decision making than a RUP business model would be. Specifically the following topics should be
+    reviewed by the reader.
+</p>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/business_architecture_D437B035.html" guid="2.6275891002471178E-306">Concept: Business Architecture</a>&nbsp;describes the architectural views commonly
+        used to describe a business as well as some of the drivers for considering business architecture.
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html" guid="1.268342166757605E-304">Concept: Modeling Large Organizations</a>&nbsp;begins to describe the partitioning of
+        a business into autonomous units that communicate through well defined services.
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html" guid="5.503233494422666E-306">Guideline: Business System</a>&nbsp;(and&nbsp;<img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="_tPtHgBpVEdqUwb9RAn2tTA">Task: Define
+        Business System Context</a>) describes in more detail how business systems may be used in the same way as CBM
+        business components:<br />
+         Business Systems <em>"partition large business models into interdependent areas of responsibilities. Business
+        Systems encapsulate their resources, and provide services through well-defined interfaces, to other parts of the
+        business"</em>&nbsp;
+    </li>
+</ul>
+<h3>
+    The Component Business Model
+</h3>
+<p>
+    The most commonly described work product resulting from a CBM engagement is the <em>component map</em>. A typical CBM
+    component map is presented below (taken from the web resource "A component-based approach to strategic change"). As you
+    can see the business components are arranged in a grid form, categorized by their <em>competency area</em> (sometimes
+    termed business <em>functional area</em>&nbsp;or <em>domain area</em>) and their <em>action</em>. The value in this map
+    is not simply that the business&nbsp;may be viewed&nbsp;as a set of components but that the analysis of the business
+    carefully produces the set of components and describes their dependencies and interactions. The following descriptions
+    are taken from the discussion on CBM found on IBM's web site.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <em>IBM's Component Business Model is a new way of looking at your business. It represents the entire business in a
+        simple framework that fits on a single page. It is an evolution of traditional views of a business, such as
+        business unit, function, geographic or process.</em>
+    </p>
+    <p>
+        <em>The component business map shows activities across lines of business, without the constrictions of geographies,
+        internal silos or business units. The Component Business Map lets you see your entire company on a single
+        page.</em>
+    </p>
+    <p>
+        <em>This single page perspective gives you a view of your business that is not constricted by barriers that could
+        potentially hamper your ability to make meaningful changes. You can see which components of the business really
+        create differentiation and value. You can identify where you have capability gaps that need to be addressed. With
+        the component view you can identify opportunities to improve efficiency and lower costs across the entire
+        enterprise. Identify the components where you can realize the greatest impact, and start there.</em>
+    </p>
+</blockquote>
+<p align="center">
+    <img height="362" alt="" src="./../../../extend.bus_model/guidances/concepts/./resources/cbm_component_chart2.jpg" width="600" /><br />
+     <strong>Figure 1 - Example CBM Map</strong>
+</p>
+<p>
+    So, the notion of a business component is very important and should be defined in a little more detail before we move
+    on to look at the parallel between CBM and RUP business modeling. Each business component identifies a basic building
+    block of your business, comprising:
+</p>
+<ul>
+    <li>
+        <strong>People</strong> - the organizational aspect of the component,
+    </li>
+    <li>
+        <strong>Process</strong> - the functions the component performs and their implementation,
+    </li>
+    <li>
+        <strong>Technology</strong> - the technology supporting the component and implementing the services it provides.
+    </li>
+</ul>
+<p>
+    The business component also provides (and depends upon) one or more services to the business, these services are
+    supported by the people, process and technology within a&nbsp;business component.&nbsp;
+</p>
+<h4>
+    Modeling Process
+</h4>
+<p>
+    While the component map is the most visible artifact (certainly in the published materials) produced by CBM, there is a
+    lot more to the model than this picture. For example, "enterprise processes" are described as processes that are owned
+    by the business itself and usually customer facing in some manner. These processes are implemented as a choreography of
+    the services provided by the business components. However, it is also the case that a business component has processes
+    within it, either implementing the services it provides to the business, or potentially management processes of its
+    own. This is also described in the topic <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html" guid="5.503233494422666E-306">Guideline:
+    Business System</a>&nbsp;using the analogy of business systems and business use cases.
+</p>
+<h3>
+    Using RUP Business Modeling&nbsp;
+</h3>
+<p>
+    As a start, we outline in the table below a mapping from the concepts of CBM introduced above to the&nbsp;work
+    products&nbsp;in the current RUP Business Modeling discipline.<br />
+    <br />
+</p><br />
+<br />
+<table cellspacing="2" cellpadding="2" width="80%" align="center" border="1">
+    <tbody>
+        <tr>
+            <th scope="col" align="middle" width="50%">
+                CBM Concept/Model Element
+            </th>
+            <th scope="col" align="middle" width="50%">
+                RUP Business Modeling Element
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Business Competency
+            </td>
+            <td>
+                <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_domain_FAAADFBF.html" guid="__IIS0ExMEduGSMz-5zscXg">Artifact: Business Domain</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Business Component
+            </td>
+            <td>
+                <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Artifact: Business System</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Provided Service
+            </td>
+            <td>
+                Interface, stereotyped as &lt;&lt;Business Service&gt;&gt; <strong>*</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Process
+            </td>
+            <td>
+                <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html" guid="{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}">Artifact: Business Use Case</a>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<br />
+<br />
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    <strong>*</strong> - This element does not exist in the current&nbsp;UML Profile for Business Modeling (see <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="_VydZ4Di-EduNTvIE5baM5w">Whitepaper: Rational UML Profile for Business Modeling</a>).
+</p>
+<p>
+    The figure below demonstrates how this mapping can be achieved in UML (using Rational Software Modeler) using the
+    profile elements listed in the table above. Note that the business competencies contain the business systems which does
+    ensure that a component cannot appear in multiple competencies. In terms of the actions (rows in the CBM map above) we
+    have not included any particular organizational element in the model below, but it seems reasonable to add a property
+    to the business system to capture this information.
+</p>
+<p align="center">
+    <img height="310" alt="UML Business Component Map" src="./../../../extend.bus_model/guidances/concepts/./resources/rup_cbm_map.PNG" width="516" /><br />
+     <strong>Figure 2 - Example UML Business Component Map</strong>
+</p>
+<p>
+    Having identified a set of business components/systems, we want to go on and define the services that these components
+    provide (and depend upon). Again, this is described in some detail in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html" guid="5.503233494422666E-306">Guideline:
+    Business System</a>, however it describes the provided/required functionality as "capabilities". So to recap let's look
+    at an example; the figure below shows a business component/system which provides two distinct services, modeled as
+    interfaces and realized by the component. This allows us to not only model the services, but if required to even model
+    the business functions on each service. Modeling the dependencies between services in this way is reasonably
+    straightforward and produces a structural model which is almost identical to the CBM map above.<br />
+    <br />
+</p>
+<p align="center">
+    <img height="214" alt="" src="./../../../extend.bus_model/guidances/concepts/./resources/rup_cbm_component.png" width="516" /><br />
+     <strong>Figure 3 - Example UML Business Component with Services</strong>
+</p>
+<h4>
+    Modeling Processes
+</h4>
+<p>
+    In terms of modeling process in UML, the RUP describes the use of <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html" guid="{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}">Artifact: Business Use Case</a>&nbsp;to capture process descriptions with
+    the <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html" guid="{47F095EB-E651-4A34-B75B-BACE38ED90C7}">Artifact: Business Use-Case Realization</a>&nbsp;detailed implementation
+    flows. With respect to the separation of enterprise processes from component processes described in CBM, we see very
+    similar guidance already in the <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_system_4B3288B3.html" guid="5.503233494422666E-306">Guideline:
+    Business System</a>&nbsp;where business use cases are described as cutting across business systems as well as
+    potentially being owned by a business system.
+</p>
+<h3>
+    Links
+</h3>
+<ul>
+    <li>
+        <strong>A component-based approach to strategic change</strong> <a href="http://www.ibm.com/services/us/igs/cbm/html/bizmodel.html">http://www.ibm.com/services/us/igs/cbm/html/bizmodel.html</a>&nbsp;
+    </li>
+    <li>
+        <strong>Component business modeling: A private banking example</strong> (Building an Edge&nbsp;Volume 5, Number 6:
+        June 22, 2004) <a href="http://www.ibm.com/industries/financialservices/doc/content/bin/bae_june_2004.pdf">http://www.ibm.com/industries/financialservices/doc/content/bin/bae_june_2004.pdf</a>
+    </li>
+    <li>
+        <strong>IBM Global Business Services</strong> <a href="http://www.ibm.com/services/us/bcs/html/bcs_index.html">http://www.ibm.com/services/us/bcs/html/bcs_index.html</a>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

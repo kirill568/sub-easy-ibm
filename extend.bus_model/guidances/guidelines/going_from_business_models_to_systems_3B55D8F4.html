@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Going from Business Models to Systems</title>
+<meta content="Guideline" name="uma.type">
+<meta content="going_from_business_models_to_systems" name="uma.name">
+<meta content="Going from Business Models to Systems" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.3212739617274792E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Going from Business Models to Systems</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This guideline shows how to derive a System's Use-Case and Analysis Models from a Business Model</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_design_model_E75F0498.html" guid="_Yi4dsBpWEdqUwb9RAn2tTA">Business Design Model</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/domains/business_modeling_rup_CDDF8485.html" guid="_8loI0CuREdqL6tsHh4YXGw">Business Modeling</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html" guid="{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}">Поиск субъектов и вариантов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_business_models__systems_relationship_to" name="XE_business_models__systems_relationship_to"></a><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Introduction</a>
+</h3>
+<p>
+    The approach to business modeling presented in the Rational Unified Process includes a concise and straightforward way
+    to generate requirements for supporting business tools or systems. A good understanding of business processes is
+    important for building the right systems. Even more value is added if you use people's roles and responsibilities, as
+    well as definitions of what "things" are handled by the business as a basis for building the system. It's from this
+    more internal view of the business, captured in a business analysis model, that you can see the tightest link to what
+    the models of the system needs to look like.
+</p>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/co_bmtse.gif" />
+</p>
+<p class="picturetext">
+    The relation between models of the business and models of a supporting information system
+</p>
+<h3>
+    <a id="XE_business_models__architectures_relationship_to" name="XE_business_models__architectures_relationship_to"></a><a id="XE_architecture__business_models_relationship_to" name="XE_architecture__business_models_relationship_to"></a><a id="Business Models and System Architecture" name="Business Models and System Architecture">Business Models and System Architecture</a>
+</h3>
+<p>
+    From an architectural perspective, having business models in place is particularly useful if your intent is to build
+    one of the following kinds of systems:
+</p>
+<ul>
+    <li>
+        Customized systems for one or more companies in a particular type of industry, such as banks and insurance
+        companies.
+    </li>
+    <li>
+        A family of applications for the open market, such as order handling systems, billing systems, and air-traffic
+        control systems.
+    </li>
+</ul>
+<p>
+    The business models give input to the use-case view and the logical view as presented in the analysis model. You can
+    also find key mechanisms at the analysis level, which are referred to as analysis mechanisms.
+</p>
+<p>
+    The following should be considered:
+</p>
+<ul>
+    <li>
+        For each business use case that will be supported by the system, identify a subsystem in the analysis model. This
+        subsystem is in the application layer and is considered a first prototype iteration. For example, if you have an
+        Order process and a Billing process in your business use-case model, identify an Order subsystem and a Billing
+        subsystem in the application layer of your analysis model. You may argue that Order and Billing are separate
+        systems. Well, that's a matter of scope. If <span         style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">you're</span>
+        considering all of your business tools as one system with several applications that share architecture, Order and
+        Billing would be application subsystems. If your scope is to build an Order Management application only, then Order
+        Management would be your system and the recommendation above would not make sense. It only makes sense if your
+        scope is such that you consider all business tools in your organization as one system.
+    </li>
+    <li>
+        For each business worker supported by the system, identify use cases that represent what is to be automated.
+    </li>
+    <li>
+        For each business entity supported by the system, identify entity classes in the analysis model. Some of these are
+        candidates for being considered as key mechanisms, the component entities, in the system.
+    </li>
+    <li>
+        For clusters of business entities-a group of business entities that are used solely within one business use case or
+        a group of otherwise closely related business entities-create a subsystem in the business specific layer.
+    </li>
+</ul>
+<p align="center">
+    <img height="340" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/co_bmarc.gif" width="465" />
+</p>
+<p class="picturetext">
+    In a four-layered system architecture, business models give input to the top two layers
+</p>
+<h3>
+    <a id="XE_business_models__actors_to_the_system,_relationship_to" name="XE_business_models__actors_to_the_system,_relationship_to"></a><a id="XE_actor__business_models,_relationships_to" name="XE_actor__business_models,_relationships_to"></a><a id="Business Models and Actors to the System" name="Business Models and Actors to the System">Business Models and
+    Actors to the System</a>
+</h3>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtose1.gif" />
+</p>
+<p class="picturetext">
+    For each business worker, identify a candidate system actor. For each business use case the business worker
+    participates in, create a candidate system use case.
+</p>
+<p>
+    To identify information-system use cases, begin with the business workers in the business analysis model.
+</p>
+<p>
+    For each business worker, perform the following steps:
+</p>
+<ul>
+    <li>
+        Decide if the business worker will be a person that will use the information system.
+    </li>
+    <li>
+        If so, identify an actor for the business worker in the information system's use-case model. Start by creating an
+        actor with the same name as the business worker.
+    </li>
+    <li>
+        Repeat these steps for all business workers.
+    </li>
+</ul>
+<p>
+    For each business use case realization, perform the following steps:
+</p>
+<ul>
+    <li>
+        Identify those sequences of steps that are initiated by a system actor (as identified in the previous steps).
+    </li>
+    <li>
+        Create a system use case for each sequence of steps. Start by using the initiating step name (operation name) as
+        the use case name.
+    </li>
+    <li>
+        Ensure that the system use case meets all the criteria for a system use case (provides meaningful value to the
+        actor and so on). Merge or further divide system use cases as appropriate.
+    </li>
+</ul>
+<p>
+    Note that this is just a starting point for the system's use-case model. As the requirements from the system's
+    perspective are better understood, these initial system actors and use cases will be refactored as needed.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p class="example">
+    The figure below gives an example on how to derive the system use case for the "Apply for a loan" business use case
+    realization. The dotted lines in the figure mark the boundaries of the system that will be considered.
+</p>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtosex1.gif" />
+</p>
+<p class="picturetext">
+    Based on business models of a bank, you can derive candidate system actors and system use cases.
+</p>
+<h3>
+    <a id="XE_entity_class__business_models_relationships_to" name="XE_entity_class__business_models_relationships_to"></a><a id="Automated Business Worker" name="Automated Business Worker">Automated Business Workers</a>
+</h3>
+<p>
+    If you are aiming at building a system that completely automates a set of business processes-which is the case if you
+    are building an e-commerce application-for example, it's no longer the business worker who will become the system
+    actor. Instead, it's the business actor who will directly communicate with the system and act as a system actor.
+</p>
+<p>
+    You are, in effect, changing the way business is performed when building an application of this kind. Responsibilities
+    of the business worker will be moved to the business actor.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p class="example">
+    When building an e-commerce site for a bank, you will be modifying the way the process is realized.
+</p>
+<ul>
+    <li>
+        <p class="example">
+            Responsibilities of the Clerk will be moved to the Customer.
+        </p>
+    </li>
+    <li>
+        <p class="example">
+            Create a system actor Customer corresponding to the business actor Customer.
+        </p>
+    </li>
+    <li>
+        <p class="example">
+            The Clerk and the Loan System business workers will be merged to become the Enhanced Loan System business
+            worker (this is represented in the figure below by the dotted lines).
+        </p>
+    </li>
+    <li>
+        <p class="example">
+            Modify the business use case realization in accordance to this new business worker.
+        </p>
+    </li>
+    <li>
+        <p class="example">
+            Identify the new system use cases, or adapt the existing ones, based on the modified business use case
+            realization. Usually operations between merged business workers become steps in the new/updated system use
+            case(s).
+        </p>
+    </li>
+</ul>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtosex2.gif" />
+</p>
+<p class="picturetext">
+    Completely automating business workers changes the way the business process is realized, as well as how you find system
+    actors and use cases
+</p>
+<h3>
+    <a id="XE_entity_class__business_models_relationships_to" name="XE_entity_class__business_models_relationships_to"></a><a id="Business Models and Entity Classes in the Analysis Model" name="Business Models and Entity Classes in the Analysis Model">Business Models and Entity Classes in the Analysis
+    Model</a>
+</h3>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtose2.gif" />
+</p>
+<p class="picturetext">
+    For each business entity, create a class in the system's analysis model
+</p>
+<p>
+    A business entity to be managed by an information system will correspond to an entity in the analysis model of the
+    information system. In some cases, however, it might be suitable to let attributes of the business entity correspond to
+    entities in the information-system model. Several business workers can access a business entity. Consequently, the
+    corresponding entities in the system can participate in several information-system use cases.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtosex3.gif" />
+</p>
+<p class="picturetext">
+    The business entities Customer Profile, Account, and Loan are all candidates for automation.
+</p>
+<h3>
+    <a id="XE_requirements__business_model_as_source_for" name="XE_requirements__business_model_as_source_for"></a><a id="Business Events" name="Business Events">Business Events</a>
+</h3>
+<p>
+    Business events identify important occurrences or changes of state in the business. They are used to decouple business
+    use cases and send notifications or triggers about the occurrence or change in state. As such, they are an excellent
+    source for business process automation, to reduce interactions between business workers and speed up business use
+    cases. Automating business events allows for the rapid propagation of important information throughout the business,
+    without burdening business workers with this responsibility.
+</p>
+<h5>
+    Example:
+</h5>
+<p class="example">
+    For example, all units involved in a military operation, may need to be notified immediately in the event of a
+    strategic vantage point being claimed by friendly (or hostile) forces. Without automation, this business may be
+    implemented by broadcasting a codeword (such as <b>Top Hat</b>) on a specific radio frequency. It would be left up to
+    all receivers of the codeword to take the necessary action (such as proceeding into the next phase of battle).
+    Automating this business event would allow for more efficient notification of the event, as well as possibly automating
+    the different responses to the event as well.
+</p>
+<h3>
+    <a id="XE_requirements__business_model_as_source_for" name="XE_requirements__business_model_as_source_for"></a><a id="Interaction between Business Workers Translated to System Requirements" name="Interaction between Business Workers Translated to System Requirements">Interaction between Business Workers
+    Translated to System Requirements</a>
+</h3>
+<p>
+    How should you interpret a link between workers in the business model? You must find out how the information systems
+    can support the communicating workers. An information system can eliminate the need to transport information between
+    workers by making the information available in the information system.
+</p>
+<h3>
+    <a id="XE_entity_class__business_models_relationships_to" name="XE_entity_class__business_models_relationships_to"></a><a id="Using the Business Object Model for Resource Planning" name="Using the Business Object Model for Resource Planning">Using the Business Analysis Model for Resource
+    Planning</a>
+</h3>
+<p>
+    If you intend to use the business analysis model for resource planning or as a basis for simulation, you will need to
+    update it to reflect what types of resources are used. You need to modify it so that each business worker and business
+    entity is implemented by only one type of resource. If your aim is to re-engineer the business process, in the first
+    iteration of your business analysis model, you should not consider resources. Doing so tends to make you focus on the
+    already existing solutions, rather than on identifying problems that can be solved with new kinds of solutions. Here's
+    an example of a procedure to consider:
+</p>
+<ul>
+    <li>
+        In a first iteration of the business analysis model, work without considering the resources or the systems that
+        will be used to implement the business.
+    </li>
+    <li>
+        Discuss what can be automated.
+    </li>
+    <li>
+        Discuss how automation can change the business process and start sketching out a system use-case model and system
+        requirements.
+    </li>
+    <li>
+        In a second iteration to the business analysis model, update it to reflect resources used and what is to be
+        automated. 
+        <ul>
+            <li>
+                Some business workers will be tagged as automated workers.
+            </li>
+            <li>
+                Some business workers will be split into two-one automated, the other one not.
+            </li>
+            <li>
+                Parts of two business workers may be partitioned out to a new automated worker.
+            </li>
+            <li>
+                Parts of a business <span                 style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">worker's
+                responsibility</span> may be moved outside of the organization to become the responsibility of a business
+                actor.
+            </li>
+        </ul>
+        <p class="exampleheading">
+            Example:
+        </p>
+    </li>
+</ul>
+<p class="example">
+    In the banking example, we decided to update the business analysis model in order to use it for resource planning.
+</p>
+<ul>
+    <li>
+        <p class="example">
+            The Clerk business worker is completely automated and becomes an Automated Clerk. The bank will only do on-line
+            banking.
+        </p>
+    </li>
+    <li>
+        <p class="example">
+            The Loan Specialist is partly automated, and is split into an Automated Loan Specialist and a Loan Specialist.
+        </p>
+    </li>
+</ul>
+<p align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bmtosex4.gif" />
+</p>
+<p class="picturetext">
+    The business workers are modified to reflect automation
+</p>
+<h3>
+    <a id="XE_business_models__relation_to_system_models_summary_table" name="XE_business_models__relation_to_system_models_summary_table"></a><a id="Summary Table" name="Summary Table">Summary Table</a>
+</h3>
+<p>
+    The following table summarizes the relationship between the business models and the system models.
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="24%">
+                    System Models
+                </th>
+                <th scope="col" width="53%">
+                    How to find candidates, using information in the business models
+                </th>
+                <th scope="col" width="23%">
+                    Business Models
+                </th>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Actor
+                </td>
+                <td width="53%">
+                    Actor candidates are found among business workers.
+                </td>
+                <td width="23%">
+                    Business worker
+                </td>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Actor
+                </td>
+                <td width="53%">
+                    Other actor candidates are found among the different business actors (customers, vendors) that will
+                    directly use the system.
+                </td>
+                <td width="23%">
+                    Business actor
+                </td>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Use case
+                </td>
+                <td width="53%">
+                    Use-case candidates are found among business-workers' operations. Look for operations, and areas of
+                    responsibility, that involve interactions with the information system. Ideally one information system
+                    use case supports all the business worker's operations within one business model use-case
+                    realization.&nbsp;
+                </td>
+                <td width="23%">
+                    Business workers' operations
+                </td>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Entity class
+                </td>
+                <td width="53%">
+                    Entity class candidates are found among business entities. Look for business entities that should be
+                    maintained or represented in the information system.&nbsp;
+                </td>
+                <td width="23%">
+                    Business entity
+                </td>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Entity class
+                </td>
+                <td width="53%">
+                    Entity class candidates are found among attributes in the business analysis model. Look for attributes
+                    that should be maintained or represented in the information system.
+                </td>
+                <td width="23%">
+                    Attributes
+                </td>
+            </tr>
+            <tr>
+                <td width="24%">
+                    Relationships between entity classes
+                </td>
+                <td width="53%">
+                    Relationships between business entities often indicate a corresponding relationship between the classes
+                    in the information system model.
+                </td>
+                <td width="23%">
+                    Relationships between business entities
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

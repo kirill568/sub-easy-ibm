@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Analyze and Evaluate Results from Reports Using Rational Performance Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="eval_results_perf_reports" name="uma.name">
+<meta content="Analyze and Evaluate Results from Reports Using Rational Performance Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_performance_tester:IBM Rational Performance Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Performance Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_WDwD4MwCEdq9s5d23VYjZw", "_KbJpEMwCEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_WDwD4MwCEdq9s5d23VYjZw", "_KbJpEMwCEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_KbJpEMwCEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Analyze and Evaluate Results from Reports Using Rational Performance Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use Rational Performance Tester to analyze and evaluate results from performance test reports.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_performance_tester_C23B7486.html" guid="_WDwD4MwCEdq9s5d23VYjZw">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_test_failure_7E42EE55.html" guid="{EA0E3D2C-F87E-49CA-8832-F791886D5741}">Анализ ошибки при тестировании</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/determine_test_results_630C9EC9.html" guid="{74E51E86-ECAB-4A61-9A88-FD358EE6F2B1}">Определение результатов тестирования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_details_2B6BD36F.html" guid="{1F825D50-70B1-48BA-B99F-010F6B44B77B}">Определение сведений о тесте</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The results of your performance test are easily accessible to you.&nbsp; With Performance Tester, results are generated
+    dynamically during a run.&nbsp; You can also regenerate the results for viewing and analysis after a run.&nbsp;
+    Performance has by default eight types of reports:
+</p>
+<ul>
+    <li>
+        Overall Report--contains information on the progress of the state of the run and a bar chart showing the overall
+        success of the run
+    </li>
+    <li>
+        Summary Report--displays the most significant data to the test run and lets you analyze the final or intermediate
+        results
+    </li>
+    <li>
+        Page Performance--displays the average response of the slowest 10 pages in the test as the test progresses
+    </li>
+    <li>
+        Response vs. Time Summary--displays the average response trend as graphed through time
+    </li>
+    <li>
+        Response vs. Time Detail--displays the response trend as graphed through time
+    </li>
+    <li>
+        Page Throughput--presents an overview of the frequency of results being transferred per interval
+    </li>
+    <li>
+        Server Health Summary--presents an overall indication of how well the server is responding to the load
+    </li>
+    <li>
+        Server Health Detail--displays specific details for the 10 least successful pages
+    </li>
+</ul>
+<p>
+    <img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" />&nbsp; For details on each of these reports, see
+    the topic <em>Evaluating results</em> in the Performance Tester online Help.
+</p>
+<p>
+    After a run, the reports are stored under the Performance Tester runs in the Test Navigator.&nbsp; From there, you can
+    click on a run and select <strong>Display Default Reports</strong>.&nbsp; This will bring up an eight-tabbed view of
+    the default reports of the selected run.&nbsp; You can also right click the run and select <strong>Display
+    <em>report-name</em> Report</strong> to display on the given report you are interested in.
+</p>
+<p>
+    You may also want to customize your own report.&nbsp; You can change the default report, modify a report (for example
+    by dragging a counter on to the report), or filter result data for your report by concentrating on the data that is of
+    interest to you and filtering out the outlying data.&nbsp;<img height="16" alt="" src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif"     width="16" /> For more information on customizing reports, see the topic <em>Customizing reports</em> in the online
+    Help.
+</p>
+<p>
+    In most cases, the default reports listed above provide you with a sufficient amount of information to evaluate your
+    results.&nbsp; However, situations will arise in which you will want to create your own report.
+</p>
+<p>
+    To create a new report, perform the following steps:
+</p>
+<ol>
+    <li>
+        Select <strong>File &gt; New &gt; Performance Test Report</strong>
+    </li>
+    <li>
+        In the Performance Test Report dialog box, enter the name of the new report in the <strong>Name</strong> field
+    </li>
+    <li>
+        Since you are adding a new report, the Report Tabs field is empty.&nbsp; Click <strong>InsertB</strong> to enter
+        information about the report tab
+    </li>
+    <li>
+        In the Performance Test Report Tab dialog, enter a name for the tab title in the <strong>Title</strong> field
+    </li>
+    <li>
+        Select a tab as a template or select a custom tab and click <strong>Next</strong>
+    </li>
+    <li>
+        The number of wizards you sdee for the graphics properties of your new report depends on the type of template you
+        select
+    </li>
+    <li>
+        Enter a title and select the graphic type and click <strong>Next</strong> (at this stage, it is best to add to
+        filter after you examine your new report)
+    </li>
+    <li>
+        When you have finished selecting the graphics and counters, click <strong>Finish</strong>
+    </li>
+</ol>
+<p>
+    You are new able to manage this report just as you would manage the default reports.&nbsp; The next time you
+    right-click an item inthe Performance Test Runs view and select <strong>Manage Reports</strong>, your new report
+    appears with the default reports.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

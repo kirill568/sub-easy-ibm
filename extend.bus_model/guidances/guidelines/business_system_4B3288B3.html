@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Business System</title>
+<meta content="Guideline" name="uma.type">
+<meta content="business_system" name="uma.name">
+<meta content="Business System" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="5.503233494422666E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Business System</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business systems represent an independent capability within a business. This guideline explains how to identify and model them.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Business System</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Introduction" name="Introduction"></a>Introduction
+</h3>
+<p>
+    Business systems represent an independent capability within a business. They are used to partition and understand the
+    structure of a business into manageable chunks, in much the same way that an organization is typically partitioned into
+    interdependent units. However, the role and purpose of different parts of an organization are not always clear to other
+    parts of it, which results in less-than-optimal interactions when executing a business process.
+</p>
+<p>
+    Business systems take the concept of partitioning and interdependence one step further. Business systems not only bind
+    and contain roles and resources (and possibly other business systems), but they also explicitly define
+    <i>interfaces</i>, or the set of services or responsibilities they can be asked to provide. Organizations that define
+    <i>service level agreements</i> to formally specify and manage interactions between departments and external
+    collaborators are in effect defining business systems. The use of a business system often goes hand-in-hand with using
+    business models at different levels of abstraction (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html" guid="1.268342166757605E-304">Concept: Modeling Large Organizations</a>).
+</p>
+<p>
+    The term "business system" should not be confused with a software system. A business system contains people, hardware,
+    and software and is therefore at a higher level of abstraction than a software system.
+</p>
+<h3>
+    <a id="Business Systems Enable Dynamic Structure" name="Business Systems Enable Dynamic Structure"></a>Business Systems
+    Enable Dynamic Structure
+</h3>
+<p>
+    In his book <i>Enterprise Modeling with UML</i>, Chris Marshall points out that traditional relatively static
+    organizational structures are no longer sufficient for the radically decentralized and dynamic business world that is
+    emerging. We can no longer expect a part of the organization to remain intact for long periods of time. As he states in
+    his book, "Value is created and delivered through value chains that form and disband over time. Indeed, the day when
+    such a chain is formed for a single transaction may not be far away."
+</p>
+<p>
+    Organizations are organic. As they feel increasing pressure from the business environment, they need to adapt to remain
+    competitive. Taken to the extreme, a static organization structure may be crippling in a highly dynamic and ruthless
+    business environment, and companies may need to turn to <b>dynamic structure</b> as a survival mechanism.
+</p>
+<p>
+    In the traditional static organization structure, departmental boundaries are only conceptual. While this may be a sign
+    of an "open" and "informal" organization, the result is that every person in and segment of the organization is
+    intertwined with the rest of the organization. It becomes extremely difficult to change or manage one part of the
+    organization completely independently from the other parts. Business systems enforce partitions and boundaries by
+    disallowing interactions between business systems, except by the predefined interfaces. These interfaces (possibly
+    formalized service-level agreements) become the hinges that support the organization. The most significant advantage to
+    these interfaces between business systems is that different parts of the organization are decoupled from each other.
+    Dependencies are defined in terms of responsibilities and not on <i>how</i> those responsibilities are carried out.
+</p>
+<p>
+    Separating the specification of responsibilities from the realization of responsibilities, and&nbsp;binding users of
+    the business system to services specified at its boundary, rather than&nbsp;binding to realizing elements inside the
+    business system boundary,&nbsp;results in a nimble organization-one that is capable of changing its structure rapidly
+    without degrading the performance of its processes. In such an organization, one of its capabilities (defined by a
+    business system) can be modified, improved, or outsourced, and the overall effect on the rest of the organization is
+    kept to a minimum. As long as the quality of service remains the same after the change, the business operations
+    continue uninterrupted. The same work could be performed by a software system, one person, or an entire
+    department-either on-site or remote.
+</p>
+<p>
+    Using business events to abstract interactions could reduce direct dependencies between business systems even further.
+    Because business events make time and space transparent, business systems can interact indirectly (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_event_213B3FAC.html" guid="1.3382783818773036E-305">Guideline: Business Event</a>).
+</p>
+<h4>
+    Note: UML Modeling Guidance for Encapsulation
+</h4>
+<p>
+    When modeling a business system with UML, we indicated in the description in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Work Product: Business System</a>&nbsp;that if encapsulation was not
+    considered important, then the business system boundary was notional - as in the traditional static organization
+    structure discussed above - and, for interaction purposes at least - the business system did not exist during business
+    operation. You can indicate this in UML by saying that the business system (which is a kind of UML component) is not
+    <em>directly</em> instantiable - it comes into being only through the instantiation of its parts. In the next section,
+    we discuss the provision of services by business systems: in this case we <em>are</em> concerned with encapsulation,
+    and can indicate that the business system has more than a notional boundary by making it directly instantiable.
+    This&nbsp;verifies the business system at analysis and design time in anticipation that, in operation, the boundary
+    will be somehow made real.
+</p>
+<h3>
+    <a id="Business Systems Have Well-defined Responsibilities" name="Business Systems Have Well-defined Responsibilities"></a>Business Systems Have Well-Defined Responsibilities
+</h3>
+<p>
+    Business systems explicitly define the responsibilities (also called services) that they can be asked to perform. This
+    specification of behavior is essential because it allows the decoupling of dependencies mentioned in the previous
+    section. A business system that does not define its services is without meaning. There is no way that another business
+    system can know what services it provides, other than inferring them from its name. For example, we could expect a
+    Resourcing business system (in departmental terms, it would be called Resource Management) to provide services for
+    requesting a resource, querying the availability of resources, and possibly querying the resources types, or profiles.
+</p>
+<p>
+    Responsibilities (or services) define the means of interaction with the business system and are specified as operations
+    of the interface(s) to it. These interfaces are collections of related services and as such describe the role that the
+    business system can play in a particular interaction. In the example that appears below the next paragraph, we see that
+    each interface is a collection of logically related services. These interfaces (clusters of responsibility) are
+    assigned to the business system responsible for carrying out the responsibilities. When something external to the
+    business system requests one of the provided services, an event occurs within the business system to initiate
+    fulfillment of the requested service. This event, which is internal to the business system, may be explicitly defined
+    as a business event. The roles and resources (business workers and business entities) within the business system then
+    collaborate with each other (internally) to fulfill the requested service. As we can see, this is much the same way the
+    business operates toward its customers. In fact, we could even model the business system as a "business," in which case
+    the requestors of services would be the business system's business actors.
+</p>
+<p>
+    The example below shows the business systems of a generic financial services institution. Only some of the dependencies
+    between business systems and interfaces are shown to improve understandability. From this diagram, it becomes apparent
+    that the responsibilities can be reassigned by allocating an interface to another business system. This reallocation of
+    responsibility would conceptually have no effect on the business systems that make use of those services.
+</p>
+<p align="center">
+    <img alt="Diagram shows business systems for a generic financial services institution." src="./../../../extend.bus_model/guidances/guidelines/resources/bsys4.gif"     border="0" />
+</p>
+<h4>
+    Note: UML Modeling Guidance for Services
+</h4>
+<p>
+    We noted above that modeling a business system as a directly instantiable component&nbsp;is a strong indicator that the
+    business system boundary&nbsp;is not intended to be&nbsp;just conceptual. We can continue this theme by modeling the
+    responsibilities of the business systems by an analogous application of the <a href="http://www-128.ibm.com/developerworks/rational/library/05/419_soa/">UML 2.0 Profile for Software Services</a>.
+    Although directed at software services, the fundamental ideas in this profile apply equally well to business systems.
+    The use of UML 2.0 ports to model services further verifies the business system boundary by defining clear
+    <em>interaction points,</em> with well-defined interfaces, between users and business systems. These interaction points
+    completely insulate the <em>implementation</em> of the business system's responsibilities from their <em>delivery</em>
+    to consumers outside the business system. This method also&nbsp;gives the Business-Process Analyst and then the
+    Business Designer&nbsp;a way of flexibly modeling the composition and choreography of services (to deliver value-added
+    services at the business system boundary).
+</p>
+<h3>
+    Business Systems Contain Roles and Resources
+</h3>
+<p>
+    A business system is an abstraction of a collection of people, hardware, and software that work together to perform the
+    responsibilities of the business system. We use the word "abstraction" because we do not describe the internal
+    collaborations within the business system in terms of people, machines, and software, but in terms of roles and
+    resources. A business system contains business workers and business entities. A business worker is a role that
+    represents a <em>system</em> as we define it in the glossary. As far as the business modeling effort is concerned, it
+    is a 'leaf' system, that is, it will be decomposed no further in the business modeling effort. We may decide during our
+    business modeling study that:
+</p>
+<ul>
+    <li>
+        a human (or humans) may be bound to a particular business worker role, in which case we can stereotype it
+        <em>&lt;&lt;worker&gt;&gt;</em>
+    </li>
+    <li>
+        the role will be fulfilled by software (and associated computational hardware), in which case we can stereotype it
+        <em>&lt;&lt;IT system&gt;&gt;</em>,
+    </li>
+    <li>
+        the role has to be performed by a more complex system, which itself may&nbsp;use human, hardware and software
+        resources - but which is not considered to be a <em>business</em> system for some reason. For example, in the
+        airport example below, we may model the business system 'Flights' to contain business workers that transport
+        passengers, that is, aircraft. Aircraft are complex systems in their own right, but decomposing them, their
+        behavior and design, requires a significant paradigm shift from business thinking. So in this context, we can leave
+        them as abstractions (although we will certainly be interested in specifying some of their characteristics - load
+        carrying capability, range, and fuel consumption, among others) and stereotype them
+        <em>&lt;&lt;system&gt;&gt;.</em>
+    </li>
+</ul>
+<p>
+    A business entity is a piece of information created or manipulated by business workers. These business workers can
+    eventually be mapped to human resources, or to specific hardware or software systems. This abstraction helps us focus
+    on the role and interfaces of the business worker and determine the <i>necessary</i> responsibilities without having to
+    consider the (usually imperfect) real situation of a specific person or system.
+</p>
+<p>
+    Note that some of the resources owned by a business system may be virtual - for example, a business system may share a
+    large mainframe with other business systems, but as far as the business systems are concerned, they own a virtual
+    machine. The mapping of virtual resources can be shown at the level that owns the real resource - in many cases this
+    will be the enterprise level (the entire business).
+</p>
+<h3>
+    <a id="Business Use Cases Cut Across Business Systems" name="Business Use Cases Cut Across Business Systems"></a>Business Use Cases Cut Across Business Systems
+</h3>
+<p>
+    Business use cases must not be simply&nbsp;<em>allocated</em> to a business system. Business use cases are the
+    customer-facing processes that require the collaboration of a number of business systems, partners, and suppliers. This
+    is referred to as the <i>value chain</i>. Business systems collaborate to perform business use cases, as shown in the
+    figure below.
+</p>
+<p align="center">
+    <img height="325" alt="Diagram shows collaboration between a customer, a partner, a regulatory body, and a supplier."     src="./../../../extend.bus_model/guidances/guidelines/resources/bsys1.gif" width="602" border="0" />
+</p>
+<p>
+    There is one exception: When creating business models at different levels of abstraction (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html" guid="1.268342166757605E-304">Concept: Modeling Large Organizations</a>), business use cases can be allocated to a
+    business system. For example, you may want to model the business as a whole as well as one of the business systems of
+    that business. In this case, there would be a Business Use-Case Model for the entire business, in which the overall
+    business use cases would cut across the business systems (as shown above). At a lower level, the services requested
+    from a particular business system could be captured as business use cases in the business system's Business Use-Case
+    Model. The guideline that states that business use cases should not be allocated to a business system should then
+    actually read: "A business use case at a particular level should not be allocated in its entirety to only one business
+    system at a lower level."
+</p>
+<p>
+    This cross-functional nature of business use cases is one of the reasons for the interest in business modeling and
+    re-engineering, as well as in analysis of the cost and performance of business processes (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/activity-based_costing_8C3CE.html" guid="2.7281590029486614E-305">Concept: Activity-Based Costing</a>). It is more valuable to understand how the cost of
+    the entire business use case relates to the added value provided to the customer than to know how the annual budget of
+    one of the departments relates to the overall corporate budget.
+</p>
+<h3>
+    <a id="Examples" name="Examples"></a>Examples
+</h3>
+<h4>
+    Furniture Store
+</h4>
+<p>
+    The figure below shows the business systems for the furniture store used as an example in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_goal_CCCB68FF.html" guid="9.06687347922131E-306">Guideline: Business Goal</a> and <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html" guid="3.9905535055726305E-306">Guideline: Business Use-Case Model</a>. This store keeps large inventory in a warehouse
+    attached to its showroom. This allows customers to browse through the products on display in the showroom and pick up
+    the products they have purchased at the warehouse. Customers can arrange for delivery of large items.
+</p>
+<p align="center">
+    <img alt="Diagram shows business systems for a furniture store." src="./../../../extend.bus_model/guidances/guidelines/resources/bsys2.gif" border="0" />
+</p>
+<p align="left">
+    This business has been divided into three interdependent business systems. Each business system has a clear purpose and
+    provides well-defined services (not visible in the diagram). Explicitly defining these interdependencies and
+    interactions helps to optimize the business.
+</p>
+<h4>
+    Airport
+</h4>
+<p>
+    An airport provides services to airlines and to passengers and visitors on behalf of the airlines. Because an airport
+    is a very large and complex business to model, it makes sense to divide it into a number of independent business
+    systems. Each business system can then be modeled independently as a business in its own right, as shown below.
+</p>
+<p align="center">
+    <img alt="Diagram shows business systems for am airport." src="./../../../extend.bus_model/guidances/guidelines/resources/bsys3.gif" border="0" />
+</p>
+<p align="left">
+    In the example above, we see that an airline would have to participate in the Passengers and Flights business systems.
+    Air traffic would be regulated by Air Traffic Control, according to laws and regulations. Hangar Facilities would
+    provide services to the ground crews of the airline. Both Passengers and Flights would use services provided by Baggage
+    Handling for departures and arrivals, respectively. The entertainment business system could also be called Airport
+    Facilities and would include such things as shops, waiting areas, parking, and transport.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.empulsys.com/rupbm" target="_blank"><img height="24"                 alt="Empulsys : разработка программного обеспечения и управление" src="./../../../core.base_rup/guidances/supportingmaterials/resources/empulsys.jpg" width="100"                 border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.empulsys.com/rupbm" target="_blank">Empulsys Holding BV</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

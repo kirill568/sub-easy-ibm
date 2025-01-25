@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Include-Relationship in the Business Use-Case Model</title>
+<meta content="Guideline" name="uma.type">
+<meta content="include-relationship_in_the_business_use-case_model" name="uma.name">
+<meta content="Include-Relationship in the Business Use-Case Model" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="8.096716256124967E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Include-Relationship in the Business Use-Case Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Include-relationships are used to partition out parts of a workflow for which the base use case only depends on the result, not the method for reaching the result. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html" guid="{89BEF367-5875-47E0-97D6-23E5BCCE52B8}">Business Use Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_include-relationship_in_business_use-case_model__guidelines_for" name="XE_include-relationship_in_business_use-case_model__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    Include-relationships are used to partition out parts of a workflow for which the base use case only depends on the
+    result, not the method for reaching the result. You can do this partitioning if it simplifies the understanding of the
+    base use case (detailed behavior is "hidden") or if the partitioned behavior can be reused in other base use cases.
+</p>
+<p>
+    For comparison, see also <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/include-relationship_5AE2718.html" guid="7.259881398615376E-305">Work Product
+    Guideline: Include-Relationship</a> in the system use-case model.
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a>
+</h3>
+<p>
+    Once you have outlined the workflow of your business use cases, you can look for behavior that is in common for several
+    workflows or that is not necessary to see in detail to understand the primary purpose of a business use case.
+</p>
+<p align="center">
+    <img height="159" alt="Diagram described in accompanying text." src="./../../../extend.bus_model/guidances/guidelines/resources/bincl1.gif" width="201" />
+</p>
+<p class="picturetext">
+    The Individual Check-in and Group Check-in business use cases both include the Baggage-Handling business use case.
+</p>
+<p>
+    A business use-case instance that follows the description of a base use case will also follow the description of the
+    inclusion use case. The whole workflow described in the included business use case is incorporated. An inclusion
+    business use case of this kind is always abstract, and need not have a relationship with a business actor.
+</p>
+<h3>
+    <a id="Recommended Restrictions in Use" name="Recommended Restrictions in Use">Recommended Restrictions in Use</a>
+</h3>
+<p>
+    You should reconsider models that have more than one level of include-relationships. Layers of this kind make models
+    hard to understand, even if they are correct in all other aspects.
+</p>
+<p>
+    You might even consider hiding inclusion use cases and include-relationships when discussing the model with people who
+    have little or no previous exposure to the use-case modeling technique.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

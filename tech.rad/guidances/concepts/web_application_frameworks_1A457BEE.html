@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Варианты структуры Web-приложений</title>
+<meta content="Concept" name="uma.type">
+<meta content="web_application_frameworks" name="uma.name">
+<meta content="Варианты структуры Web-приложений" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.099460392705072E-303"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.099460392705072E-303"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Варианты структуры Web-приложений</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом документе рассказано о том, как служебные объекты данных (SDO) поддерживают разработку Web-приложений. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_implementer_D145E819.html" guid="{75501BAA-0CCE-4852-A7B2-B10CA71C002A}">Реализатор</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Введение
+</h3>
+<p>
+    SDO - это спецификация модели программирования, обеспечивающая стандартизированный, не зависящий от источника и не
+    требующий подключения доступ к базовым данным. Модель допускает извлечение данных из любого типа источника (реляционная
+    база данных, сущностные объекты EJB, Web-служба, источник данных XML и т.д.) и их стандартизированное представление в
+    виде структурированного графа. SDO обеспечивает выполнение операций при отсутствии подключения за счет извлечения графа
+    данных и его независимости от соединения или транзакций с базовым хранилищем. Данная спецификация предложена к
+    утверждению в JCP как Java Specification Request (JSR) 235.
+</p>
+<h5>
+    Архитектура
+</h5>
+<p>
+    Архитектура SDO использует стандартизированный уровень доступа к данным (служба посредника данных) для возврата графов
+    данных (DataGraph) клиентам, обращающимся к неоднородным источникам данных. На рисунке 4 показаны компоненты
+    архитектуры SDO.
+</p>
+<p align="center">
+    <img alt="Объект DataObject архитектуры SDO " src="./../../../tech.rad/guidances/concepts/resources/sdo_architecture.gif" />
+</p>
+<p class="picturetext" align="center">
+    Рисунок 4: Объект DataObject архитектуры SDO
+</p>
+<p>
+    В объекте DataObject хранятся фактические данные (например, значения примитивов или строки реляционной базы данных), а
+    также возможные ссылки на другие объекты DataObject. При этом можно определять тип, взаимоотношения и ограничения этих
+    данных.
+</p>
+<h5>
+    DataGraph
+</h5>
+<p>
+    В объекте DataGraph хранится набор объектов DataObject. Обычно DataGraph представляет собой единицу передачи информации
+    между компонентами архитектуры. В нем хранятся все внесенные в данные изменения, включая новые, измененные и удаленные
+    объекты DataObject.
+</p>
+<h5>
+    Служба посредника данных
+</h5>
+<p>
+    Служба посредника данных обеспечивает взаимодействие с источником данных и создание объектов DataGraph, представляющих
+    его данные. Стандартный формат представления данных преобразуется в графическое представление SDO с помощью модульной
+    службы. Посредник также обеспечивает применение к источнику данных изменений, внесенных в DataGraph.
+</p>
+<h3>
+    Применимость структуры
+</h3>
+<p>
+    Технология SDO обеспечивает простую интеграцию структуры и инструментов. В контексте JSF и других структур MVC, следует
+    рассмотреть два решения:
+</p>
+<p>
+    <strong>Связывание компонента пользовательского интерфейса с SDO (JSF)</strong>
+</p>
+<p>
+    В структуре JSF значения компонентов пользовательского Web-интерфейса можно декларативно связать с объектами SDO для
+    извлечения требуемых данных. Например, можно связать компонент DataTable с SDO, обеспечив тем самым извлечение
+    информации из базового источника данных. Такое сочетание делает подключение компонентов интерфейса к источникам данных
+    очень простым, не требуя абсолютно никакого программирования. На рисунке 5 показана архитектура, показанная в
+    результате связывания компонентов JSF пользовательского интерфейса с SDO.
+</p>
+<p align="center">
+    <img height="257" alt="Использование SDO с JSF " src="./../../../tech.rad/guidances/concepts/resources/sdo_jsf.gif" width="556" />
+</p>
+<p align="center">
+    <strong>Рисунок 5: Использование SDO с JSF</strong>
+</p>
+<p>
+    <strong>Моделирование объектов в SDO (любая структура MVC)</strong>
+</p>
+<p>
+    Модельный уровень структуры MVC может использовать SDO для обращения к базовым данным. На рисунке 6 приведен пример
+    модели клиента, использующей SDO для доступа к данным, сохраняемым с помощью сущностных объектов EJB. Моделируемый
+    объект использует объекты DataGraph, возвращенные фасадом сеансового EJB без сохранения состояния. Фасад сеансового
+    объекта JavaBean, в свою очередь, извлекает объекты DataGraph из посредника, который служит фасадом данных для
+    сущностного объекта EJB, основанного на механизме хранилища.
+</p>
+<p align="center">
+    <img height="174" alt="Использование SDO с моделируемыми объектами и EJB" src="./../../../tech.rad/guidances/concepts/resources/sdo_ejb.gif" width="584" />
+</p>
+<p align="center">
+    <strong>Рисунок 6: Использование SDO с моделируемыми объектами и EJB</strong>
+</p>
+<h2>
+    Ресурсы
+</h2>
+<p>
+    По следующим ссылкам приведена дополнительная информация о средах приложений и технологиях компонентов, описанных в
+    данном документе:
+</p>
+<ul>
+    <li>
+        Документация по Struts: <a href="http://jakarta.apache.org/struts/index.html">http://jakarta.apache.org/struts/index.html</a>
+    </li>
+    <li>
+        Документация по JavaServerFaces: <a href="http://java.sun.com/j2ee/javaserverfaces">http://java.sun.com/j2ee/javaserverfaces</a>
+    </li>
+    <li>
+        Библиотека интеграции Struts-Faces: <a href="http://cvs.apache.org/builds/jakarta-struts/nightly/struts-faces/">http://cvs.apache.org/builds/jakarta-struts/nightly/struts-faces/</a>
+    </li>
+    <li>
+        Информационный бюллетень, посвященный объектам SDO: <a href="ftp://www6.software.ibm.com/software/developer/library/j-commonj-sdowmt/Next-Gen-Data-Programming-Whitepaper.doc">ftp://www6.software.ibm.com/software/developer/library/j-commonj-sdowmt/Next-Gen-Data-Programming-Whitepaper.doc</a>
+        (<a href="http://www.microsoft.com/office/word/default.asp">MS-Word</a>)
+    </li>
+    <li>
+        Разработка приложений JSF с помощью WebSphere Studio 5.1.1:<br />
+         <a href="http://www-106.ibm.com/developerworks/websphere/techjournal/0401_barcia/barcia.html">http://www-106.ibm.com/developerworks/websphere/techjournal/0401_barcia/barcia.html<br />
+        </a>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Business Patterns</title>
+<meta content="Concept" name="uma.type">
+<meta content="business_patterns" name="uma.name">
+<meta content="Business Patterns" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.3820579508345107E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Business Patterns</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">A business pattern is defined as generalized solutions that can be implemented and applied in a problem situation (a context), and thereby eliminate one or more of the inherent problems. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_architect_bom_26A8745F.html" guid="_RqlJIBpWEdqUwb9RAn2tTA">Business Architect</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_designer_30BD5E18.html" guid="{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}">Business Designer</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/domains/business_modeling_rup_CDDF8485.html" guid="_8loI0CuREdqL6tsHh4YXGw">Business Modeling</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_process_analyst_B9668ABF.html" guid="{76FAC4FE-AA09-48AC-85A5-68BD1EE8A86A}">Business-Process Analyst</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_patterns" name="XE_business_patterns"></a> 
+<p>
+    We define a business pattern as generalized solutions that can be implemented and applied in a problem situation (a
+    context), and thereby eliminate one or more of the inherent problems. Patterns can be considered prototypes for
+    production. [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#ERI00" guid="7.755968586980351E-308">ERI00</a>]&nbsp;
+</p>
+<p>
+    Patterns are part of how you define your business architecture:&nbsp;
+</p>
+<ul>
+    <li>
+        They reflect common solutions to common problems.
+    </li>
+    <li>
+        Patterns help maintain an architectural style throughout the organization.
+    </li>
+    <li>
+        They are a simple way of capturing experiences.&nbsp;
+    </li>
+</ul>
+<p>
+    We present a few patterns that can be useful as a baseline:&nbsp;
+</p>
+<ul>
+    <li>
+        <p class="MsoBodyText">
+            <a href="#Process Evaluation Pattern">Process evaluation pattern</a>
+        </p>
+    </li>
+    <li>
+        <p class="MsoBodyText">
+            <a href="#Process Feedback Pattern">Process feedback pattern</a>
+        </p>
+    </li>
+    <li>
+        <p class="MsoBodyText">
+            <a href="#Activity Interaction Pattern">Activity interaction pattern</a>
+        </p>
+    </li>
+    <li>
+        <p class="MsoBodyText">
+            <a href="#Business Event-Result History Pattern">Business event-result history pattern</a>
+        </p>
+    </li>
+</ul>
+<p>
+    All of these patterns are based on the extensive pattern collection in [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#ERI00" guid="7.755968586980351E-308">ERI00</a>].&nbsp;
+</p>
+<h3>
+    <a id="Process Evaluation Pattern" name="Process Evaluation Pattern">Process Evaluation Pattern</a>
+</h3>
+<p class="MsoBodyText">
+    <b>Context</b>: This pattern is a sibling to the process feedback pattern. It reflects a need to plan for more
+    strategic and long-term investments when improving a process.<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span>
+</p>
+<p class="MsoBodyText">
+    <b>Problem</b>: The process evaluation pattern can be applied to all situations where the business process results must
+    be evaluated to provide a competitive edge. Manufacturing, marketing, and sales processes are examples of the different
+    business processes that must be evaluated each time they are executed.<span     style="mso-spacerun: yes">&nbsp;&nbsp;</span>
+</p>
+<p class="MsoBodyText">
+    <b>Solution</b>: A solution to this problem is to have an evaluation process in place that continuously monitors and
+    suggests improvements, both long-term and short term, to a business process.
+</p>
+<p align="center">
+    <img height="312" alt="Process Evaluation Image" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa4.gif" width="378" v:shapes="_x0000_i1025" />
+</p>
+<p class="picturetext">
+    Participants of the process evaluation pattern
+</p>
+<p>
+    <b>List of participants:&nbsp;</b>
+</p>
+<p>
+    aBusiness Actor-A consumer of the business.&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    Core Process-A business process which has the primary purpose to fulfill a need of the consumer.&nbsp;
+</p>
+<p>
+    Evaluate Core Process(es)-A business process whit the primary purpose of monitoring one or more core processes to
+    propose improvements to make them more efficient.
+</p>
+<p align="center">
+    <img height="201" alt="Image described in following content." src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa5.gif" width="290"     v:shapes="_x0000_i1026" /> &nbsp;
+</p>
+<p class="picturetext">
+    Dynamic view of the process evaluation pattern. For each core business process, a supporting business process that
+    evaluates and improves it should exist. This evaluation process needs to interact with the business actor involved in
+    the basic process. &nbsp;
+</p>
+<p>
+    This pattern has no static view.
+</p>
+<h3>
+    <a id="Process Feedback Pattern" name="Process Feedback Pattern">Process Feedback Pattern</a>
+</h3>
+<p class="MsoBodyText">
+    <b>Context</b>: The process feedback pattern can be applied to all situations where the business process results must
+    be evaluated to provide a competitive edge. Manufacturing, marketing, and sales processes are examples of the different
+    business processes that must be evaluated each time they are executed. For example, if the sales process is evaluated
+    each time <span     style="FONT-SIZE: 10pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">it's</span>
+    executed, the sales budget can be increased or decreased based on feedback from the sales channels.<span     style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span>
+</p>
+<p class="MsoBodyText">
+    <b>Problem</b>: A process starts with an input and ends with an output. The process uses and consumes resources to
+    create and refine other resources that become the output. A process also has a certain goal to achieve, which can be
+    expressed in the number of resources that are output from the process. If resources are not used effectively, it may
+    become too expensive to produce the outputs of the process, which would enable competitors to gain market shares.<span     style="mso-spacerun: yes">&nbsp;</span>
+</p>
+<p class="MsoBodyText">
+    <b>Solution</b>: A solution to this problem is to measure the effectiveness of the process, and at each initiation of a
+    new instance of the process, perform a few steps to evaluate how the process can be improved the next time.
+</p><br class="MsoBodyText" />
+<br />
+<p align="center">
+    <img height="320" alt="Process Feedback Pattern Image" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa1.gif" width="364"     v:shapes="_x0000_i1025" />
+</p>
+<p class="picturetext">
+    Participants of the process feedback pattern
+</p>
+<p>
+    <b>List of participants:&nbsp;</b>
+</p>
+<p>
+    aBusiness Worker-A role including the set of responsibilities needed to refine the process deliverable.&nbsp;
+</p>
+<p>
+    aDeliverable-This is the deliverable of the process, which changes state as the business worker manipulates it.
+</p>
+<p>
+    Metrics of aDeliverable-This is the metrics collected to show the state changes of the process deliverable, and also
+    how the business worker performs.
+</p><br />
+<br />
+<p class="MsoBodyText" align="center">
+    <img height="268" alt="Static view of the process feedback pattern" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa2.gif" width="292"     v:shapes="_x0000_i1026" />
+</p>
+<p class="picturetext">
+    Static view of the process feedback pattern
+</p><br class="MsoBodyText" />
+<br />
+<p class="MsoBodyText" align="center">
+    <img height="297" alt="Dynamic view of the process feedback pattern" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa3.gif" width="329"     v:shapes="_x0000_i1027" />
+</p>
+<p class="picturetext">
+    Dynamic view of the process feedback pattern
+</p>
+<h3>
+    <a id="Activity Interaction Pattern" name="Activity Interaction Pattern">Activity Interaction Pattern</a>
+</h3>
+<p class="MsoBodyText">
+    <b>Context</b>: The activity interaction pattern can be used wherever complex interactions between activities within a
+    business process are modeled.
+</p>
+<p class="MsoBodyText">
+    <b>Problem</b>: Activities may share resources with one another, typically by way of data transmission.<span     style="mso-spacerun: yes">&nbsp;</span>
+</p>
+<p class="MsoBodyText">
+    <b>Solution</b>: The activity interaction pattern can be used to model and organize complex interactions between
+    business resources.
+</p>
+<p class="MsoBodyText" align="center">
+    <img height="355" alt="Participants of the activity interaction pattern" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa6.gif" width="420"     border="0" />
+</p>
+<p class="picturetext">
+    Participants of the activity interaction pattern
+</p>
+<p>
+    <b>List of participants:&nbsp;</b>
+</p>
+<p>
+    aBusinessWorker-One of the business workers participating in the realization of the process.&nbsp;
+</p>
+<p>
+    anotherBusinessWorker-Another of the business workers participating in the realization of the process.&nbsp;
+</p>
+<p>
+    doThing-Activity performed by an instance of aBusinessWorker.
+</p>
+<p>
+    doOtherThing-Activity performed by an instance of anotherBusinessWorker.
+</p>
+<p>
+    aDeliverable-What is produced or maintained by the process.
+</p>
+<p style="TEXT-ALIGN: center" align="center">
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><img      height="415"     alt="Dynamic view of the activity interaction pattern-Resource A and resource B use the same shared object."     src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa7.gif" width="474" v:shapes="_x0000_i1025" /></span>
+</p>
+<p class="picturetext">
+    Dynamic view of the activity interaction pattern <span     style="FONT-SIZE: 10pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">-</span>Resource
+    A and resource B use the same shared object. &nbsp;
+</p>
+<p>
+    This pattern has no static view.
+</p>
+<h3>
+    <a id="Business Event-Result History Pattern" name="Business Event-Result History Pattern">Business Event-Result
+    History Pattern</a>
+</h3>
+<p class="MsoBodyText">
+    <b>Context</b>: The business event-result history pattern is suitable for problem domains where you need to maintain a
+    history of business events and their results. It is most often used to model financial systems and enterprise resource
+    planning (ERP) systems.
+</p>
+<p class="MsoBodyText">
+    <b>Problem</b>: The business event-result history pattern is use to track significant business events and then to
+    connect these events to their results. Capturing the different business events, along with their results-such as
+    decisions, contracts, statements, or products-helps you make better business decisions. The goal of this pattern is to
+    enable you to keep a record of all important business events, which are typically described with attributes such as
+    description, purpose, and result.
+</p>
+<p class="MsoBodyText">
+    <b>Solution</b>: Using the business event-results history pattern ensures that models produced to track important
+    business events and their causes are extensible. Extensible means that new kinds of events and causes can be added at a
+    later date to the same overall structure. Using this pattern makes it possible to record business events and, at a
+    later point in time, to analyze these events and draw conclusions. These conclusions typically lead to activities or
+    decisions in the business, such as to discontinue a relationship with a customer or vendor because of poor payment
+    history. If no record of business events is maintained, no history is available to learn from and the same mistakes may
+    be repeated over and over again. One potential problem with this pattern is when too many low-level business events are
+    recorded, the amount of detail makes the record hard to analyze and evaluate. Events should be defined so they're easy
+    to understand in a business context; for example, order placed, product delivered, invoice paid, and so on.
+</p>
+<p align="center">
+    <img height="352" alt="Participants of the business event-result history pattern " src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa8.gif"     width="399" v:shapes="_x0000_i1025" />
+</p>
+<p class="picturetext">
+    Participants of the business event-result history pattern
+</p><br class="MsoBodyText" />
+<br />
+<p>
+    <b>List of participants:&nbsp;</b>
+</p>
+<p>
+    Business Event-This business entity describes significant occurrences to the business. Examples of attributes to a
+    Business Event could be date, priority, description, and type. Common types are delivery, contract signing, and
+    purchase.&nbsp;
+</p>
+<p>
+    Product-This business entity represents the deliverables. Products can be abstract objects, such as a service, business
+    effort or market share or physical objects such as software and hardware. Common attributes are identifier and name.
+    Common types of products are computer program, support, consultation, and installation.&nbsp;
+</p>
+<p>
+    Party-This business entity may represent either individuals or companies. The parties play a role in the context of a
+    Contract. Typical roles are seller and buyer. Party typically has the attributes name and address.&nbsp;
+</p>
+<p>
+    Contract-This business entity represents a deal or a decision. The Contract defines the circumstances of a delivery,
+    where the delivery is a Product. The Contract is usually between a seller and a buyer, but it can also be between other
+    parties. Common attributes are description, date and until-date. Contracts can be associated with each other; for
+    example, one contract can be complimentary to another contract. This is also shown with the recursive association.
+    Examples of types of contracts are skeleton contract or lease contract.&nbsp;
+</p>
+<p>
+    Statement-A Statement expresses a Contract. A Statement can express many contracts and a contract can be stated many
+    times. Typical attributes are description and date. Statements can also be associated with each other. This is shown
+    with the recursive association. Examples of types of statements are written statements and verbal statements.
+</p>
+<p style="MARGIN-LEFT: 0cm; TEXT-ALIGN: center" align="center">
+    <img height="308" alt="The static view of the business event-result history pattern" src="./../../../extend.bus_model/guidances/concepts/resources/co_bpa9.gif"     width="377" v:shapes="_x0000_i1026" />
+</p>
+<p class="picturetext">
+    The static view of the business event-result history pattern
+</p>
+<p class="MsoBodyText">
+    This pattern has no dynamic view.&nbsp;
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

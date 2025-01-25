@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Business Entity</title>
+<meta content="Artifact" name="uma.type">
+<meta content="rup_business_entity" name="uma.name">
+<meta content="Business Entity" name="uma.presentationName">
+<meta content="WorkProductType:model_element:Элементы модели" name="uma.category">
+<meta content="Artifact" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_n7ZcgN7REdmjRZts2c4ZjQ", "{9A14ED32-2AC5-457E-93B8-474642D33A50}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{9A14ED32-2AC5-457E-93B8-474642D33A50}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Артефакт: Business Entity</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../extend.bus_model/workproducts/resources/bentity.jpg"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">A Business Entity represents a significant and persistent piece of information that is manipulated by business actors and business workers. Business Entities are passive; that is, they do not initiate interactions on their own. A Business Entity might be used in many different Business Use-Case Realizations and usually outlives any single interaction. Business Entities provide the basis for sharing information (document flow) among Business Workers participating in different Business Use-Case Realizations.</td>
+</tr>
+<tr>
+<td>Типы рабочих продуктов: <a href="./../../core.base_rup/workproducttypes/model_element_74CA3914.html" guid="_n7ZcgN7REdmjRZts2c4ZjQ">Элементы модели</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_business_entity__as_artifact" name="XE_business_entity__as_artifact"></a><a id="XE_business_entity__purpose_of" name="XE_business_entity__purpose_of"></a><a id="Purpose" name="Purpose"></a> 
+<p>
+    Business Entities represent an abstraction of important persistent information within the business. Any piece of
+    information that is a property of something else is probably not a Business Entity in itself.&nbsp; For example,
+    ContactDetails is a property of Customer and therefore not a Business Entity in itself. Information that is not stored
+    but is created or determined on-demand (when necessary) is also probably not a Business Entity. For example, product
+    inventory is certainly significant information, but this is not persistent information. Anytime somebody needs to know
+    how many instances of a particular bar code are currently on the shelves (or in the warehouse), this information will
+    be calculated and then discarded.
+</p>
+<p>
+    Stakeholders use Business Entities to ensure that the information created and required by the organization is present
+    in the Business Analysis Model. A business designer is responsible for identifying and describing Business Entities, as
+    well as for assessing the impact of organizational changes on the information created and required by the business.
+    Business Entities are also used by systems analysts and designers when describing system use cases and identifying
+    software entities, respectively.
+</p>
+<p>
+    Note that we say that Business Entities are manipulated by Business Workers, and in Business Use Case Realizations we
+    show this through invocations of operations on the Business Entity by Business Workers. This depiction is itself a
+    convenience - in reality the operation invoked on the Business Entity may be through the application of a tool by the
+    Business Worker.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Артефакт-контейнер</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Ответственный:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_designer_30BD5E18.html" guid="{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}">Business Designer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Изменен:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_architect_bom_26A8745F.html" guid="_RqlJIBpWEdqUwb9RAn2tTA">Business Architect</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_designer_30BD5E18.html" guid="{75C2C53E-AAB7-48F1-8CF6-ABA55D1C3469}">Business Designer</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Задачи</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Вход для:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/tasks/detail_a_business_entity_11E120FA.html" guid="{06A9A8AA-171C-4A9C-8CD8-A366F32AA77F}">Detail a Business Entity</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Выход из:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html" guid="_xfhhcBpWEdqUwb9RAn2tTA">Business Architectural Analysis</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/tasks/detail_a_business_entity_11E120FA.html" guid="{06A9A8AA-171C-4A9C-8CD8-A366F32AA77F}">Detail a Business Entity</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Иллюстрации	</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Отчеты</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/reports/business_entity_3BF830EF.html" guid="1.7739604216977318E-305">Business Entity </a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Опции представления</th><td class="sectionTableCell">UML Representation: Class, stereotyped as &lt;&lt;business entity&gt;&gt;. 
+<p>
+    <a id="Tailoring" name="Tailoring"></a>
+</p>
+<p>
+    If you are doing domain modeling, meaning that you identify Business Entities only, you can use the stereotype
+    &lt;&lt;domain class&gt;&gt; instead of &lt;&lt;business entity&gt;&gt;.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/checklists/business_entities_8D5D7B50.html" guid="1.888492534518768E-306">Business Entities</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html" guid="1.0295540980844903E-304">Business Entity</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.empulsys.com/rupbm" target="_blank"><img height="24"                 alt="Empulsys : разработка программного обеспечения и управление" src="./../../core.base_rup/guidances/supportingmaterials/resources/empulsys.jpg" width="100"                 border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.empulsys.com/rupbm" target="_blank">Empulsys Holding BV</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

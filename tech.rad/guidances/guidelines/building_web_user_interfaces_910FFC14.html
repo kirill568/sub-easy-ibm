@@ -1,0 +1,1112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Создание пользовательских Web-интерфейсов</title>
+<meta content="Guideline" name="uma.type">
+<meta content="building_web_user_interfaces" name="uma.name">
+<meta content="Создание пользовательских Web-интерфейсов" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "2.1236886661583098E-303"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.1236886661583098E-303"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Создание пользовательских Web-интерфейсов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этих рекомендациях приведены инструкции по созданию пользовательских Web-интерфейсов с помощью среды моделирования RAD 6.0. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_component_AE366827.html" guid="{3293F4F7-EFCD-4476-BFF1-81AC3812B512}">Элементы проекта реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a id="introduction" name="introduction"></a>Введение
+</h3>
+<p>
+    В RAD 6.0 предусмотрен широкий набор инструментов для быстрого создания пользовательских Web-интерфейсов. К этим
+    инструментам относятся <em>Проектировщик Web-сайтов</em>, <em>Проектировщик страниц</em> и несколько мастеров,
+    упрощающих создание сложных Web-страниц. В этом документе описан метод разработки, перечислены поддерживаемые типы
+    страниц и приведены рекомендации по эффективному применению инструментов для создания пользовательских Web-интерфейсов.
+</p>
+<h3>
+    <a id="introduction" name="introduction"></a>Метод разработки
+</h3>
+<p>
+    Для создания каждой Web-страницы пользовательского интерфейса можно сразу применить <em>Проектировщик страниц</em>,
+    однако для оптимизации процедуры в RAD 6.0 рекомендуется сначала воспользоваться нисходящим методом разработки с
+    помощью <em>Проектировщика Web-сайтов</em>. Редактор <em>Навигации</em> позволяет:
+</p>
+<ul>
+    <li>
+        Определять структуру навигации Web-сайта: 
+        <p>
+            Сначала создайте структуру Web-сайта в виде иерархической диаграммы. Составитель <em>Сайтов</em> позволяет
+            перетаскивать в диаграмму новые или существующие страницы и проекты и объединять их в группы. Составитель
+            сайтов можно открыть из панели <em>Палитра</em>. В этом редакторе можно наглядно добавлять, удалять страницы и
+            менять их расположение. При создании диаграммы навигации <em>Проектировщик Web-сайтов</em> автоматически
+            устанавливает ссылки между Web-страницами и составляет карту сайта. Позже, при составлении страницы с помощью
+            <em>Проектировщика страниц</em>, можно будет добавлять к ней элементы навигации, например, панель или меню
+            навигации. Эти элементы можно настроить для показа только связанных со страницей ссылок (например, можно
+            показать только ссылки на корневую, родительскую страницу, страницу того же уровня и первую дочернюю страницу).
+        </p>
+    </li>
+    <li>
+        Использовать шаблоны страниц: 
+        <p>
+            Шаблон задает макет и визуальные элементы, одинаковые для всех страниц, и определяет внешний вид Web-сайта.
+            Web-сайт можно создать с помощью мастера в процессе или после создания Web-проекта. В редакторе
+            <em>Навигации</em> шаблон можно применить ко всем страницам в диаграмме или только к нескольким выбранным. В
+            шаблон рекомендуется включать элементы навигации, чтобы затем применить их ко всем страницам и таким образом
+            установить управляющие элементы во всем Web-сайте.
+        </p>
+    </li>
+    <li>
+        Выбирать тип каждой Web-страницы: 
+        <p>
+            Щелкните два раза на любой странице, после чего откроется мастер <em>Создания страниц</em>. В нем выберите один
+            из поддерживаемых типов страниц (см. пункт Выбор типа страницы), задайте начальные свойства страницы и откройте
+            ее в редакторе <em>Проектировщик страниц</em>. Теперь можно составлять и редактировать содержимое страницы.
+            Обратите внимание, что с помощью составителя <em>Навигации Web-сайта</em> можно перетаскивать на страницу
+            элементы навигации. Составитель можно открыть из панели <em>Палитра</em>.
+        </p>
+    </li>
+</ul>
+<h3>
+    <a id="introduction" name="introduction"></a>Выбор типа страницы
+</h3>
+<p>
+    RAD 6.0 поддерживает создание пользовательских Web-интерфейсов с помощью технологий HTML, JSP и Faces JSP. Каждая из
+    них соответствует требованиям отдельного типа Web-приложений. Каждая технология определяет тип страниц, который
+    поддерживает различные компоненты пользовательского Web-интерфейса. При создании пользовательского Web-интерфейса
+    необходимо знать, какие компоненты поддерживает тот или иной тип страниц и соответствует ли он типу разрабатываемого
+    Web-приложения. Ниже описаны компоненты, поддерживаемые разными типами страниц в RAD 6.0, и указано, какие типы страниц
+    можно использовать в Web-приложениях, основанных на статической, динамической среде, а также на Struts и JavaServer
+    Faces (JSF).
+</p><strong><a id="introduction" name="introduction"></a>Поддерживаемые компоненты пользовательского интерфейса</strong> 
+<p>
+    Типы страниц в RAD 6.0, которые можно реализовать в пользовательских интерфейсах, делятся на три категории: HTML, JSP и
+    Faces JSP. JSP в свою очередь делится на простые файлы JSP и страницы Struts JSP. Faces JSP делится на простые Faces
+    JSP и Faces JSP с кэшированием на стороне клиента. Ниже приведено описание этих типов страниц.
+</p>
+<p>
+    <strong>HTML</strong>
+</p>
+<p>
+    Этот тип позволяет создавать простые страницы HTML и поддерживает другие языки описания (см. таблицу 1 - Компоненты
+    типов страниц). Поддерживаются также обычные компоненты HTML: набор фреймов, CSS и JavaScript. Кроме того, этот тип
+    страниц позволяет создавать и применять шаблоны для определения внешнего вида Web-страниц.
+</p>
+<p>
+    <strong>JSP</strong>
+</p>
+<p>
+    Тип страниц JSP поддерживает интерфейсы, созданные с помощью технологии JSP (в RAD 6.0 поддерживается стандартная
+    версия JSP 2.0). В этом типе доступны все компоненты простых страниц HTML, а также технология сценария JSP (Java
+    Scriptlet) и действия (Пользовательский тег). Этот инструмент поддерживает функцию JSP Fragments, которая позволяет
+    выносить одинаковые части страницы в отдельный файл и по мере необходимости включать его в другие страницы JSP. Также
+    поддерживается доступ к базовым данным с помощью технологии Service Data Object (SDO). Описание SDO приведено в разделе
+    <a class="elementLinkWithUserText" href="./../../../tech.rad/guidances/concepts/web_application_frameworks_1A457BEE.html" guid="1.099460392705072E-303">Концепция: Среды Web-приложений</a>.
+</p>
+<p>
+    <strong>Struts JSP</strong>
+</p>
+<p>
+    Страница Struts JSP содержит все компоненты простой страницы JSP, а также все элементы Struts (см. Концепции: Среды
+    Web-приложений для описания Struts). Этот тип страниц применяется для разработки пользовательских Web-интерфейсов для
+    приложений, созданных с помощью среды Struts. Также этот инструмент поддерживает доступ к библиотекам тегов Struts HTML
+    (struts-html.tld) и Bean (struts-bean.tld), позволяет включать поля из объекта ActionForm прямо на страницу, а также
+    добавлять другие библиотеки Struts.
+</p>
+<p>
+    <strong>Faces JSP</strong>
+</p>
+<p>
+    Страницы Faces JSP - это страницы JSP, разработанные для пользовательских Web-интерфейсов, которые были созданы с
+    помощью технологии JSF. (Описание JSF приведено в разделе <a class="elementLinkWithUserText" href="./../../../tech.rad/guidances/concepts/web_application_frameworks_1A457BEE.html" guid="1.099460392705072E-303">Концепция: Среды Web-приложений</a>.) Такие страницы предоставляют доступ к библиотеке
+    базовых тегов и к предопределенным компонентам пользовательского интерфейса (компонентам Faces), которые можно
+    перетащить на страницу. Faces JSP позволяет использовать сценарии в форме фрагментов кода Java, например, для обработки
+    событий пользовательского интерфейса.
+</p>
+<p>
+    <strong>Faces JSP с кэшированием на стороне клиента</strong>
+</p>
+<p>
+    Страницы такого типа содержат все функции Faces JSP, а также компоненты пользовательского интерфейса, данные которого
+    можно кэшировать на стороне клиента. Кэширование на стороне клиента позволяет связывать компонент с переменными
+    JavaScript, а не с данными на стороне сервера. Благодаря этому сокращается количество запросов между сервером и
+    клиентом и повышается производительность создаваемых Web-страниц. Доступны следующие компоненты Faces Client:
+</p>
+<ul>
+    <li>
+        Сетка данных: Содержит таблицу с записями из реляционного источника данных или элементами из массива JavaBean.
+    </li>
+    <li>
+        График: Отображает данные в виде гистограммы, круговой диаграммы или графика. Для работы с графиками в браузере
+        необходимо установить модуль Macromedia Flash.
+    </li>
+    <li>
+        Панель Дерево: Отображает иерархические данные в виде древовидной структуры.
+    </li>
+    <li>
+        Web-служба: Позволяет получать данные от существующей Web-службы без обновления страницы.
+    </li>
+</ul>
+<p>
+    В следующей таблице приведен обзор компонентов, поддерживаемых страницами каждого типа. Эту таблицу можно использовать
+    для определения оптимального типа страниц для конкретного пользовательского интерфейса Web-приложения.
+</p>
+<center>
+    <table cellspacing="0" cellpadding="5" width="700" border="1">
+        <tbody>
+            <tr valign="top" bgcolor="#CCCCCC">
+                <th width="100">
+                    Тип страницы
+                </th>
+                <th width="200">
+                    Язык описания
+                </th>
+                <th width="50">
+                    Поддержка CSS
+                </th>
+                <th width="50">
+                    Поддержка шаблонов страниц
+                </th>
+                <th width="50">
+                    Формат стиля XML
+                </th>
+                <th width="100">
+                    Поддержка сценариев (ScriptingSupport)
+                </th>
+                <th width="140">
+                    Доступ к данным SDO (*)
+                </th>
+            </tr>
+            <tr valign="top">
+                <td>
+                    HTML
+                </td>
+                <td>
+                    <p>
+                        HTML 4.01
+                    </p>
+                    <p>
+                        Набор фреймов HTML 4.01
+                    </p>
+                    <p>
+                        Compact HTML 1.0
+                    </p>
+                    <p>
+                        XHTML 1.0 или 1.1
+                    </p>
+                    <p>
+                        Набор фреймов XHTML 1.0
+                    </p>
+                    <p>
+                        WML 1.3
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                </td>
+                <td>
+                    нд
+                </td>
+                <td>
+                    JavaScript
+                </td>
+                <td>
+                    нд
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    JSP
+                </td>
+                <td>
+                    <p>
+                        HTML 4.01
+                    </p>
+                    <p>
+                        Набор фреймов HTML 4.01
+                    </p>
+                    <p>
+                        Compact HTML 1.0
+                    </p>
+                    <p>
+                        XHTML 1.0 или 1.1
+                    </p>
+                    <p>
+                        Набор фреймов XHTML 1.0
+                    </p>
+                    <p>
+                        WML 1.3
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        JavaScript
+                    </p>
+                    <p>
+                        Java Scriptlet
+                    </p>
+                    <p>
+                        Пользовательский тег
+                    </p>
+                </td>
+                <td>
+                    Да
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Struts JSP
+                </td>
+                <td>
+                    <p>
+                        HTML 4.01
+                    </p>
+                    <p>
+                        Набор фреймов HTML 4.01
+                    </p>
+                    <p>
+                        XHTML 1.0 или 1.1
+                    </p>
+                    <p>
+                        Набор фреймов XHTML 1.0
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        JavaScript
+                    </p>
+                    <p>
+                        Java Scriptlet
+                    </p>
+                    <p>
+                        Пользовательский тег
+                    </p>
+                </td>
+                <td>
+                    Да
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Faces JSP
+                </td>
+                <td>
+                    <p>
+                        HTML 4.01
+                    </p>
+                    <p>
+                        XHTML 1.0 или 1.1
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        JavaScript
+                    </p>
+                    <p>
+                        Java Scriptlet
+                    </p>
+                    <p>
+                        Пользовательский тег
+                    </p>
+                    <p>
+                        Фрагмент кода Java
+                    </p>
+                </td>
+                <td>
+                    Да
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Faces JSP с кэшированием на стороне клиента
+                </td>
+                <td>
+                    <p>
+                        HTML 4.01
+                    </p>
+                    <p>
+                        XHTML 1.0 или 1.1
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Да
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Нет
+                    </p>
+                    <p>
+                        Да
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        JavaScript
+                    </p>
+                    <p>
+                        Java Scriptlet
+                    </p>
+                    <p>
+                        Пользовательский тег
+                    </p>
+                    <p>
+                        Фрагмент кода Java
+                    </p>
+                    <p>
+                        Macromedia Flash
+                    </p>
+                </td>
+                <td>
+                    Да (с кэшированием данных на стороне клиента)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+<p>
+    * Для развертывания данных SDO необходимо установить WAS 5.1
+</p>
+<p align="center">
+    <strong>Таблица 1 - Компоненты типов страниц</strong><br />
+</p>
+<h3>
+    <a id="web_application" href="./../../../tech.rad/guidances/concepts/web_application_frameworks_1A457BEE.html" guid="1.099460392705072E-303" name="web_application"></a>Применимость Web-приложения
+</h3>
+<p>
+    <br />
+     Тип страниц, используемый при реализации пользовательского Web-интерфейса, в большинстве случаев зависит от типа
+    разрабатываемого Web-приложения. Для статических Web-приложений доступны только страницы HTML. Для динамических
+    Web-приложений можно использовать как HTML, так и JSP. Помимо этого, при разработке динамических Web-приложений с
+    помощью среды JSF или Struts можно использовать соответствующие типы страниц. Это открывает доступ к дополнительным
+    функциям и упрощает процедуру создания пользовательского интерфейса. В таблице 2 указано, какие типы страниц можно
+    применять к статическим, динамическим Web-приложениям, и Web-приложениям, использующим среды JSF и Struts.<br />
+</p>
+<center>
+    <table cellspacing="0" cellpadding="5" width="700" border="1">
+        <tbody>
+            <tr valign="top" bgcolor="#CCCCCC">
+                <th>
+                    Тип страницы
+                </th>
+                <th>
+                    Статическое Web-приложение
+                </th>
+                <th>
+                    Динамическое Web-приложение (вне среды)
+                </th>
+                <th>
+                    Web-приложение Struts
+                </th>
+                <th>
+                    Web-приложение JSF
+                </th>
+            </tr>
+            <tr valign="top">
+                <td>
+                    HTML
+                </td>
+                <td>
+                    Да
+                </td>
+                <td>
+                    Да
+                </td>
+                <td>
+                    Да
+                </td>
+                <td>
+                    Да
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    JSP
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Да
+                </td>
+                <td>
+                    Да
+                </td>
+                <td>
+                    Да
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Struts JSP
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Да (рекомендуется)
+                </td>
+                <td>
+                    Нет
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Faces JSP
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Да (с библиотекой интеграции)
+                </td>
+                <td>
+                    Да (рекомендуется)
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Faces JSP с кэшированием на стороне клиента
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Нет
+                </td>
+                <td>
+                    Да (с библиотекой интеграции)
+                </td>
+                <td>
+                    Да (рекомендуется)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+<p align="center">
+    <strong>Таблица 2 - Применимость типов страниц</strong>
+</p>
+<h3>
+    <a id="web_application" href="./../../../tech.rad/guidances/concepts/web_application_frameworks_1A457BEE.html" guid="1.099460392705072E-303" name="web_application"></a>Редактирование страниц
+</h3>
+<p>
+    <em>Проектировщик страниц</em> применяется в RAD 6.0 для редактирования Web-страниц. Он содержит базовую редакторскую
+    панель для создания страниц в режиме WYSIWYG или в виде текстового файла с исходным кодом. В зависимости от типа
+    создаваемой Web-страницы при работе с проектировщиком применяются также и другие панели. В редактировании страниц
+    участвуют следующие панели:
+</p>
+<p>
+    <strong>Панель Палитра</strong>
+</p>
+<p>
+    В панели Палитра представлен широкий набор готовых к применению компонентов пользовательского интерфейса, которые можно
+    поместить на страницу. Эти компоненты объединены в отдельных составителях в соответствии с типом функций, которые они
+    выполняют. Например, стандартные элементы форм HTML (кнопки, текстовые поля и выпадающие списки) сгруппированы в
+    составителе <em>Теги форм</em>. В зависимости от типа редактируемой страницы в панели Палитра отображаются разные
+    составители. В таблице 3 перечислены составители по умолчанию, которые применяются для всех типов страниц. В панели
+    Палитра можно добавлять, удалять, скрывать и показывать составители. Можно также настраивать большинство составителей,
+    выполняя те же действия с их компонентами. В документации к продукту приведено описание каждого составителя и его
+    содержимого по умолчанию.
+</p>
+<center>
+    <table cellspacing="0" cellpadding="5" width="700" border="1">
+        <tbody>
+            <tr valign="top" bgcolor="#CCCCCC">
+                <th>
+                    Составитель панели Палитра
+                </th>
+                <th>
+                    HTML
+                </th>
+                <th>
+                    JSP
+                </th>
+                <th>
+                    Struts JSP
+                </th>
+                <th>
+                    Faces JSP
+                </th>
+                <th>
+                    Faces JSP с кэшированием на стороне клиента
+                </th>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги HTML
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги форм
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Шаблон страниц
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Навигация по Web-сайтам
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Портал
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги JSP
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Data
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Компоненты Faces
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Компоненты Faces Client
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги HTML Struts
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги объекта JavaBean Struts
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги управления Struts
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    X
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Вложенные теги Struts
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    скрыто
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    Теги замощения Struts
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td align="middle">
+                    скрыто
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+<p align="center">
+    <strong>Таблица 3 - Составители по умолчанию в панели Палитра (по типу страницы)</strong>
+</p>
+<p align="left">
+    <strong>Панель Быстрое редактирование</strong>
+</p>
+<p align="left">
+    Эта панель позволяет быстро добавлять на страницу фрагменты кода JavaScript. Выберите на странице компонент, после чего
+    в левой части панели Быстрое редактирование появится список действий, которые можно применить к этому компоненту.
+    Выберите действие и добавьте сценарий для него одним из следующих способов:
+</p>
+<div align="left">
+    <ul>
+        <li>
+            Введите сценарий прямо в редактор сценариев в правой части панели.
+        </li>
+        <li>
+            Щелкните правой кнопкой мыши на редакторе сценариев, выберите <em>Ввести фрагмент кода</em> и выберите фрагмент
+            кода из предложенного списка. В зависимости от контекста будут предложены разные фрагменты кода.
+        </li>
+    </ul>
+</div>
+<h3 align="left">
+    <a id="web_application" href="./../../../tech.rad/guidances/concepts/web_application_frameworks_1A457BEE.html" guid="1.099460392705072E-303" name="web_application"></a>Ресурсы
+</h3>
+<p align="left">
+    Дополнительная информация о <em>Проектировщике Web-сайтов</em> и <em>Проектировщике страниц</em> приведена в
+    документации к продукту:
+</p>
+<div align="left">
+    <ol>
+        <li>
+            Запустите Rational Application Developer 6.0.
+        </li>
+        <li>
+            В панели меню выберите <em>Справка &gt; Оглавление справки</em>.
+        </li>
+        <li>
+            Разверните пункт <em>Разработка Web-приложений</em>.
+        </li>
+        <li>
+            Просмотрите <em>Проектирование Web-сайтов</em> или <em>Проектирование Web-страниц</em>.
+        </li>
+    </ol>
+</div></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

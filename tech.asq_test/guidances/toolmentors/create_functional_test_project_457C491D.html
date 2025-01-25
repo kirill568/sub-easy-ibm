@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Create a Test Project Using IBM Rational Functional Tester</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_functional_test_project" name="uma.name">
+<meta content="Create a Test Project Using IBM Rational Functional Tester" name="uma.presentationName">
+<meta content="Tool:rup_test_functional_tester:IBM Rational Functional Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Functional Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_QWBsEMwCEdq9s5d23VYjZw", "_oLvZcMwBEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_QWBsEMwCEdq9s5d23VYjZw", "_oLvZcMwBEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_oLvZcMwBEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Create a Test Project Using IBM Rational Functional Tester</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Functional Tester to create a project.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_functional_tester_65E9E232.html" guid="_QWBsEMwCEdq9s5d23VYjZw">IBM Rational Functional Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_environment_configurations_605902BA.html" guid="{187268D3-3166-4823-8DD8-5E1112004AC3}">Определение конфигурации среды тестирования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/define_test_approach_51A370C3.html" guid="{87F96887-83EF-4F0F-8F79-E98043406B52}">Определение подхода к тестированию</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/identify_test_targets_693323A6.html" guid="{FFBDC174-FA91-4712-ABE2-7580A5670E8D}">Определение цели теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    One of the first things you will do in IBM&reg; Rational&reg; Functional Tester is create a project. This step is necessary to
+    define the test environment configuration for your test effort. The project is used to set references to other
+    projects, set default properties for test assets (such as object maps and script templates), and manage the integration
+    with IBM&reg; Rational&reg; Test Manager.
+</p>
+<p>
+    A Rational Functional Tester project stores application test assets such as scripts, object maps, verification point
+    baseline files, and test datapools. From a Rational Functional Tester project, you can manage your test assets from the
+    Projects view. Creating a project is a necessary precursor to developing tests. Before you can begin recording scripts
+    (see <a class="elementLinkWithUserText" href="./../../../tech.asq_test/guidances/toolmentors/create_functional_test_script_E22A970E.html" guid="_rPIR8MwBEdq9s5d23VYjZw">Tool Mentor: Create Test Scripts Using IBM Rational Functional Tester</a>), you must
+    first create a project.
+</p>
+<p>
+    <strong>Note:</strong> If you have Rational TestManager installed, you may use the integrated features of Rational
+    Functional Tester with Rational TestManager. This integration requires Rational TestManager version 20003.06.13 or
+    higher. For more information on this integration, refer to the topic <img height="16" alt=""     src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> <em>Understanding Functional Test Product Packaging and Integrations</em>
+    in the Rational Functional Tester online Help.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To create a test project in Rational Functional Tester, perform the following steps:
+</p>
+<ol>
+    <li>
+        Open Rational Functional Tester
+    </li>
+    <li>
+        Ensure that the Functional Test Perspective is selected
+    </li>
+    <li>
+        Select <strong>File &gt; New &gt; Functional Test Project</strong>
+    </li>
+    <li>
+        Enter a project name and click <strong>Finish</strong>
+    </li>
+</ol>
+<p>
+    For more information on Rational Functional Tester projects, refer to the topic <img height="16" alt=""     src="./../../../tech.asq_test/guidances/toolmentors/./resources/helpbook.gif" width="16" /> <em>Creating a Functional Tester Project</em> in the Rational Functional
+    Tester online Help.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

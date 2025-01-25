@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Business Process Decomposition</title>
+<meta content="Concept" name="uma.type">
+<meta content="business_process_decomposition" name="uma.name">
+<meta content="Business Process Decomposition" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_26PQIAIMEdq-_NKqZM1EhA", "_C7UYYBDfEdq7YLm-hn4i0Q", "_vHtFUC7CEdu64PK-GeN94Q"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_C7UYYBDfEdq7YLm-hn4i0Q", "_vHtFUC7CEdu64PK-GeN94Q"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vHtFUC7CEdu64PK-GeN94Q"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Business Process Decomposition</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Business process decomposition is an approach which allows the refinement of business use cases, to make tractable the expression of use case realizations in UML Activity Diagram form.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../extend.bus_model/disciplines/rup_business_modeling_discipline_553E20F6.html" guid="_C7UYYBDfEdq7YLm-hn4i0Q">Business Modeling</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/roles/rup_business_process_analyst_B9668ABF.html" guid="{76FAC4FE-AA09-48AC-85A5-68BD1EE8A86A}">Business-Process Analyst</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_14F1BAF2.html" guid="{587A849E-B5F2-4B17-8C7F-1C59B0F5612D}">Business Use Case</a>
+</li>
+<li>
+<a href="./../../../extend.bus_model/workproducts/rup_business_use_case_model_EC79264C.html" guid="{89BEF367-5875-47E0-97D6-23E5BCCE52B8}">Business Use Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    A <em><strong>business process</strong></em> is <span style="mso-fareast-font-family: 'MS Mincho'">a group of logically
+    related (and typically sequenced) activities that use the resources of the organization to provide defined results in
+    support of the organization's objectives -- delivering value in the form of product or service, often&nbsp;to an
+    external party such as a customer or partner. The process, possibly decomposed into sub-processes, has associated
+    organization, resource, and data models to capture all aspects of the process, including not only performing roles, but
+    required/used resources, ownership of resources, accountability, definitions of items passed into and out of tasks, and
+    so on.</span>
+</p>
+<p>
+    This is a very concrete view of process, and so we adopt the view that business processes are <em>realizations</em> of
+    the bounding business system's <em>business use cases</em>. Therefore we can apply the same taxonomy to them as we do
+    to business use cases (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/business_use-case_model_1C8E857B.html" guid="3.9905535055726305E-306">Guideline: Business Use-Case Model</a>), that is:
+</p>
+<ul>
+    <li>
+        <strong>Core</strong>, for the external-facing business&nbsp;processes that provide the value chain
+    </li>
+    <li>
+        <strong>Management</strong>, for the internal business use cases that coordinate the value chain
+    </li>
+    <li>
+        <strong>Support</strong>, for the internal business use cases that support the value chain
+    </li>
+</ul>
+<p>
+    We also allow processes to be event-driven, that is, they are triggered by conditions (resulting in <a class="elementLinkWithUserText" href="./../../../extend.bus_model/workproducts/rup_business_event_853992A0.html" guid="{EF5798CC-41AE-4137-B248-B308D465CF8A}">Artifact: Business Event</a>s) that arise in the conduct of business.
+</p>
+<h3>
+    Process Level
+</h3>
+<p>
+    In&nbsp;<a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/concepts/modeling_large_organizations_DB7556B6.html" guid="1.268342166757605E-304">Concept: Modeling Large Organizations</a>&nbsp;(extract in quotes below), we describe a
+    technique for accommodating the needs of executive management, as well as business process owners, by defining business
+    use cases at two levels of detail:
+</p>
+<p>
+    "One model, for the executives, would contain a set of high-level business use cases that showed the intent and purpose
+    of the organization. The other model, for the process owners, would contain a detailed set of use cases that helped
+    clarify how the organization needs to function internally. For each high-level business use case, you could define one,
+    or several, detailed business use cases representing the same activities in the organization..."
+</p>
+<p>
+    The figure below illustrates this refinement of use cases.
+</p>
+<p align="center">
+    <em><img height="570" alt="Illustration of Business Use-Case refinement" src="./../../../extend.bus_model/guidances/concepts/./resources/large1.gif"     width="517" /></em>
+</p>
+<p>
+    Note that the lower-level, more detailed use cases are still use cases for the <em>same business system</em> as the
+    high-level use cases, that is they still represent a black-box view of the behavior of that business system. For each
+    of these levels of use-case, there is a corresponding realization, which we can describe as a business process, it is
+    possible therefore to regard this kind of analysis as <em>process decomposition</em>.
+</p>
+<p>
+    Process decomposition analyzes business processes and sub-processes to a level of detail at which it is feasible and
+    useful to construct an <a class="elementlinkwithusertext" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">activity diagram</a> for the sub-process. Input to process decomposition can come from
+    <em><strong>Level 1</strong></em> business process models, perhaps&nbsp;written only as narratives, and associated with
+    the corresponding <em>Level 1</em> business use cases by realization relationships. <em><strong>A Level 1 process is
+    the high-level description of what a business system does, meeting the needs of executive management, as described
+    above.</strong></em>
+</p>
+<p>
+    Process decomposition results in a set of documented <em><strong>Level 2</strong></em> processes captured in the <a class="elementlinkwithusertext" href="./../../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a> as <a class="elementlinkwithusertext" href="./../../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html" guid="{47F095EB-E651-4A34-B75B-BACE38ED90C7}">Business Use-Case Realizations</a> -- at <em>Level 2</em> it is typically
+    possible to construct an activity diagram for the process, so as a rule of thumb we have&nbsp;three levels of
+    decomposition -- level 1 process, level 2 process and activity (composed of activity nodes). There are several ways to
+    illustrate a business use-case realization -- we focus on activity diagrams (see&nbsp;<a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Guideline: Diagrams in the Business Analysis Model</a>)&nbsp;here because they have a
+    form and semantics that will be familiar to most business analysts interested in business process modeling. Such models
+    are especially useful in identifying inefficiencies in current processes, leading to identification of opportunities
+    for automation and business transformation.
+</p>
+<h3>
+    Business Process Decomposition in SOMA mapped to Use-Case Refinement.
+</h3>
+<p>
+    IBM <a href="http://www-1.ibm.com/services/us/bcs/html/bcs_index.html">Global Business Services</a> (GBS) <a href="http://www-1.ibm.com/services/us/bcs/pdf/g510-5060-ibm-service-oriented-modeling-arch.pdf">Service-Oriented
+    Modeling and Architecture</a> (SOMA) is an approach and set of techniques for SOA that bridge the gap between business
+    and IT.
+</p>
+<p>
+    In the figures below, we map the results of process decomposition as SOMA would&nbsp;show it, to the equivalent results
+    in business modeling using business use-case refinement. We include this to show that the two approaches are really
+    only using different terminology and representations for the same concepts, and yield the same result in the end -- a
+    set of business process descriptions that can be used to bridge the gap to automation, for example, using IT systems,
+    or services in a Service-Oriented Architecture&nbsp;(<a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/termdefinitions/service-oriented_architecture_C8869AEF.html" guid="_yVEVKdnmEdmO6L4XMImrsA">SOA</a>) initiative.
+</p>
+<p style="MARGIN: 6pt 0in" align="center">
+    <img height="258" alt="Illustration of process decomposition" src="./../../../extend.bus_model/guidances/concepts/./resources/Technique-Fig28.gif" width="545" />
+</p>
+<p style="MARGIN: 6pt 0in">
+    The figure above shows process decomposition into sub-processes and use cases in a notational form used in SOMA. The
+    notion of a sub-process is a convenient construct used to denote further levels of refinement of a process, into its
+    constituent parts (sub-processes), recursively.
+</p>
+<p style="MARGIN: 6pt 0in">
+    Once we get to the point where we begin to look at user-system interactions, we stop and label the sub-process a
+    leaf-level sub-process.&nbsp; A leaf-level sub-process is&nbsp;potentially a&nbsp;composite of system use cases, for
+    example, a leaf-level sub-process of Process Order might have have use-cases of Get Customer Name, Get Customer Address
+    and Get Order Items.
+</p>
+<p style="MARGIN: 6pt 0in">
+    The figure below shows the equivalent structure expressed using RUP business modeling notation.
+</p>
+<p style="MARGIN: 6pt 0in" align="center">
+    <em><img height="406" alt="Illustration of mapping of business use-case refinement" src="./../../../extend.bus_model/guidances/concepts/./resources/uc_refinement.jpg"     width="666" /></em>
+</p>
+<p style="MARGIN: 6pt 0in">
+    This structure shows the same three levels, with the leaf-level sub-processes being represented by action nodes in the
+    activity diagram.
+</p>
+<p style="MARGIN: 6pt 0in">
+    Note that what SOMA shows as use cases at the lowest level, are not <em>Business</em> Use Cases as we define them here:
+    they are -- as are the corresponding activity nodes (action nodes) in the Business Use-Case Realizations -- the loci
+    for possible interaction(s) with IT systems. SOMA's use cases are therefore closer to the use cases that arise in
+    application development, as it is described in RUP (see <a class="elementLinkWithUserText" href="./../../../extend.bus_model/guidances/guidelines/going_from_business_models_to_systems_3B55D8F4.html" guid="1.3212739617274792E-306">Guideline: Going from Business Models to Systems</a>).
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Using UML activity diagrams to model business processes it is possible to identify key <a class="elementlinkwithusertext" href="./../../../extend.bus_model/workproducts/rup_business_worker_75AE475B.html" guid="{6C6AD4E6-C7B4-42E1-A3D1-FAC9DC2415B5}">business workers</a>, business significant milestones and <a class="elementlinkwithusertext" href="./../../../extend.bus_model/workproducts/rup_business_event_853992A0.html" guid="{EF5798CC-41AE-4137-B248-B308D465CF8A}">events</a>, task sequences and dependencies, <a class="elementlinkwithusertext" href="./../../../extend.bus_model/workproducts/rup_business_entity_638A1D00.html" guid="{9A14ED32-2AC5-457E-93B8-474642D33A50}">business entities</a> modified and exchanged, and interactions within and
+    between organizations.<span style="mso-spacerun: yes">&nbsp;</span> A process model should concretely identify "what"
+    needs to take place, not "how" tasks are carried out, since that is an aspect of business process that can change over
+    time, especially in response to changes in business environment or technology.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

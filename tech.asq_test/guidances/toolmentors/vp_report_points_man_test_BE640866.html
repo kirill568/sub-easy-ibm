@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: When to Use Verification Points versus Reporting Points</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="vp_report_points_man_test" name="uma.name">
+<meta content="When to Use Verification Points versus Reporting Points" name="uma.presentationName">
+<meta content="Tool:rup_test_manual_tester:IBM Rational Manual Tester" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="IBM Rational Manual Tester" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "_UFtp4MwCEdq9s5d23VYjZw", "_-OQOYMwBEdq9s5d23VYjZw"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_UFtp4MwCEdq9s5d23VYjZw", "_-OQOYMwBEdq9s5d23VYjZw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_-OQOYMwBEdq9s5d23VYjZw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: When to Use Verification Points versus Reporting Points</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Manual Tester to optimize usage of verification and reporting points.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../tech.asq_test/tools/rup_test_manual_tester_70C53459.html" guid="_UFtp4MwCEdq9s5d23VYjZw">IBM Rational Manual Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/determine_test_results_630C9EC9.html" guid="{74E51E86-ECAB-4A61-9A88-FD358EE6F2B1}">Определение результатов тестирования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    IBM&reg; Rational&reg; Manual Tester supports four types of statements for writing a test script: steps, verification points,
+    reporting points, and groups. The question often arises: What is the difference between a verification point (VP) and a
+    reporting point (RP)? This tool mentor describes the difference, and provides some guidance on when to use verification
+    points and when to use reporting points.
+</p>
+<h4>
+    How are verification points and reporting points different?
+</h4>
+<p>
+    <i>Verification points</i> are steps inside a script that are meant to provide the tester with a way of asking
+    questions about the application under test. When a tester has followed a series of steps that change the appearance of
+    the application, a VP can be used to indicate that the application responded correctly. In this way, if a VP fails, the
+    tester knows immediately that one of the following is true:
+</p>
+<ul>
+    <li>
+        The tester did not follow the steps correctly.
+    </li>
+    <li>
+        The application is not behaving correctly. In this case, the application could have changed since the time when the
+        test was written. As a result, the test itself could be out-of-date, or the application could have a new defect in
+        it.
+    </li>
+</ul>
+<p>
+    For example, a VP could ask "Did the application open a new window?" after the tester clicked the <strong>File &gt; New
+    Window</strong> menu option, or "Is the error message displayed in a red font?" after the test has deliberately created
+    an error condition.
+</p>
+<p>
+    When a tester runs a script, VPs allow the tester to communicate that the application behaved in one of the following
+    ways:
+</p>
+<ul>
+    <li>
+        As expected (via the <i>pass</i> result)
+    </li>
+    <li>
+        Not as expected (via <i>fail</i> when the result is clearly incorrect, or via <i>error</i> when something
+        completely unexpected happens, like an unexpected error dialog popping up)
+    </li>
+    <li>
+        Neither obviously as expected or not as expected (via the <i>inconclusive</i> result).
+    </li>
+</ul>
+<p>
+    <i>Reporting points</i> are also steps in a script, but they are meant to allow the tester to report on the state of
+    the test itself. Suppose a test is intended to prove that the tester can create a new order in an online ordering
+    system. The tester may navigate the application correctly, following all the steps of the script and therefore giving
+    all the VPs a <i>pass</i> result. However, when the tester goes to the order status screen, the order cannot be found.
+    In this case, the tester could use the RP to indicate that the test failed, even though all the VPs passed.
+</p>
+<p>
+    As with verification points, the tester would use the <i>pass</i> result if the test obviously achieved the overall
+    objective. The tester would use the <i>fail</i> result if the test obviously did not achieve its objective. The
+    <i>error</i> result would indicate that the test result was both wrong and unexpected, and the <i>inconclusive</i>
+    result would indicate that the tester could not determine if the test passed or failed.
+</p>
+<p>
+    Tests will typically have many VPs, and at least one but usually very few RPs.
+</p>
+<p>
+    This tool mentor provides an example of how you can structure a test script to use VPs and RPs in an optimal way.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To create a summary report of VPs in a test script using RPs, perform the following steps:
+</p>
+<ol>
+    <li>
+        Create a series of steps to perform some task in the application being tested
+    </li>
+    <li>
+        At the end of that series of steps, include a VP that asks if the application (or some portion of the application)
+        now has a particular appearance
+    </li>
+    <li>
+        If it would help the tester to run the test, include an image of your application in the VP
+    </li>
+    <li>
+        If it helps with readability, put the steps and their VP in a group
+    </li>
+    <li>
+        Repeat the above four steps for each task in the test
+    </li>
+    <li>
+        At the end of the test, include one RP that asks if some overall result has been achieved by performing all the
+        steps in the test
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

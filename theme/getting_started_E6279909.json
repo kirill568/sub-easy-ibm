@@ -1,0 +1,47 @@
+[
+
+{objectId: "3.2329841703462285E-305", title: "Начало работы", url: "core.base_rup/customcategories/getting_started_E6279909.html", nodeDocType: "3ebda39d", 
+children: [
+
+{objectId: "_uRs44C8CEdqfj_h52-wqcw", title: "Введение в RUP", url: "core.base_rup/guidances/supportingmaterials/introduction_to_rup_36B63436.html", nodeDocType: "3ebda39d"},
+{objectId: "5.95251660891756E-306", title: "Основные элементы процесса", url: "core.base_rup/guidances/supportingmaterials/process_essentials_C18A2AB2.html", nodeDocType: "e9d4dce8"},
+{objectId: "_uDU1oASEEdq61bDkWg1SXw", title: "Основные сведения об архитектуре методов", url: "core.base_concepts/customcategories/method_architecture_fundamentals_5F73467B.html", nodeDocType: "1bed0b76", 
+children: [
+
+{objectId: "_94_eoO8LEdmKSqa_gSYthg", title: "Ключевые возможности архитектуры UMA", url: "core.base_concepts/guidances/concepts/introduction_to_uma_931F5B93.html", nodeDocType: "699c271e"},
+{objectId: "_WfL28BTMEdqrUt4zetC1gg", title: "Концепции наполнения методов", url: "core.base_concepts/customcategories/method_concepts_179C5639.html", nodeDocType: "1bed0b76", 
+children: [
+
+{objectId: "1.1609745730665898E-304", title: "Роль             ", url: "core.base_concepts/guidances/concepts/role_BBD6A3E6.html", nodeDocType: "699c271e"},
+{objectId: "7.624729048911575E-305", title: "Задача             ", url: "core.base_concepts/guidances/concepts/task_86A4917F.html", nodeDocType: "699c271e"}]},
+{objectId: "_AtM0gBTQEdqrUt4zetC1gg", title: "Концепции процесса", url: "core.base_concepts/customcategories/process_concepts_2FEF92F.html", nodeDocType: "1bed0b76", 
+children: [
+
+{objectId: "_EhgqwO8MEdmKSqa_gSYthg", title: "Процесс поставки", url: "core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html", nodeDocType: "699c271e"}]}]},
+{objectId: "1.8262162566452063E-305", title: "Абстрактные путеводители", url: "core.base_rup/customcategories/conceptual_road_maps_2DE84E99.html", nodeDocType: "a05ed82e", 
+children: [
+
+{objectId: "6.991505672198195E-305", title: "Тонкая настройка RUP", url: "core.base_rup/guidances/concepts/tailoring_rup_F8F0EB23.html", nodeDocType: "a05ed82e"},
+{objectId: "2.721222001330515E-305", title: "Тонкая настройка процесса для малых проектов", url: "core.base_rup/guidances/concepts/tailoring_a_process_for_a_small_project_21481E2E.html", nodeDocType: "a05ed82e"},
+{objectId: "2.4535616775795524E-305", title: "Инструкции Agile и RUP", url: "core.base_rup/guidances/concepts/agile_practices_and_rup_A0E7A9D3.html", nodeDocType: "a05ed82e"},
+{objectId: "_VRdboFiQEdqHEvGt7YigcA", title: "Modeling the User Experience", url: "extend.ux_model/guidances/roadmaps/modeling_the_user_experience_E179D60A.html", nodeDocType: "90caf4f2"}]},
+{objectId: "3.825193364226223E-305", title: "Инструментальная поддержка процесса", url: "core.base_rup/customcategories/supporting_process_with_tools_13EBC28D.html", nodeDocType: "25cf96dd", 
+children: [
+
+{objectId: "1.1096478523026133E-304", title: "Руководство по конкретному инструменту", url: "core.base_rup/guidances/supportingmaterials/tool_specific_guidance_89209D18.html", nodeDocType: "25cf96dd"},
+{objectId: "2.65719655976642E-305", title: "Настраиваемый процесс", url: "core.base_rup/guidances/supportingmaterials/configurable_process_34A7BAC2.html", nodeDocType: "25cf96dd"}]},
+{objectId: "1.9677894927771484E-305", title: "Введение в UML", url: "core.base_rup/customcategories/uml_basics_FDBD2A0C.html", nodeDocType: "ed41b3aa", 
+children: [
+
+{objectId: "4.792914878943572E-306", title: "Различия между UML 1.x и UML 2.0", url: "core.base_rup/guidances/supportingmaterials/differences_between_uml_1_x_and_uml_2_0_CA70F2E6.html", nodeDocType: "ed41b3aa"}]},
+{objectId: "7.755968586980351E-308", title: "Ссылки", url: "core.base_rup/customcategories/references_56F06DFD.html", nodeDocType: "4093afe9", 
+children: [
+
+{objectId: "_gQBlsDtqEdqdFcqmPOQKxA", title: "Примечания по справочникам", url: "core.base_rup/guidances/supportingmaterials/references_notes_6580A72E.html", nodeDocType: "4093afe9"}]},
+{objectId: "5.2110322426453943E-306", title: "Дополнительные ресурсы", url: "core.base_rup/customcategories/additional_resources_E6845C6F.html", nodeDocType: "173bf443", 
+children: [
+
+{objectId: "1.4764011899219245E-304", title: "RUP в developerWorks", url: "core.base_rup/guidances/supportingmaterials/rup_on_developerworks_FCF9A310.html", nodeDocType: "d693a9f2"},
+{objectId: "1.3612642469528346E-305", title: "Обучение в университете Rational", url: "core.base_rup/guidances/supportingmaterials/training_with_rational_university_931C47F2.html", nodeDocType: "d693a9f2"}]}]}
+]
+

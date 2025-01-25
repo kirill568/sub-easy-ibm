@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RoleSets nodeId="b4e58c02">
+<RoleSet pname="Аналитики" name="analysts" nodeId="2fc28172">
+<Role pname="Business Architect" name="rup_business_architect_bom" nodeId="68832e00"></Role>
+<Role pname="Business Designer" name="rup_business_designer" nodeId="a2173b2c"></Role>
+<Role pname="Business-Process Analyst" name="rup_business_process_analyst" nodeId="3926acca"></Role>
+<Role pname="Аналитик" name="rup_system_analyst" nodeId="e4db89ae"></Role>
+<Role pname="Заинтересованное лицо" name="rup_stakeholder" nodeId="1d9c363c"></Role>
+<Role pname="Разработчик требований" name="rup_requirement_specifier" nodeId="57304368"></Role>
+</RoleSet>
+<RoleSet pname="Разработчики" name="developers" nodeId="d27df4e8">
+<Role pname="Интегратор" name="rup_integrator" nodeId="c120214"></Role>
+<Role pname="Проектировщик" name="rup_designer" nodeId="1bde5cd2"></Role>
+<Role pname="Проектировщик базы данных" name="rup_database_designer" nodeId="557269fe"></Role>
+<Role pname="Проектировщик интерфейса" name="rup_user_interface_designer" nodeId="8e33168c"></Role>
+<Role pname="Проектировщик капсул" name="rup_capsule_designer" nodeId="d6dabd06"></Role>
+<Role pname="Разработчик архитектуры" name="rup_software_architect" nodeId="52286e86"></Role>
+<Role pname="Реализатор" name="rup_implementer" nodeId="8bbc7bb2"></Role>
+</RoleSet>
+<RoleSet pname="Тестировщики" name="testers" nodeId="c47d2840">
+<Role pname="Аналитик" name="rup_test_analyst" nodeId="d51ce39c"></Role>
+<Role pname="Испытатель" name="rup_tester" nodeId="ea40cf42"></Role>
+<Role pname="Разработчик тестов" name="rup_test_designer" nodeId="23d4dc6e"></Role>
+<Role pname="Руководитель тестирования" name="rup_test_manager" nodeId="5c9588fc"></Role>
+</RoleSet>
+<RoleSet pname="Администраторы" name="managers" nodeId="d8b69b1a">
+<Role pname="Администратор конфигурации" name="rup_configuration_manager" nodeId="117747a8"></Role>
+<Role pname="Администратор развертывания" name="rup_deployment_manager" nodeId="22170304"></Role>
+<Role pname="Администратор системы" name="rup_system_administrator" nodeId="5ad7af92"></Role>
+<Role pname="Администратор управления изменениями" name="rup_change_manager" nodeId="946bbcbe"></Role>
+<Role pname="Проверяющий" name="rup_management_reviewer" nodeId="cd2c694c"></Role>
+<Role pname="Руководитель проекта" name="rup_project_manager" nodeId="587d43bc"></Role>
+<Role pname="Руководитель тестирования" name="rup_test_manager" nodeId="93638518"></Role>
+</RoleSet>
+<RoleSet pname="Работа и поддержка" name="production_support" nodeId="a1ddaba6">
+<Role pname="Администратор системы" name="rup_system_administrator" nodeId="dcc3ed02"></Role>
+<Role pname="Дизайнер графических материалов" name="rup_graphic_artist" nodeId="14326560"></Role>
+<Role pname="Инженер" name="rup_process_engineer" nodeId="5982be8c"></Role>
+<Role pname="Разработчик курса" name="rup_course_developer" nodeId="d37e3bdc"></Role>
+<Role pname="Специалист по инструментам" name="rup_tool_specialist" nodeId="e647d38"></Role>
+<Role pname="Технический писатель" name="rup_technical_writer" nodeId="45d2f596"></Role>
+</RoleSet>
+<RoleSet pname="Общие роли" name="general_roles" nodeId="57c4e522">
+<Role pname="Заинтересованное лицо" name="rup_stakeholder" nodeId="8f335d80"></Role>
+<Role pname="Координатор проверки" name="rup_review_manager" nodeId="ca199edc"></Role>
+<Role pname="Любая роль" name="rup_any_role" nodeId="188173a"></Role>
+<Role pname="Проверяющий" name="rup_reviewer" nodeId="7efb5d88"></Role>
+<Role pname="Технический контролер" name="rup_technical_reviewer" nodeId="c57d6f34"></Role>
+</RoleSet>
+</RoleSets>

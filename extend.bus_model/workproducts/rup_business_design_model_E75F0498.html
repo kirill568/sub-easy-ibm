@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Business Design Model</title>
+<meta content="Artifact" name="uma.type">
+<meta content="rup_business_design_model" name="uma.name">
+<meta content="Business Design Model" name="uma.presentationName">
+<meta content="@Type:@Name:@DisplayName" name="uma.category">
+<meta content="WorkProductType:model:Модель" name="uma.category">
+<meta content="Artifact" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_N13eYAINEdq-_NKqZM1EhA", "_8loI0CuREdqL6tsHh4YXGw", "_Yi4dsBpWEdqUwb9RAn2tTA"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_EOvXUN7HEdm8G6yT7-Wdqw", "_8loI0CuREdqL6tsHh4YXGw", "_Yi4dsBpWEdqUwb9RAn2tTA"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_mTMIkN7REdmjRZts2c4ZjQ", "_Yi4dsBpWEdqUwb9RAn2tTA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Yi4dsBpWEdqUwb9RAn2tTA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Артефакт: Business Design Model</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../extend.bus_model/workproducts/resources/ar_bam.jpg"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">This artifact describes the realization of the business use cases by interacting business systems, business workers and business entities. It is also a refinement or a realization of the Business Analysis Model which in most of the cases will replace.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../extend.bus_model/domains/business_modeling_rup_CDDF8485.html" guid="_8loI0CuREdqL6tsHh4YXGw">Business Modeling</a>
+<br>Типы рабочих продуктов: <a href="./../../core.base_rup/workproducttypes/model_C75A0621.html" guid="_mTMIkN7REdmjRZts2c4ZjQ">Модель</a>
+<br>Расширяет: <a href="./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}">Business Analysis Model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of the Business Design Model is to describe how the business use cases are realized. The Business Design
+    Model defines the services offered by the business in terms of interfaces and operations, the information that is
+    passed around (business entities), the internal organization into business systems and&nbsp;business workers and how
+    they collaborate to realize the external behavior described in the business use cases.
+</p>
+<p>
+    This is the place where all the design decisions are captured.&nbsp;The "more abstract" elements from the Business
+    Analysis Model are realized by "more concrete" ones. For example, the initial Business Workers are mapped or realized
+    into human workers or automated systems. In most of the cases the Business Analysis Model evolves into a Business
+    Design Model, as more design decisions are taken.
+</p>
+<p>
+    The Business&nbsp;Design Model is used by stakeholders, business-process analysts and business architects&nbsp;to
+    understand how the business currently works (in as-is form), and to analyze the effect of changes to the business (in
+    to-be form). The business architect&nbsp;is responsible for the structure and integrity of the model, while business
+    designers are responsible for detailing elements within the model. The model is also used by systems analysts for
+    deriving system requirements based on how automated systems - that is, automated business workers (usually
+    software-intensive)&nbsp;- will be used as part of business processes. Software architects use the model to define a
+    software architecture that fits the organization seamlessly and to identify classes in software analysis and design
+    models.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Содержащиеся артефакты</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_domain_FAAADFBF.html" guid="__IIS0ExMEduGSMz-5zscXg">Business Domain</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_entity_638A1D00.html" guid="{9A14ED32-2AC5-457E-93B8-474642D33A50}">Business Entity</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_event_853992A0.html" guid="{EF5798CC-41AE-4137-B248-B308D465CF8A}">Business Event</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_rule_9818835D.html" guid="{7F78B340-DD31-451A-9459-25F36E07401C}">Business Rule</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_system_BB28EEB.html" guid="{4064F184-314B-4965-9F08-6AE5DBF6205A}">Business System</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_use_case_realization_55CAF00D.html" guid="{47F095EB-E651-4A34-B75B-BACE38ED90C7}">Business Use-Case Realization</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/workproducts/rup_business_worker_75AE475B.html" guid="{6C6AD4E6-C7B4-42E1-A3D1-FAC9DC2415B5}">Business Worker</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Ответственный:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_architect_bom_26A8745F.html" guid="_RqlJIBpWEdqUwb9RAn2tTA">Business Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Изменен:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/roles/rup_business_architect_bom_26A8745F.html" guid="_RqlJIBpWEdqUwb9RAn2tTA">Business Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Задачи</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Вход для:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html" guid="{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}">Поиск субъектов и вариантов</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/develop_vision_D9584F04.html" guid="{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}">Разработка видения</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/capture_common_vocabulary_9BA76DA7.html" guid="{962AC6BA-4ACA-4D7D-B56F-24558A026854}">Создание общего словаря</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Выход из:
+								</span>
+<ul>
+<li>
+<a href="./../../extend.bus_model/tasks/bm_architectural_analysis_630ADB6.html" guid="_xfhhcBpWEdqUwb9RAn2tTA">Business Architectural Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Иллюстрации	</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Шаблоны</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/templates/business_use-case_realization_specification_4D877DAF.html" guid="2.6576205146287937E-306">Business Use-Case Realization Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Отчеты</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/reports/business_analysis_model_survey_38F32C0B.html" guid="8.979731646519528E-306">Business Analysis Model Survey</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/reports/business_entity_3BF830EF.html" guid="1.7739604216977318E-305">Business Entity </a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/reports/business_use-case_realization_159BE70A.html" guid="4.1216383810562285E-306">Business Use-Case Realization </a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/reports/business_worker_F325254C.html" guid="6.879255527765166E-306">Business Worker </a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Последствия отсутствия</th><td class="sectionTableCell"><p>
+    As in the business analysis model case, the business&nbsp;design model describes <em>how</em> the business works
+    internally to perform business functions, so the model is essential when considering changes to the business processes
+    or the organization (structure, roles and responsibilities) - you will be unable to reason about such changes without
+    this model.
+</p></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Причины для отказа</th><td class="sectionTableCell"><p>
+    Reference: <a class="elementLinkWithUserText" href="./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}"><u>Work Product: Business Analysis Model</u></a>.
+</p></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Опции представления</th><td class="sectionTableCell"><p>
+    UML Representation:&nbsp; Model, stereotyped as &lt;&lt;business design&gt;&gt;.
+</p>
+<p>
+    The <strong>business&nbsp;design model</strong> may have the following <strong>properties</strong>, similar to the
+    Business Analysis Model:
+</p>
+<ul>
+    <li>
+        <strong>Introduction:</strong> A textual description that serves as a brief introduction to the model.
+    </li>
+    <li>
+        <strong>Business Systems:</strong>&nbsp;Components in the model, representing a hierarchy*.
+    </li>
+    <li>
+        <strong>Business Workers:&nbsp;</strong>The Business Worker classes in the model, owned by the Business Systems.
+    </li>
+    <li>
+        <strong>Business Entities:</strong> The Business Entity classes in the model, owned by the Business Systems.
+    </li>
+    <li>
+        <strong>Business Events:</strong> The Business Event classes in the model, owned by the Business Systems.
+    </li>
+    <li>
+        <strong>Business Rules:</strong> The Business Rules captured in the model. These are not the Business Rules that
+        are captured in document form in a separate artifact.
+    </li>
+    <li>
+        <strong>Relationships:</strong> The relationships in the model, owned by the Business Systems.
+    </li>
+    <li>
+        <strong>Business Use-Case Realizations:</strong> The Business Use-Case Realizations in the model, owned by the
+        Business Systems.
+    </li>
+    <li>
+        <strong>Business Context Collaboration:</strong> The external realization of the interactions between the business
+        and the business actors, showing the <em>services</em> provided by the top-level Business System (that is, the
+        business itself), the interfaces for these services, the connections to the business actors, and the Business
+        Entities input and output.
+    </li>
+    <li>
+        <strong>Diagrams:</strong> The diagrams in the model, owned by the Business Systems.
+    </li>
+</ul>
+<p>
+    *Note that the business itself is the top-level component (Business System), and may directly encapsulate business
+    workers, business entities etc.
+</p>
+<p>
+    For&nbsp;a more detailed description of different flavors of Business Design Model see <a class="elementLinkWithUserText" href="./../../extend.bus_model/workproducts/rup_business_analysis_model_9449F63A.html" guid="{CF53445C-3351-46C6-810E-8251830029A7}"><u>Work Product: Business Analysis Model</u></a>.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/checklists/business_analysis_model_8F07AB6C.html" guid="4.008082751699213E-306">Business Analysis Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Концепции</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/concepts/domain_design_846FF5B2.html" guid="_qr6IQE6nEduhs-ki98mFFw">Domain Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/aggregation_in_the_business_analysis_model_486F84A9.html" guid="5.888288202551755E-305">Aggregation in the Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/association_in_the_business_analysis_model_BB06CDDA.html" guid="3.692812179186766E-305">Association in the Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/business_analysis_model_1E251B6A.html" guid="1.0729818999075064E-304">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/business_entity_734D1170.html" guid="1.0295540980844903E-304">Business Entity</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/diagrams_in_the_business_analysis_model_F0F7B759.html" guid="2.967860873569252E-305">Diagrams in the Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/generalization_in_the_business_analysis_model_C74DAF63.html" guid="1.410487898839562E-305">Generalization in the Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../extend.bus_model/guidances/guidelines/going_from_business_models_to_systems_3B55D8F4.html" guid="1.3212739617274792E-306">Going from Business Models to Systems</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.empulsys.com/rupbm" target="_blank"><img height="24"                 alt="Empulsys : разработка программного обеспечения и управление" src="./../../core.base_rup/guidances/supportingmaterials/resources/empulsys.jpg" width="100"                 border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.empulsys.com/rupbm" target="_blank">Empulsys Holding BV</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p><p/><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
